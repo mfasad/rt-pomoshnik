@@ -1,0 +1,145 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как зайти в БИОС приставки Ростелеком: вход в UEFI — РТ Помощник</title><meta name="description" content="Инструкция по входу в настройки BIOS (UEFI) на ТВ-приставках Ростелеком. Методы с пультом, клавиатурой и риски изменения параметров.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-zajti-v-bios-pristavki-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как зайти в БИОС приставки Ростелеком: вход в UEFI — РТ Помощник">
+<meta property="og:description" content="Инструкция по входу в настройки BIOS (UEFI) на ТВ-приставках Ростелеком. Методы с пультом, клавиатурой и риски изменения параметров."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-zajti-v-bios-pristavki-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как зайти в БИОС приставки Ростелеком: вход в UEFI — РТ Помощник">
+<meta name="twitter:description" content="Инструкция по входу в настройки BIOS (UEFI) на ТВ-приставках Ростелеком. Методы с пультом, клавиатурой и риски изменения параметров.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-zajti-v-bios-pristavki-rostelekom.html#article", "headline": "Как зайти в БИОС приставки Ростелеком", "description": "Инструкция по входу в настройки BIOS (UEFI) на ТВ-приставках Ростелеком. Методы с пультом, клавиатурой и риски изменения параметров.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-zajti-v-bios-pristavki-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-zajti-v-bios-pristavki-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-zajti-v-bios-pristavki-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Оборудование", "item": "https://rt-pomoshnik.vercel.app/category/oborudovanie/"}, {"@type": "ListItem", "position": 3, "name": "Как зайти в БИОС приставки Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-zajti-v-bios-pristavki-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-zajti-v-bios-pristavki-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Можно ли установить Windows на приставку Ростелеком?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, архитектура процессоров в ТВ-приставках (обычно ARM) не совместима с операционной системой Windows, которая требует процессоры x86/x64. Установка невозможна технически."}}, {"@type": "Question", "name": "Что делать, если после входа в меню экран черный?", "acceptedAnswer": {"@type": "Answer", "text": "Попробуйте переключить источник сигнала на телевизоре или заменить кабель HDMI. В некоторых случаях изображение в Recovery выводится в низком разрешении, которое ваш ТВ может не поддерживать автоматически."}}, {"@type": "Question", "name": "Сбросит ли вход в BIOS настройки провайдера?", "acceptedAnswer": {"@type": "Answer", "text": "Сам вход в меню не сбрасывает настройки. Однако выполнение команды Factory Reset внутри меню удалит привязку к личному кабинету и настройки сети, потребуется повторная активация."}}, {"@type": "Question", "name": "Где найти кнопку Reset, если её нет на корпусе?", "acceptedAnswer": {"@type": "Answer", "text": "В некоторых компактных моделях кнопка Reset совмещена с разъемом питания или скрыта внутри порта USB. Внимательно осмотрите разъемы с фонариком, ищите маленькое углубление."}}, {"@type": "Question", "name": "Как выйти из меню Recovery, если пульт не работает?", "acceptedAnswer": {"@type": "Answer", "text": "Попробуйте подключить USB-клавиатуру и использовать стрелки и Enter. Если это не помогает, единственный вариант — полное обесточивание устройства на 1–2 минуты."}}, {"@type": "Question", "name": "Нужен ли специальный кабель для входа в БИОС?", "acceptedAnswer": {"@type": "Answer", "text": "Для стандартного входа в Recovery кабель не нужен. Для глубокой перепрошивки через UART может потребоваться специальный USB-TTL адаптер, но это процедура для сервисных инженеров."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="is-active" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/oborudovanie/">Оборудование</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Оборудование</span> · 8 мин</p><h1>Как зайти в БИОС приставки Ростелеком</h1><p class="pc-deck">Инструкция по входу в настройки BIOS (UEFI) на ТВ-приставках Ростелеком. Методы с пультом, клавиатурой и риски изменения параметров.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Короткий вывод</strong><span>Классический BIOS на приставках Ростелеком отсутствует. Для доступа к настройкам загрузки используйте меню Recovery (сочетание Reset + Питание) или подключите USB-клавиатуру для вызова Boot Menu.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Оборудование</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#особенности-архитектуры-тв-приставок">Особенности архитектуры ТВ-приставок</a></li><li><a href="#стандартные-методы-входа-через-пульт">Стандартные методы входа через пульт</a></li><li><a href="#использование-usb-клавиатуры-для-доступа">Использование USB-клавиатуры для доступа</a></li><li><a href="#модели-eltex-и-специфика-входа">Модели Eltex и специфика входа</a></li><li><a href="#устройства-sercomm-и-huawei">Устройства Sercomm и Huawei</a></li><li><a href="#альтернативные-способы-через-программное-обеспечение">Альтернативные способы через программное обеспечение</a></li><li><a href="#типичные-ошибки-и-риски">Типичные ошибки и риски</a></li></ol></nav>
+<div class="pc-prose"><p>Прямой доступ к классическому BIOS на современных ТВ-приставках Ростелеком (модели на базе Android или Linux) технически невозможен для обычного пользователя, так как производители блокируют загрузчики и скрывают низкоуровневые настройки. Вместо привычного синего экрана BIOS используется среда UEFI или специализированное меню восстановления (Recovery Mode), вызываемое комбинациями кнопок при включении устройства.</p>
+
+<p>Попытки попасть в системное меню чаще всего связаны с необходимостью перепрошивки устройства, сброса настроек до заводских или установки стороннего программного обеспечения. Важно понимать, что интерфейс, который вы ищете, кардинально отличается от компьютерного: здесь нет вкладок с таймингами памяти или настройками напряжения процессора.</p>
+
+<p>Процедура входа зависит от конкретной модели устройства (например, SberBox, Eltex, Sercomm или Huawei) и ревизии платы. Стандартные методы включают использование скрытых сочетаний кнопок на пульте дистанционного управления или подключение USB-клавиатуры для эмуляции нажатия служебных клавиш.</p>
+
+<p>Вмешательство в работу загрузчика без должной квалификации несет высокие риски. Ошибка в параметрах может привести к тому, что приставка перестанет загружать операционную систему, превратившись в «кирпич», восстановление которого возможно только через программатор или сервисный центр.</p>
+
+
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Когда нужно остановиться</strong><p>Если вы не знаете точного названия модели и версии прошивки, не изменяйте параметры в инженерном меню. Неправильная настройка загрузчика приведет к полной неработоспособности устройства.</p></div></aside>
+
+<h2 id="особенности-архитектуры-тв-приставок">Особенности архитектуры ТВ-приставок</h2>
+
+<p>Термин «БИОС» применительно к телевизионным приставкам является условным. В отличие от персональных компьютеров, где BIOS или UEFI хранятся на отдельной микросхеме и предоставляют широкий интерфейс настройки, в TV-боксах эти функции интегрированы в загрузчик (Bootloader).</p>
+
+<p>Производители оборудования для Ростелекома, такие как Eltex, Sercomm или Huawei, используют урезанные версии загрузчиков (часто U-Boot), которые инициализируют железо и передают управление операционной системе. Пользовательский доступ к этим параметрам намеренно ограничен во избежание случайной поломки устройства неопытными клиентами.</p>
+
+<p>Вместо полноценного BIOS разработчики внедряют режим Recovery. Это аварийная среда, позволяющая выполнить сброс данных (Wipe Data), обновить прошивку с внешнего носителя или перезагрузить систему. Именно это меню чаще всего принимают за BIOS при попытках перепрошивки.</p>
+
+<aside class="pc-definition"><strong>Bootloader и Recovery</strong><p>Загрузчик — это первая программа, запускаемая при включении. Recovery — это специальный режим обслуживания, позволяющий сбросить настройки или установить обновление в обход основной системы.</p></aside>
+
+<h2 id="стандартные-методы-входа-через-пульт">Стандартные методы входа через пульт</h2>
+
+<p>Наиболее распространенный способ попасть в служебное меню не требует дополнительного оборудования. Он основан на нажатии определенной комбинации клавиш на пульте дистанционного управления в момент подачи питания на приставку.</p>
+
+<p>Для начала полностью обесточьте устройство, выдернув шнур питания из розетки. Затем найдите на корпусе приставки кнопку Reset (Сброс). Она может быть скрыта в углублении и требовать нажатия скрепкой, или быть отдельной кнопкой.</p>
+
+<p>Зажмите кнопку Reset и, удерживая её, подключите кабель питания обратно в сеть. Не отпускайте кнопку до появления логотипа или специального меню на экране телевизора. В некоторых моделях вместо Reset требуется удерживать кнопку питания на самом корпусе устройства.</p>
+
+<div class="pc-widget-title">Порядок действий</div><ol class="pc-steps"><li><span>1</span><div><strong>Отключите питание приставки из розетки.</strong></div></li><li><span>2</span><div><strong>Найдите кнопку Reset или Power на корпусе.</strong></div></li><li><span>3</span><div><strong>Зажмите кнопку и включите питание, удерживая нажатие 10–15 секунд.</strong></div></li></ol>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="использование-usb-клавиатуры-для-доступа">Использование USB-клавиатуры для доступа</h2>
+
+<p>Если комбинации с пультом не срабатывают, наиболее эффективным методом является эмуляция компьютерного входа. Многие приставки на базе Android поддерживают стандартные протоколы HID при подключении периферии.</p>
+
+<p>Подключите обычную компьютерную USB-клавиатуру в свободный порт приставки. Если портов недостаточно или они заняты, используйте USB-хаб. Убедитесь, что клавиатура определяется устройством (иногда загорается индикатор CapsLock).</p>
+
+<p>При включении приставки попробуйте нажимать служебные клавиши, характерные для ПК: F2, F10, F12 или Delete. Частота опроса клавиатуры в загрузчике может быть низкой, поэтому нажимайте кнопку многократно и ритмично сразу после подачи питания.</p>
+
+<p>В ряде моделей, особенно старых версий SML или Eltex, срабатывает клавиша Esc или пробел. Если экран остается черным, но приставка подает признаки жизни, возможно, видеовыход еще не инициализирован, но команда уже принята.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Не все USB-порты на приставке активны до загрузки ОС. Попробуйте подключить клавиатуру в разные разъемы, включая порты USB 2.0, которые часто имеют приоритет при загрузке.</p></div></aside>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-nastroit-podklyuchenie-routera-k-internetu-rostelekom.html"><span>01</span><strong>Как настроить роутер Ростелеком: руководство по подключению</strong><small>14 мин →</small></a><a href="/articles/k/ka/kak-nastroit-dsl-2750u-pod-rostelekom.html"><span>02</span><strong>Как настроить роутер D-Link DSL-2750U под Ростелеком</strong><small>10 мин →</small></a><a href="/articles/k/ka/kak-zajti-v-nastrojki-routera-rostelekom-rt-gm-2.html"><span>03</span><strong>Как зайти в настройки роутера Ростелеком RT-GM-2</strong><small>9 мин →</small></a></div></aside><h2 id="модели-eltex-и-специфика-входа">Модели Eltex и специфика входа</h2>
+
+<p>Приставки Eltex (например, модели NT-500 или BOX) часто используются провайдером и имеют свои особенности. В этих устройствах доступ к консоли загрузчика часто осуществляется через последовательный порт (UART), но для базовых задач хватает меню восстановления.</p>
+
+<p>Для входа в Recovery на Eltex обычно используется зажатие кнопки на передней панели устройства при включении. Интерфейс может быть текстовым, отображаемым прямо на экране ТВ, без графической оболочки.</p>
+
+<p>Если необходимо изменить порядок загрузки (например, для запуска с флешки), в некоторых версиях прошивок Eltex это делается через скрытое меню, вызываемое кодом на пульте или специальным приложением, установленным заранее.</p>
+
+<div class="pc-fact-grid" aria-label="Как оценить ситуацию"><div><span>Индикатор мигает</span><strong>Режим восстановления</strong><p>Устройство готово к прошивке</p></div><div><span>Черный экран</span><strong>Нет сигнала</strong><p>Проверьте кабель HDMI и источник</p></div><div><span>Загрузка Android</span><strong>Успешный старт</strong><p>Время упущено, нужно перезагрузить</p></div></div>
+
+<h2 id="устройства-sercomm-и-huawei">Устройства Sercomm и Huawei</h2>
+
+<p>Оборудование от Sercomm и Huawei, поставляемое Ростелекомом, часто имеет более закрытую архитектуру. Вход в инженерное меню здесь может требовать не только физического воздействия, но и отправки специальных команд.</p>
+
+<p>Для некоторых моделей Huawei актуален метод с отключением питания и быстрым нажатием кнопки питания на корпусе 5–7 раз подряд перед окончательным включением. Это может вызвать меню выбора режима загрузки.</p>
+
+<p>В устройствах Sercomm часто встречается защита от несанкционированного доступа. Даже при попадании в меню Recovery опции могут быть ограничены только сбросом настроек, без возможности изменения параметров загрузчика.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="альтернативные-способы-через-программное-обеспечение">Альтернативные способы через программное обеспечение</h2>
+
+<p>Существует метод входа в расширенные настройки без перезагрузки, через отладку по USB (ADB). Для этого необходимо активировать режим разработчика в настройках Android-приставки.</p>
+
+<p>Зайдите в «Настройки» -> «Об устройстве» и нажмите 7 раз на номер сборки. Появится сообщение о включении режима разработчика. Затем в новом меню активируйте «Отладка по USB».</p>
+
+<p>Подключив приставку к ПК, можно отправить команду <code>adb reboot bootloader</code> или <code>adb reboot recovery</code>. Это программный аналог нажатия кнопок, который работает надежнее, если система еще загружается.</p>
+
+<div class="pc-code"><span>bash</span><pre><code>adb reboot recovery</code></pre></div>
+
+<h2 id="типичные-ошибки-и-риски">Типичные ошибки и риски</h2>
+
+<p>Самая распространенная ошибка — выбор неправильного пункта в меню Recovery. Пункт «Wipe Data/Factory Reset» полностью удаляет все пользовательские данные и настройки, возвращая устройство к заводскому состоянию.</p>
+
+<p>Попытка прошить неподходящую версию ПО может нарушить работу драйверов пульта или Wi-Fi модуля. Всегда проверяйте, что прошивка предназначена именно для вашей ревизии платы, а не просто для той же модели.</p>
+
+<p>Некоторые пользователи пытаются замкнуть контакты на плате для входа в режим программирования. Это грубая ошибка, которая с высокой вероятностью приведет к короткому замыканию и выходу устройства из строя без возможности восстановления.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Выбор Wipe Data вместо Reboot — потеря всех настроек</strong></div></article><article><span>02</span><div><strong>Прошивка от другой ревизии — отказ Wi-Fi или пульта</strong></div></article><article><span>03</span><div><strong>Замыкание контактов на плате — физическая поломка устройства</strong></div></article></div>
+
+<details>
+<summary>Можно ли установить Windows на приставку Ростелеком?</summary>
+<p>Нет, архитектура процессоров в ТВ-приставках (обычно ARM) не совместима с операционной системой Windows, которая требует процессоры x86/x64. Установка невозможна технически.</p>
+</details>
+
+<details>
+<summary>Что делать, если после входа в меню экран черный?</summary>
+<p>Попробуйте переключить источник сигнала на телевизоре или заменить кабель HDMI. В некоторых случаях изображение в Recovery выводится в низком разрешении, которое ваш ТВ может не поддерживать автоматически.</p>
+</details>
+
+<details>
+<summary>Сбросит ли вход в BIOS настройки провайдера?</summary>
+<p>Сам вход в меню не сбрасывает настройки. Однако выполнение команды Factory Reset внутри меню удалит привязку к личному кабинету и настройки сети, потребуется повторная активация.</p>
+</details>
+
+<details>
+<summary>Где найти кнопку Reset, если её нет на корпусе?</summary>
+<p>В некоторых компактных моделях кнопка Reset совмещена с разъемом питания или скрыта внутри порта USB. Внимательно осмотрите разъемы с фонариком, ищите маленькое углубление.</p>
+</details>
+
+<details>
+<summary>Как выйти из меню Recovery, если пульт не работает?</summary>
+<p>Попробуйте подключить USB-клавиатуру и использовать стрелки и Enter. Если это не помогает, единственный вариант — полное обесточивание устройства на 1–2 минуты.</p>
+</details>
+
+<details>
+<summary>Нужен ли специальный кабель для входа в БИОС?</summary>
+<p>Для стандартного входа в Recovery кабель не нужен. Для глубокой перепрошивки через UART может потребоваться специальный USB-TTL адаптер, но это процедура для сервисных инженеров.</p>
+</details>
+
+<div class="pc-summary"><span>Итог</span><h2>Что важно запомнить</h2><p>Классического BIOS на приставках нет. Используйте меню Recovery через кнопку Reset или команду ADB. Будьте осторожны со сбросом данных, так как это удалит настройки подключения.</p></div></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-nastroit-podklyuchenie-routera-k-internetu-rostelekom.html"><span>14 мин</span><strong>Как настроить роутер Ростелеком: руководство по подключению</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-dsl-2750u-pod-rostelekom.html"><span>10 мин</span><strong>Как настроить роутер D-Link DSL-2750U под Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-zajti-v-nastrojki-routera-rostelekom-rt-gm-2.html"><span>9 мин</span><strong>Как зайти в настройки роутера Ростелеком RT-GM-2</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-internet-k-noutbuku-cherez-kabel-rostelekom.html"><span>12 мин</span><strong>Подключение интернета Ростелеком к ноутбуку через кабель</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-sdelat-reset-na-routere-rostelekom.html"><span>13 мин</span><strong>Как сделать сброс настроек на роутере Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/p/pu/pult-rostelekom-kak-otkryt.html"><span>9 мин</span><strong>Как открыть пульт Ростелеком для замены элементов питания</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

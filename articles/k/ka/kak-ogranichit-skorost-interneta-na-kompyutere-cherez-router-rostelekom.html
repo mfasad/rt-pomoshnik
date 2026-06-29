@@ -1,0 +1,143 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как ограничить скорость интернета на роутере Ростелеком: инструкция — РТ Помощник</title><meta name="description" content="Пошаговая настройка QoS и Rate Limit на роутерах Ростелеком. Как урезать скорость для конкретного устройства или всей сети.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-ogranichit-skorost-interneta-na-kompyutere-cherez-router-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как ограничить скорость интернета на роутере Ростелеком: инструкция — РТ Помощник">
+<meta property="og:description" content="Пошаговая настройка QoS и Rate Limit на роутерах Ростелеком. Как урезать скорость для конкретного устройства или всей сети."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-ogranichit-skorost-interneta-na-kompyutere-cherez-router-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как ограничить скорость интернета на роутере Ростелеком: инструкция — РТ Помощник">
+<meta name="twitter:description" content="Пошаговая настройка QoS и Rate Limit на роутерах Ростелеком. Как урезать скорость для конкретного устройства или всей сети.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-ogranichit-skorost-interneta-na-kompyutere-cherez-router-rostelekom.html#article", "headline": "Настройка ограничения скорости на роутере Ростелеком", "description": "Пошаговая настройка QoS и Rate Limit на роутерах Ростелеком. Как урезать скорость для конкретного устройства или всей сети.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-ogranichit-skorost-interneta-na-kompyutere-cherez-router-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-ogranichit-skorost-interneta-na-kompyutere-cherez-router-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-ogranichit-skorost-interneta-na-kompyutere-cherez-router-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Настройка Wi-Fi", "item": "https://rt-pomoshnik.vercel.app/category/nastrojka-wi-fi/"}, {"@type": "ListItem", "position": 3, "name": "Настройка ограничения скорости на роутере Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-ogranichit-skorost-interneta-na-kompyutere-cherez-router-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-ogranichit-skorost-interneta-na-kompyutere-cherez-router-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Можно ли ограничить скорость только для одного сайта?", "acceptedAnswer": {"@type": "Answer", "text": "Стандартными средствами бытовых роутеров Ростелеком ограничить скорость для конкретного сайта (домена) невозможно. Функции QoS работают на уровне IP-адресов устройств или портов. Для фильтрации по доменам требуются продвинутые системы контроля трафика или специализированное ПО на компьютере."}}, {"@type": "Question", "name": "Почему после настройки скорости интернет пропал совсем?", "acceptedAnswer": {"@type": "Answer", "text": "Скорее всего, вы указали слишком низкое значение лимита (например, 1 Кбит/с) или перепутали единицы измерения. Также возможно, что вы ограничили скорость устройства, с которого пытаетесь зайти в настройки, и браузер не успевает загрузить страницу. Выполните сброс роутера кнопкой Reset."}}, {"@type": "Question", "name": "Влияет ли ограничение скорости на пинг в играх?", "acceptedAnswer": {"@type": "Answer", "text": "Да, правильное ограничение фоновых загрузок на других устройствах может снизить пинг (задержку) на игровом ПК, так как канал не будет забит мусорным трафиком. Однако если вы ограничите скорость самого игрового устройства слишком сильно, это может привести к лагам и разрывам соединения."}}, {"@type": "Question", "name": "Нужно ли перезагружать роутер после настройки QoS?", "acceptedAnswer": {"@type": "Answer", "text": "В большинстве случаев настройки применяются мгновенно. Однако для гарантированного вступления в силу всех правил, особенно связанных с привязкой IP и MAC-адресов, рекомендуется перезагрузить роутер через веб-интерфейс или физически."}}, {"@type": "Question", "name": "Можно ли ограничить скорость UPLOAD (отдачи)?", "acceptedAnswer": {"@type": "Answer", "text": "Да, в настройках QoS всегда есть два параметра: Download (загрузка) и Upload (отдача). Ограничение отдачи важно, если кто-то раздает торренты, так как забитый канал отдачи часто вызывает большие задержки даже при свободном канале загрузки."}}, {"@type": "Question", "name": "Где найти пароль от роутера, если наклейка стерлась?", "acceptedAnswer": {"@type": "Answer", "text": "Если стандартный пароль (admin/admin) не подходит и наклейка нечитаема, придется выполнить сброс настроек. Зажмите кнопку Reset на 10-15 секунд. После этого пароль вернется к заводскому, указанному в инструкции или на сайте производителя, но все ваши настройки интернета сбросятся."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="is-active" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Настройка Wi-Fi</span> · 11 мин</p><h1>Настройка ограничения скорости на роутере Ростелеком</h1><p class="pc-deck">Пошаговая настройка QoS и Rate Limit на роутерах Ростелеком. Как урезать скорость для конкретного устройства или всей сети.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Краткий вывод</strong><span>Ограничение скорости настраивается в веб-интерфейсе роутера в разделах QoS или Bandwidth Control. Вам потребуется установить максимальную скорость загрузки (Download) и отдачи (Upload) в килобитах или мегабитах для конкретного IP-адреса устройства.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Настройка Wi-Fi</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#вход-в-панель-управления-и-подготовка">Вход в панель управления и подготовка</a></li><li><a href="#настройка-qos-на-роутерах-sagemcom">Настройка QoS на роутерах Sagemcom</a></li><li><a href="#управление-трафиком-на-устройствах-sercomm-и-rt">Управление трафиком на устройствах Sercomm и RT</a></li><li><a href="#привязка-ограничения-к-mac-адресу">Привязка ограничения к MAC-адресу</a></li><li><a href="#проверка-эффективности-и-диагностика">Проверка эффективности и диагностика</a></li><li><a href="#альтернативные-методы-ограничения">Альтернативные методы ограничения</a></li></ol></nav>
+<div class="pc-prose"><p>Изменение пропускной способности канала на маршрутизаторе необходимо для предотвращения перегрузки сети, когда один пользователь скачивает большие файлы или играет в онлайн-игры. Это особенно актуально в семьях, где несколько устройств одновременно потребляют трафик, а тарифный план имеет фиксированную скорость. Ограничение позволяет выделить гарантированную полосу пропускания для критически важных задач, например, видеозвонков или удаленной работы.</p>
+
+<p>В оборудовании, предоставляемом провайдером, эта функция чаще всего реализуется через механизм QoS (Quality of Service) или Bandwidth Control. Интерфейсы настроек могут отличаться в зависимости от модели устройства: старые версии Sagemcom, современные Sercomm или фирменные роутеры с логотипом RT. Принцип действия един — создание правил, которые принудительно снижают максимальную скорость передачи данных для выбранных IP-адресов.</p>
+
+<p>Процедура требует доступа к панели администратора роутера и базового понимания сетевых адресов. Поэтому перед внесением изменений рекомендуется записать текущие параметры или выполнить сброс к заводским настройкам, если доступ будет утерян.</p>
+
+
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Риск потери доступа</strong><p>При установке слишком низких значений скорости (менее 10-20 Кбит/с) вы можете потерять возможность открыть настройки роутера снова. Если это произошло, используйте кнопку Reset на корпусе устройства для сброса пароля и настроек.</p></div></aside>
+
+<h2 id="вход-в-панель-управления-и-подготовка">Вход в панель управления и подготовка</h2>
+
+<p>Для начала настройки необходимо получить доступ к административной панели вашего маршрутизатора. Откройте любой веб-браузер на устройстве, подключенном к сети Ростелеком по кабелю или Wi-Fi. В адресной строке введите стандартный шлюз: чаще всего это 192.168.1.1 или 192.168.0.1. Точный адрес указан на наклейке на нижней части корпуса роутера вместе с логином и паролем для входа.</p>
+
+<p>После ввода адреса система запросит авторизацию. Используйте учетные данные, указанные производителем. По умолчанию это часто пара admin/admin, но на современных моделях пароль может быть уникальным и напечатанным в поле PWD или Password. Если вы ранее меняли эти данные и не помните их, придется выполнить аппаратный сброс устройства.</p>
+
+<p>Попав в главное меню, осмотрите интерфейс. В старых прошивках Sagemcom настройки скорости часто скрыты во вкладке «Дополнительно» или «Advanced». В новых интерфейсах Sercomm или RT-роутерах ищите разделы с названиями «Контроль полосы пропускания», «QoS», «Управление трафиком» или «Bandwidth Control».</p>
+
+<p>Прежде чем создавать правила ограничения, необходимо зафиксировать IP-адрес устройства, скорость которого вы планируете урезать. Зайдите в список подключенных клиентов (обычно раздел «Локальная сеть», «LAN» или «Список клиентов»). Найдите нужное устройство по имени или MAC-адресу и запишите его текущий IP. Для надежности рекомендуется закрепить этот адрес, чтобы он не менялся после перезагрузки роутера.</p>
+
+<div class="pc-widget-title">Порядок подготовки</div><ol class="pc-steps"><li><span>1</span><div><strong>Войдите в веб-интерфейс роутера по адресу 192.168.1.1</strong></div></li><li><span>2</span><div><strong>Найдите раздел QoS или Bandwidth Control</strong></div></li><li><span>3</span><div><strong>Запишите IP-адрес устройства, которое нужно ограничить</strong></div></li><li><span>4</span><div><strong>Включите функцию контроля полосы пропускания (Enable)</strong></div></li></ol>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="настройка-qos-на-роутерах-sagemcom">Настройка QoS на роутерах Sagemcom</h2>
+
+<p>Модели Sagemcom [fast] 2804 и 3804 имеют классический интерфейс, где управление скоростью реализовано через приоритеты и лимиты. После входа в систему перейдите в меню «Дополнительно» (Advanced) и выберите пункт «QoS». В некоторых версиях прошивки этот пункт может находиться в разделе «Сеть» (Network).</p>
+
+<p>В открывшемся окне поставьте галочку напротив пункта «Включить QoS» (Enable QoS). Система предложите указать общую пропускную способность вашего канала. Введите значения, соответствующие вашему тарифу Ростелеком, с небольшим запасом (около 90% от реальной скорости). Это необходимо для корректной работы алгоритмов планировщика.</p>
+
+<p>Далее найдите кнопку «Добавить» (Add) или «Новое правило». В открывшейся форме выберите тип правила. Для простого ограничения скорости без приоритизации выберите опцию «Ограничение скорости» или просто укажите IP-адрес клиента. В полях «Максимальная скорость загрузки» (Max Download) и «Максимальная скорость отдачи» (Max Upload) введите желаемые значения.</p>
+
+<p>Обратите внимание на единицы измерения. В интерфейсах Sagemcom скорость часто указывается в Кбит/с (Kbps). Если вы хотите ограничить скорость до 5 Мбит/с, необходимо ввести значение 5120. После заполнения всех полей нажмите «Сохранить» (Save) или «Применить» (Apply). Новые настройки вступают в силу немедленно, но для гарантии лучше перезагрузить роутер.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Единицы измерения</strong><p>Внимательно следите за единицами измерения в полях ввода. Путаница между Кбит/с (Kbps) и Мбит/с (Mbps) приведет к тому, что скорость будет ограничена в 1000 раз сильнее, чем планировалось, сделав интернет практически неработоспособным.</p></div></aside>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-upravlyat-routerom-cherez-telefon-udalenno-rostelekom.html"><span>01</span><strong>Как управлять роутером Ростелеком с телефона удаленно</strong><small>12 мин →</small></a><a href="/articles/k/ka/kak-podklyuchit-noutbuk-k-wifi-rostelekom.html"><span>02</span><strong>Как подключить ноутбук к Wi-Fi Ростелеком</strong><small>11 мин →</small></a><a href="/articles/k/ka/kak-samomu-nastroit-router-rostelekom-cherez-telefon.html"><span>03</span><strong>Настройка роутера Ростелеком через телефон</strong><small>12 мин →</small></a></div></aside><h2 id="управление-трафиком-на-устройствах-sercomm-и-rt">Управление трафиком на устройствах Sercomm и RT</h2>
+
+<p>Современные роутеры, выдаваемые Ростелекомом (серии RT, Sercomm), используют обновленный интерфейс с более наглядной структурой. Функция ограничения скорости здесь часто вынесена в отдельный блок или интегрирована в настройки гостевой сети и родительского контроля.</p>
+
+<p>Перейдите в раздел «Расширенные настройки» и найдите пункт «Контроль полосы пропускания» (Bandwidth Control). Активируйте переключатель состояния функции. В отличие от старых моделей, здесь часто можно задавать правила не только по IP, но и выбирать устройство из выпадающего списка подключенных клиентов, что упрощает процесс.</p>
+
+<p>Создайте новое правило, нажав на плюсик или кнопку «Добавить правило». Укажите диапазон IP-адресов. Если нужно ограничить одно устройство, введите его адрес и в поле «Конец диапазона» укажите то же самое значение. Заполните поля «Макс. скорость приема» и «Макс. скорость передачи».</p>
+
+<p>В некоторых версиях прошивок Sercomm доступна функция «Интеллектуальный QoS». Если она включена, роутер сам распределяет трафик, отдавая приоритет играм и видео. Для жесткого ограничения скорости лучше отключить интеллектуальный режим и использовать ручную настройку лимитов, так как автоматика может игнорировать заданные пределы в пользу приоритетных протоколов.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Как выбрать метод</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>Интерфейс роутера старый (Sagemcom 2804)</span><strong>Используйте раздел QoS и вводите скорость в Кбит/с</strong></div><div class="pc-decision-row"><span>Интерфейс современный (Sercomm, RT)</span><strong>Используйте Bandwidth Control и выбирайте устройство из списка</strong></div><div class="pc-decision-row"><span>Нужно ограничить всех кроме себя</span><strong>Настройте правило для диапазона IP-адресов всей сети, исключив свой ПК</strong></div></div></section>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="привязка-ограничения-к-mac-адресу">Привязка ограничения к MAC-адресу</h2>
+
+<p>Наиболее надежный способ ограничения — привязка правила к физическому адресу устройства (MAC-адресу), а не к IP. IP-адреса могут меняться при переподключении, если не настроена статическая аренда DHCP, а MAC-адрес остается неизменным.</p>
+
+<p>Найдите в меню раздел «Сеть» (LAN) или «DHCP-сервер». Там должна быть таблица «Статический DHCP» или «Привязка IP-MAC». Добавьте новое правило, введя MAC-адрес устройства и желаемый IP, который будет выдаваться ему постоянно. Сохраните настройки.</p>
+
+<p>После закрепления IP вернитесь в настройки QoS или Bandwidth Control. Создайте правило ограничения для этого конкретного IP-адреса. Теперь, даже если вы перезагрузите роутер или устройство, правило ограничения продолжит действовать, так как адрес не изменится.</p>
+
+<p>Если в вашем роутере есть функция фильтрации по MAC-адресам непосредственно в модуле QoS, используйте её. Это избавит от необходимости настраивать статический DHCP отдельно. Просто скопируйте MAC-адрес из списка клиентов и вставьте его в поле настройки правила ограничения скорости.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Указание скорости в Мбит вместо Кбит, что блокирует интернет полностью</strong></div></article><article><span>02</span><div><strong>Ограничение скорости на самом компьютере через программы, а не на роутере, что не дает эффекта для других устройств</strong></div></article><article><span>03</span><div><strong>Забывчивость при отключении правила, когда необходимость в нем отпала</strong></div></article></div>
+
+<h2 id="проверка-эффективности-и-диагностика">Проверка эффективности и диагностика</h2>
+
+<p>После применения настроек необходимо убедиться, что ограничение работает корректно. Подключитесь к сети с устройства, для которого было создано правило. Откройте сайт для проверки скорости (например, speedtest.net) и запустите тест.</p>
+
+<p>Сравните полученные цифры с заданными в настройках роутера. Небольшое расхождение (5-10%) является нормальным из-за служебного трафика и особенностей протоколов. Если скорость осталась прежней, проверьте, включена ли галочка активации правила в списке QoS.</p>
+
+<p>Частая проблема — кэширование данных браузером или торрент-клиентом. При тестировании убедитесь, что вы измеряете «чистую» скорость, закрыв другие программы, потребляющие трафик. Также попробуйте очистить кэш браузера перед повторным замером.</p>
+
+<p>Если ограничение не срабатывает, проверьте приоритеты правил. В некоторых роутерах правила обрабатываются сверху вниз. Если выше в списке стоит правило «Разрешить всё» или «Высокий приоритет» для данного IP, оно может блокировать действие правила ограничения, расположенного ниже. Переместите правило ограничения наверх списка.</p>
+
+<section class="pc-verify"><div class="pc-verify-head"><span>Контрольные точки</span><h3>Контрольные точки</h3></div><div class="pc-verify-grid"><article class="pc-verify-card"><strong>Тест скорости на ограниченном устройстве</strong><div><span>Норма</span><p>Скорость не превышает заданный лимит</p></div><div><span>Тревожный признак</span><p>Скорость соответствует тарифу или выше лимита</p></div></article><article class="pc-verify-card"><strong>Доступ к настройкам роутера</strong><div><span>Норма</span><p>Панель открывается быстро</p></div><div><span>Тревожный признак</span><p>Настройки грузятся долго или не открываются</p></div></article></div></section>
+
+<h2 id="альтернативные-методы-ограничения">Альтернативные методы ограничения</h2>
+
+<p>Если встроенные средства роутера не подходят или интерфейс слишком сложен, можно использовать функцию «Гостевая сеть». Многие современные роутеры Ростелеком позволяют создать отдельную точку доступа Wi-Fi с собственными настройками.</p>
+
+<p>В настройках гостевой сети часто есть отдельный ползунок или поле для ограничения максимальной скорости для всех подключенных к ней устройств. Это идеальный вариант, если нужно урезать скорость для гостей или детей, не затрагивая основные устройства.</p>
+
+<p>Еще один метод — использование сторонних прошивок (например, OpenWrt), если модель роутера поддерживает их установку. Это дает максимально гибкий контроль, включая ограничение скорости по времени суток или типу трафика. Однако такая процедура сложна и может лишить устройство гарантии.</p>
+
+<p>Для временного ограничения можно просто отключить устройство от сети через панель администратора. В списке клиентов напротив каждого устройства обычно есть кнопка «Блокировать» или значок замка. Это полностью прекратит доступ в интернет, что иногда эффективнее, чем медленная скорость.</p>
+
+<section class="pc-compare"><h3>Сравнение методов</h3><div><div><strong>QoS / Bandwidth Control</strong><p>Гибкое ограничение скорости, устройство остается в сети</p></div><div><strong>Гостевая сеть</strong><p>Простое ограничение для группы устройств, изоляция от основной сети</p></div><div><strong>Блокировка по MAC</strong><p>Полное отключение устройства от интернета</p></div></div></section>
+
+<details>
+<summary>Можно ли ограничить скорость только для одного сайта?</summary>
+<p>Стандартными средствами бытовых роутеров Ростелеком ограничить скорость для конкретного сайта (домена) невозможно. Функции QoS работают на уровне IP-адресов устройств или портов. Для фильтрации по доменам требуются продвинутые системы контроля трафика или специализированное ПО на компьютере.</p>
+</details>
+
+<details>
+<summary>Почему после настройки скорости интернет пропал совсем?</summary>
+<p>Скорее всего, вы указали слишком низкое значение лимита (например, 1 Кбит/с) или перепутали единицы измерения. Также возможно, что вы ограничили скорость устройства, с которого пытаетесь зайти в настройки, и браузер не успевает загрузить страницу. Выполните сброс роутера кнопкой Reset.</p>
+</details>
+
+<details>
+<summary>Влияет ли ограничение скорости на пинг в играх?</summary>
+<p>Да, правильное ограничение фоновых загрузок на других устройствах может снизить пинг (задержку) на игровом ПК, так как канал не будет забит мусорным трафиком. Однако если вы ограничите скорость самого игрового устройства слишком сильно, это может привести к лагам и разрывам соединения.</p>
+</details>
+
+<details>
+<summary>Нужно ли перезагружать роутер после настройки QoS?</summary>
+<p>В большинстве случаев настройки применяются мгновенно. Однако для гарантированного вступления в силу всех правил, особенно связанных с привязкой IP и MAC-адресов, рекомендуется перезагрузить роутер через веб-интерфейс или физически.</p>
+</details>
+
+<details>
+<summary>Можно ли ограничить скорость UPLOAD (отдачи)?</summary>
+<p>Да, в настройках QoS всегда есть два параметра: Download (загрузка) и Upload (отдача). Ограничение отдачи важно, если кто-то раздает торренты, так как забитый канал отдачи часто вызывает большие задержки даже при свободном канале загрузки.</p>
+</details>
+
+<details>
+<summary>Где найти пароль от роутера, если наклейка стерлась?</summary>
+<p>Если стандартный пароль (admin/admin) не подходит и наклейка нечитаема, придется выполнить сброс настроек. Зажмите кнопку Reset на 10-15 секунд. После этого пароль вернется к заводскому, указанному в инструкции или на сайте производителя, но все ваши настройки интернета сбросятся.</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-upravlyat-routerom-cherez-telefon-udalenno-rostelekom.html"><span>12 мин</span><strong>Как управлять роутером Ростелеком с телефона удаленно</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-noutbuk-k-wifi-rostelekom.html"><span>11 мин</span><strong>Как подключить ноутбук к Wi-Fi Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-samomu-nastroit-router-rostelekom-cherez-telefon.html"><span>12 мин</span><strong>Настройка роутера Ростелеком через телефон</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-vaj-faj-na-modeme-rostelekom.html"><span>14 мин</span><strong>Настройка Wi-Fi соединения на оборудовании Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-ubrat-parol-na-vaj-faj-router-rostelekom.html"><span>10 мин</span><strong>Как убрать пароль на Wi-Fi роутер Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/g/gd/gde-smotret-parol-na-vaj-faj-router-rostelekom.html"><span>10 мин</span><strong>Где смотреть пароль на вай фай роутер Ростелеком</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

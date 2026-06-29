@@ -1,0 +1,146 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как узнать пароль от Wi-Fi Ростелеком на Windows 10 — РТ Помощник</title><meta name="description" content="Пошаговая инструкция, как посмотреть пароль от Wi-Fi Ростелеком на Windows 10 через настройки сети, командную строку и личный кабинет.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-posmotret-parol-ot-wifi-na-kompyutere-windows-10-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как узнать пароль от Wi-Fi Ростелеком на Windows 10 — РТ Помощник">
+<meta property="og:description" content="Пошаговая инструкция, как посмотреть пароль от Wi-Fi Ростелеком на Windows 10 через настройки сети, командную строку и личный кабинет."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-posmotret-parol-ot-wifi-na-kompyutere-windows-10-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как узнать пароль от Wi-Fi Ростелеком на Windows 10 — РТ Помощник">
+<meta name="twitter:description" content="Пошаговая инструкция, как посмотреть пароль от Wi-Fi Ростелеком на Windows 10 через настройки сети, командную строку и личный кабинет.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-posmotret-parol-ot-wifi-na-kompyutere-windows-10-rostelekom.html#article", "headline": "Как посмотреть пароль от Wi-Fi Ростелеком на Windows 10", "description": "Пошаговая инструкция, как посмотреть пароль от Wi-Fi Ростелеком на Windows 10 через настройки сети, командную строку и личный кабинет.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-posmotret-parol-ot-wifi-na-kompyutere-windows-10-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-posmotret-parol-ot-wifi-na-kompyutere-windows-10-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-posmotret-parol-ot-wifi-na-kompyutere-windows-10-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Настройка Wi-Fi", "item": "https://rt-pomoshnik.vercel.app/category/nastrojka-wi-fi/"}, {"@type": "ListItem", "position": 3, "name": "Как посмотреть пароль от Wi-Fi Ростелеком на Windows 10", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-posmotret-parol-ot-wifi-na-kompyutere-windows-10-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-posmotret-parol-ot-wifi-na-kompyutere-windows-10-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Что делать, если вкладка «Безопасность» пустая или неактивна?", "acceptedAnswer": {"@type": "Answer", "text": "Это означает, что у вашей текущей учетной записи нет прав администратора. Вам необходимо выйти из системы и войти под учетной записью администратора или попросить владельца компьютера ввести его пароль для подтверждения действия."}}, {"@type": "Question", "name": "Можно ли узнать пароль от Wi-Fi соседей через эти методы?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Описанные методы позволяют просмотреть только те профили сетей, к которым ваш компьютер был подключен ранее с вводом правильного пароля. Взлом чужих сетей этими способами невозможен."}}, {"@type": "Question", "name": "Где найти наклейку с паролем, если она стерлась?", "acceptedAnswer": {"@type": "Answer", "text": "Если наклейка на корпусе роутера нечитаема, единственный способ узнать заводской пароль — сбросить устройство кнопкой Reset до заводских настроек. После этого пароль вернется к стандартному, указанному в документации к модели."}}, {"@type": "Question", "name": "Почему команда netsh выдает ошибку «Сеть не найдена»?", "acceptedAnswer": {"@type": "Answer", "text": "Скорее всего, вы неправильно ввели имя профиля. В Windows имена чувствительны к регистру и пробелам. Выполните сначала команду netsh wlan show profiles , чтобы увидеть точное название, и скопируйте его."}}, {"@type": "Question", "name": "Изменится ли пароль в личном кабинете Ростелеком, если я поменяю его в Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Изменение пароля в настройках Windows невозможно, там его можно только посмотреть. Реальная смена пароля происходит только в настройках роутера или через личный кабинет провайдера, если поддерживается удаленное управление."}}, {"@type": "Question", "name": "Безопасно ли сохранять пароль в Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Да, это стандартная функция системы. Однако если к вашему компьютеру имеют доступ посторонние люди с правами администратора, они также смогут узнать сохраненные пароли. В таких случаях рекомендуется использовать шифрование диска."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="is-active" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Настройка Wi-Fi</span> · 10 мин</p><h1>Как посмотреть пароль от Wi-Fi Ростелеком на Windows 10</h1><p class="pc-deck">Пошаговая инструкция, как посмотреть пароль от Wi-Fi Ростелеком на Windows 10 через настройки сети, командную строку и личный кабинет.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Краткий вывод</strong><span>Самый быстрый способ — открыть свойства беспроводной сети в панели управления и включить отображение символов во вкладке «Безопасность». Альтернативный вариант — использование команды netsh wlan в командной строке.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Настройка Wi-Fi</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#просмотр-пароля-через-графический-интерфейс-настроек">Просмотр пароля через графический интерфейс настроек</a></li><li><a href="#использование-командной-строки-для-восстановления-ключа">Использование командной строки для восстановления ключа</a></li><li><a href="#просмотр-данных-через-веб-интерфейс-роутера">Просмотр данных через веб-интерфейс роутера</a></li><li><a href="#проверка-через-личный-кабинет-абонента">Проверка через Личный кабинет абонента</a></li><li><a href="#возможные-ошибки-и-ограничения-доступа">Возможные ошибки и ограничения доступа</a></li><li><a href="#сравнение-способов-восстановления-доступа">Сравнение способов восстановления доступа</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+<div class="pc-prose"><p>Узнать пароль от сети Wi-Fi на компьютере под управлением Windows 10 можно несколькими способами, если устройство уже подключено к роутеру Ростелеком. Операционная система хранит ключи безопасности всех сетей, к которым когда-либо подключался пользователь, в специальном реестре. Эти данные зашифрованы, но доступны для просмотра через графический интерфейс настроек или с помощью системных утилит командной строки.</p>
+
+<p>Восстановление доступа необходимо, когда нужно подключить к интернету новое устройство (смартфон, планшет или другой ноутбук), а стандартная наклейка с заводскими данными на корпусе роутера утеряна или нечитабельна. Для абонентов Ростелеком процедура ничем не отличается от стандартной работы с Windows, так как защита зависит от настроек операционной системы, а не от провайдера.</p>
+
+<p>Важно понимать, что для просмотра сохраненного пароля вы должны обладать правами администратора на данном компьютере. Если вы работаете под учетной записью гостя или ограниченного пользователя, система запросит подтверждение прав перед отображением ключа безопасности. Также метод сработает только в том случае, если компьютер ранее успешно соединялся с данной беспроводной сетью и сохранил профиль подключения.</p>
+
+
+
+<h2 id="просмотр-пароля-через-графический-интерфейс-настроек">Просмотр пароля через графический интерфейс настроек</h2>
+<p>Наиболее простой и безопасный метод для большинства пользователей — использование стандартного меню настроек Windows. Этот способ не требует знания специальных команд и позволяет визуально убедиться в правильности вводимых символов. Интерфейс может незначительно отличаться в зависимости от версии сборки Windows 10, но логика действий остается неизменной.</p>
+
+<p>Для начала необходимо открыть панель управления сетями. Нажмите правой кнопкой мыши на значок подключения к интернету в трее (возле часов) и выберите пункт «Параметры сети и Интернет». В открывшемся окне найдите ссылку «Центр управления сетями и общим доступом» или «Настройка параметров адаптера», чтобы перейти к классическому интерфейсу управления подключениями.</p>
+
+<p>В списке активных подключений найдите значок вашей беспроводной сети Wi-Fi и кликните по нему левой кнопкой мыши. Откроется окно состояния подключения, где отображается скорость соединения и длительность сеанса. В этом окне нажмите кнопку «Свойства беспроводной сети». Это действие откроет диалоговое окно с детальной информацией о профиле сети.</p>
+
+<div class="pc-widget-title">Порядок действий в свойствах сети</div><ol class="pc-steps"><li><span>1</span><div><strong>Открыть состояние беспроводной сети через значок Wi-Fi в трее</strong></div></li><li><span>2</span><div><strong>Нажать кнопку «Свойства беспроводной сети»</strong></div></li><li><span>3</span><div><strong>Перейти на вкладку «Безопасность»</strong></div></li><li><span>4</span><div><strong>Поставить галочку «Отображать вводимые знаки»</strong></div></li></ol>
+
+<h2 id="использование-командной-строки-для-восстановления-ключа">Использование командной строки для восстановления ключа</h2>
+<p>Если графический интерфейс по какой-то причине недоступен или вы предпочитаете работу с консолью, Windows предоставляет мощный инструмент netsh. Эта утилита позволяет управлять сетевыми настройками, включая просмотр сохраненных профилей Wi-Fi и их ключей безопасности. Метод универсален и работает даже в тех случаях, когда текущее подключение отсутствует, но профиль сохранен в памяти.</p>
+
+<p>Для запуска утилиты необходимо открыть командную строку с правами администратора. Нажмите комбинацию клавиш Win + X и выберите в меню «Windows PowerShell (администратор)» или «Командная строка (администратор)». В открывшемся черном окне введите команду <code>netsh wlan show profiles</code> и нажмите Enter. Система выведет список всех сетей, профили которых сохранены на компьютере.</p>
+
+<p>Найдите в списке название вашей сети Ростелеком (обычно оно указано в поле «Имена профилей пользователей»). Затем введите команду для отображения подробной информации о конкретном профиле, добавив параметр ключа. Синтаксис команды выглядит следующим образом: <code>netsh wlan show profile name="Имя_Сети" key=clear</code>. Вместо «Имя_Сети» подставьте точное название вашего Wi-Fi, сохраняя кавычки, если в названии есть пробелы.</p>
+
+<div class="pc-code"><span>bash</span><pre><code>netsh wlan show profile name=&quot;Rostelecom&quot; key=clear</code></pre></div>
+
+<p>После выполнения команды система выдаст большой блок текста с информацией о профиле. Найдите раздел «Параметры безопасности» (Security settings). В строке «Содержимое ключа» (Key Content) будет отображен ваш пароль в открытом виде. Скопируйте его внимательно, соблюдая регистр букв и специальные символы.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="просмотр-данных-через-веб-интерфейс-роутера">Просмотр данных через веб-интерфейс роутера</h2>
+<p>Альтернативный способ узнать пароль — зайти в настройки самого маршрутизатора Ростелеком. Этот метод полезен, если ни одно из ваших устройств сейчас не подключено к сети, но есть возможность соединиться с роутером по кабелю или вы знаете пароль от админ-панели. Интерфейс зависит от модели оборудования (Sagemcom, Eltex, Huawei или ZTE), но общий принцип един.</p>
+
+<p>Откройте любой браузер и в адресной строке введите IP-адрес шлюза. Для оборудования Ростелеком это чаще всего <code>192.168.1.1</code> или <code>192.168.0.1</code>. Точный адрес, а также логин и пароль для входа указаны на наклейке на дне роутера. Стандартные учетные данные часто совпадают с admin/admin или admin/пароль от Wi-Fi, если они не были изменены пользователем ранее.</p>
+
+<p>После авторизации найдите раздел, отвечающий за беспроводную сеть. Он может называться «WLAN», «Wi-Fi», «Беспроводная сеть» или «Настройки WLAN». Внутри этого раздела ищите подраздел «Безопасность» (Security) или «Настройки безопасности». В поле «Предварительный ключ WPA» (WPA Pre-Shared Key) или «Пароль» будет отображен текущий ключ доступа к сети.</p>
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Когда нужно остановиться</strong><p>Если вы изменили пароль в настройках роутера, все ранее подключенные устройства потеряют связь с интернетом и потребуют повторного ввода нового ключа. Убедитесь, что у вас есть доступ к админ-панели, прежде чем вносить изменения.</p></div></aside>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-podklyuchit-vaj-faj-na-routere-rostelekom-video.html"><span>01</span><strong>Как подключить и настроить Wi-Fi на роутере Ростелеком</strong><small>10 мин →</small></a><a href="/articles/k/ka/kak-nastroit-vaj-faj-router-rostelekom-na-drugogo-provajdera.html"><span>02</span><strong>Как настроить роутер Ростелеком на другого провайдера</strong><small>15 мин →</small></a><a href="/articles/g/gd/gde-najti-pin-kod-na-routere-rostelekom.html"><span>03</span><strong>Где найти ПИН-код на роутере Ростелеком: поиск и восстановление</strong><small>12 мин →</small></a></div></aside><h2 id="проверка-через-личный-кабинет-абонента">Проверка через Личный кабинет абонента</h2>
+<p>Абоненты Ростелеком могут также воспользоваться личным кабинетом на сайте провайдера или мобильным приложением. Этот способ не всегда показывает текущий пароль от Wi-Fi, так как провайдер не всегда хранит локальные настройки вашего роутера на своих серверах, но он полезен для управления услугой в целом.</p>
+
+<p>Войдите в личный кабинет на сайте <code>my.rt.ru</code>, используя ваш номер лицевого счета или телефон и пароль. В разделе «Услуги» или «Оборудование» может быть доступна информация о выданном вам модеме. Некоторые современные модели роутеров с функцией удаленного управления (TR-069) позволяют просматривать и изменять настройки Wi-Fi прямо из интерфейса провайдера.</p>
+
+<p>Если в личном кабинете есть раздел управления Wi-Fi, вы сможете увидеть текущее название сети и пароль, а также при необходимости сменить их на новые. Это особенно удобно, если вы забыли пароль от админ-панели роутера, но имеете доступ к аккаунту провайдера. Изменения применятся автоматически после сохранения настроек на стороне сервера.</p>
+
+<h2 id="возможные-ошибки-и-ограничения-доступа">Возможные ошибки и ограничения доступа</h2>
+<p>При попытке просмотра пароля пользователи могут столкнуться с рядом ограничений. Самое частое — отсутствие прав администратора. Windows блокирует просмотр сохраненных ключей безопасности для стандартных пользователей в целях защиты данных. В этом случае система просто не покажет поле для ввода пароля администратора или выдаст ошибку доступа при выполнении команд в консоли.</p>
+
+<p>Другая распространенная проблема — несоответствие имени профиля. В командной строке имя сети должно быть указано точно так, как оно записано в системе, включая пробелы и регистр букв. Ошибка в одном символе приведет к тому, что утилита сообщит об отсутствии профиля с таким именем. Используйте команду просмотра списка профилей, чтобы скопировать название без ошибок.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Попытка без прав администратора — система заблокирует доступ к вкладке безопасности.</strong></div></article><article><span>02</span><div><strong>Неверный синтаксис команды netsh — отсутствие кавычек в названии сети с пробелами приведет к ошибке выполнения.</strong></div></article></div>
+
+<p>Также стоит учитывать, что если пароль был изменен на роутере недавно, а компьютер еще не переподключался к сети с новым ключом, в системе будет храниться старый, уже недействительный пароль. В этом случае просмотр сохраненных данных не поможет получить актуальный доступ, и потребуется сброс настроек сети или ввод нового ключа вручную.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="сравнение-способов-восстановления-доступа">Сравнение способов восстановления доступа</h2>
+<p>Каждый из рассмотренных методов имеет свои преимущества и сценарии использования. Выбор конкретного способа зависит от того, какие устройства у вас есть под рукой и какой уровень доступа к системе вы имеете. Ниже приведено сравнение основных вариантов для быстрого принятия решения.</p>
+
+<div class="pc-table-wrap"><table>
+<thead>
+<tr>
+<th>Способ</th>
+<th>Преимущества</th>
+<th>Ограничения</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Свойства сети (GUI)</td>
+<td>Простота, наглядность, не требует запоминания команд</td>
+<td>Требует наличия подключенного устройства с Windows</td>
+</tr>
+<tr>
+<td>Командная строка</td>
+<td>Работает даже без активного подключения, быстро</td>
+<td>Нужны права администратора, внимательность к синтаксису</td>
+</tr>
+<tr>
+<td>Настройки роутера</td>
+<td>Позволяет увидеть и изменить пароль для всех устройств</td>
+<td>Нужен доступ к админ-панели (логин/пароль роутера)</td>
+</tr>
+</tbody>
+</table></div>
+
+<section class="pc-compare"><h3>Сравнение вариантов</h3><div><div><strong>Через Windows</strong><p>Подходит, если ПК уже подключен к сети. Не требует доступа к роутеру.</p></div><div><strong>Через роутер</strong><p>Подходит, если нет подключенных ПК, но есть доступ к настройкам оборудования.</p></div></div></section>
+
+<p>Если ни один из способов не подошел, крайним вариантом является сброс роутера до заводских настроек. Это вернет пароль к значению, указанному на наклейке под корпусом устройства, но удалит все индивидуальные настройки, включая тип подключения и параметры IPTV. После сброса потребуется заново настроить роутер для работы с сетью Ростелеком.</p>
+
+<h2 id="faq">FAQ</h2>
+<details>
+<summary>Что делать, если вкладка «Безопасность» пустая или неактивна?</summary>
+<p>Это означает, что у вашей текущей учетной записи нет прав администратора. Вам необходимо выйти из системы и войти под учетной записью администратора или попросить владельца компьютера ввести его пароль для подтверждения действия.</p>
+</details>
+<details>
+<summary>Можно ли узнать пароль от Wi-Fi соседей через эти методы?</summary>
+<p>Нет. Описанные методы позволяют просмотреть только те профили сетей, к которым ваш компьютер был подключен ранее с вводом правильного пароля. Взлом чужих сетей этими способами невозможен.</p>
+</details>
+<details>
+<summary>Где найти наклейку с паролем, если она стерлась?</summary>
+<p>Если наклейка на корпусе роутера нечитаема, единственный способ узнать заводской пароль — сбросить устройство кнопкой Reset до заводских настроек. После этого пароль вернется к стандартному, указанному в документации к модели.</p>
+</details>
+<details>
+<summary>Почему команда netsh выдает ошибку «Сеть не найдена»?</summary>
+<p>Скорее всего, вы неправильно ввели имя профиля. В Windows имена чувствительны к регистру и пробелам. Выполните сначала команду <code>netsh wlan show profiles</code>, чтобы увидеть точное название, и скопируйте его.</p>
+</details>
+<details>
+<summary>Изменится ли пароль в личном кабинете Ростелеком, если я поменяю его в Windows?</summary>
+<p>Нет. Изменение пароля в настройках Windows невозможно, там его можно только посмотреть. Реальная смена пароля происходит только в настройках роутера или через личный кабинет провайдера, если поддерживается удаленное управление.</p>
+</details>
+<details>
+<summary>Безопасно ли сохранять пароль в Windows?</summary>
+<p>Да, это стандартная функция системы. Однако если к вашему компьютеру имеют доступ посторонние люди с правами администратора, они также смогут узнать сохраненные пароли. В таких случаях рекомендуется использовать шифрование диска.</p>
+</details>
+
+<div class="pc-summary"><span>Итог</span><h2>Что важно запомнить</h2><p>Пароль от Wi-Fi хранится в системе Windows и доступен для просмотра владельцу ПК через свойства сети или консоль. Для доступа к настройкам роутера требуются права администратора устройства.</p></div></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-podklyuchit-vaj-faj-na-routere-rostelekom-video.html"><span>10 мин</span><strong>Как подключить и настроить Wi-Fi на роутере Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-vaj-faj-router-rostelekom-na-drugogo-provajdera.html"><span>15 мин</span><strong>Как настроить роутер Ростелеком на другого провайдера</strong><b>Читать ↗</b></a><a href="/articles/g/gd/gde-najti-pin-kod-na-routere-rostelekom.html"><span>12 мин</span><strong>Где найти ПИН-код на роутере Ростелеком: поиск и восстановление</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-s-kompyutera-podklyuchitsya-k-wifi-routeru-rostelekom.html"><span>10 мин</span><strong>Подключение к роутеру Ростелеком с компьютера</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-pomenyat-parol-rostelekom-internet-vaj-faj.html"><span>12 мин</span><strong>Как поменять пароль на Wi-Fi Ростелеком: пошаговая инструкция</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-router-rostelekom-zxhn-h298a-internet.html"><span>13 мин</span><strong>Настройка роутера Ростелеком ZXHN H298A</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

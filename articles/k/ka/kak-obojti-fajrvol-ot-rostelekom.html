@@ -1,0 +1,133 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Обход блокировок Ростелеком: способы и настройки — РТ Помощник</title><meta name="description" content="Инструкция по настройке обхода блокировок Ростелеком. DNS, VPN, прокси и смена протоколов для доступа к сайтам.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-obojti-fajrvol-ot-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Обход блокировок Ростелеком: способы и настройки — РТ Помощник">
+<meta property="og:description" content="Инструкция по настройке обхода блокировок Ростелеком. DNS, VPN, прокси и смена протоколов для доступа к сайтам."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-obojti-fajrvol-ot-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Обход блокировок Ростелеком: способы и настройки — РТ Помощник">
+<meta name="twitter:description" content="Инструкция по настройке обхода блокировок Ростелеком. DNS, VPN, прокси и смена протоколов для доступа к сайтам.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-obojti-fajrvol-ot-rostelekom.html#article", "headline": "Как обойти блокировки Ростелеком", "description": "Инструкция по настройке обхода блокировок Ростелеком. DNS, VPN, прокси и смена протоколов для доступа к сайтам.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-obojti-fajrvol-ot-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-obojti-fajrvol-ot-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-obojti-fajrvol-ot-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Решение проблем", "item": "https://rt-pomoshnik.vercel.app/category/reshenie-problem/"}, {"@type": "ListItem", "position": 3, "name": "Как обойти блокировки Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-obojti-fajrvol-ot-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-obojti-fajrvol-ot-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Замедлит ли интернет использование VPN?", "acceptedAnswer": {"@type": "Answer", "text": "Да, скорость может снизиться из-за шифрования трафика и расстояния до сервера VPN. Выбор сервера, географически близкого к вам, минимизирует потери скорости."}}, {"@type": "Question", "name": "Безопасно ли менять DNS на сторонние?", "acceptedAnswer": {"@type": "Answer", "text": "Использование надежных публичных DNS (Google, Cloudflare) безопасно и часто даже быстрее серверов провайдера. Избегайте неизвестных бесплатных DNS-сервисов."}}, {"@type": "Question", "name": "Может ли провайдер узнать, что я использую VPN?", "acceptedAnswer": {"@type": "Answer", "text": "Провайдер видит факт зашифрованного соединения с сервером VPN, но не видит, какие сайты вы посещаете внутри туннеля. Некоторые провайдеры могут блокировать известные VPN-протоколы."}}, {"@type": "Question", "name": "Нужно ли настраивать обход блокировок на каждом устройстве?", "acceptedAnswer": {"@type": "Answer", "text": "Если настройка сделана в роутере (DNS), то она применится ко всем устройствам в сети. Браузерные настройки (DoH) и программы (VPN, GoodbyeDPI) действуют только на конкретном устройстве."}}, {"@type": "Question", "name": "Что делать, если ничего не помогает?", "acceptedAnswer": {"@type": "Answer", "text": "Попробуйте протоколы обфускации (маскировки) в VPN-клиентах, которые делают трафик похожим на обычный HTTPS. Также можно использовать сеть Tor для максимальной анонимности."}}, {"@type": "Question", "name": "Влияет ли смена DNS на скорость загрузки файлов?", "acceptedAnswer": {"@type": "Answer", "text": "Смена DNS влияет только на время нахождения адреса сайта (разрешение имени). Скорость скачивания файлов после начала загрузки от DNS не зависит."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="is-active" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/reshenie-problem/">Решение проблем</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Решение проблем</span> · 8 мин</p><h1>Как обойти блокировки Ростелеком</h1><p class="pc-deck">Инструкция по настройке обхода блокировок Ростелеком. DNS, VPN, прокси и смена протоколов для доступа к сайтам.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Короткий вывод</strong><span>Самый простой способ — сменить DNS-серверы в настройках роутера на публичные (например, Google или Cloudflare). Для сложных блокировок потребуется настройка VPN или использование прокси-серверов.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Решение проблем</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#изменение-dns-серверов-в-роутере">Изменение DNS-серверов в роутере</a></li><li><a href="#настройка-безопасного-dns-doh-и-dot">Настройка безопасного DNS (DoH и DoT)</a></li><li><a href="#использование-vpn-сервисов">Использование VPN-сервисов</a></li><li><a href="#применение-протоколов-обхода-dpi">Применение протоколов обхода DPI</a></li><li><a href="#настройка-прокси-серверов">Настройка прокси-серверов</a></li><li><a href="#проброс-портов-и-статический-ip">Проброс портов и статический IP</a></li><li><a href="#частые-вопросы-faq">Частые вопросы (FAQ)</a></li></ol></nav>
+<div class="pc-prose"><p>Пользователи провайдера сталкиваются с ограничениями доступа к определенным интернет-ресурсам из-за требований законодательства или внутренних настроек сети. Блокировка может срабатывать автоматически на уровне оборудования провайдера или по решению регулятора. Для восстановления доступа к заблокированным сайтам существует несколько технических методов изменения сетевых настроек.</p>
+
+<p>Простая смена DNS-серверов часто позволяет обойти блокировки, основанные на доменных именах, но не работает при блокировке по IP-адресу. Более сложные методы включают использование зашифрованных туннелей, прокси-серверов или специализированного программного обеспечения. Выбор конкретного способа зависит от типа блокировки, модели используемого роутера и уровня технической подготовки пользователя.</p>
+
+
+
+<div class="pc-fact-grid" aria-label="Как оценить ситуацию"><div><span>Сайт не грузится, ошибка DNS</span><strong>Проблема с доменными именами</strong><p>Попробовать смену DNS</p></div><div><span>Сайт недоступен, таймаут</span><strong>Блокировка по IP-адресу</strong><p>Нужен VPN или прокси</p></div><div><span>Работает только через мобильный интернет</span><strong>Блокировка провайдера</strong><p>Требуется шифрование трафика</p></div></div>
+
+<h2 id="изменение-dns-серверов-в-роутере">Изменение DNS-серверов в роутере</h2>
+
+<p>Самый доступный метод обхода блокировок — замена стандартных DNS-серверов провайдера на публичные. Провайдер часто использует свои серверы доменных имен, которые отдают ошибку при запросе адреса заблокированного ресурса. Публичные серверы не подчиняются локальным спискам блокировок и могут вернуть корректный IP-адрес сайта.</p>
+
+<p>Для изменения настроек необходимо зайти в панель управления роутером. Обычно адрес для входа — 192.168.0.1 или 192.168.1.1, логин и пароль часто указаны на наклейке снизу устройства (admin/admin). В меню следует найти раздел «Интернет», «WAN» или «DNS».</p>
+
+<div class="pc-widget-title">Порядок действий</div><ol class="pc-steps"><li><span>1</span><div><strong>Зайти в веб-интерфейс роутера по адресу 192.168.0.1</strong></div></li><li><span>2</span><div><strong>Найти раздел настроек DNS (часто во вкладке WAN или Интернет)</strong></div></li><li><span>3</span><div><strong>Вручную прописать адреса: 8.8.8.8 и 8.8.4.4 (Google) или 1.1.1.1 (Cloudflare)</strong></div></li><li><span>4</span><div><strong>Сохранить настройки и перезагрузить роутер</strong></div></li></ol>
+
+<p>После сохранения настроек и перезагрузки устройства компьютеры и смартфоны начнут использовать новые серверы. Важно понимать, что этот метод помогает только если блокировка реализована на уровне DNS. Если провайдер блокирует доступ по IP-адресу или использует системы глубокого анализа пакетов (DPI), смена DNS не даст результата.</p>
+
+<h2 id="настройка-безопасного-dns-doh-и-dot">Настройка безопасного DNS (DoH и DoT)</h2>
+
+<p>Современные браузеры и операционные системы поддерживают протоколы зашифрованного DNS: DNS over HTTPS (DoH) и DNS over TLS (DoT). Эти технологии шифруют запросы к серверу имен, делая их невидимыми для провайдера. Ростелеком не может перехватить или подменить такой запрос, так как не видит, к какому домену вы обращаетесь.</p>
+
+<p>В браузере Google Chrome настройка находится в разделе «Настройки» -> «Конфиденциальность и безопасность» -> «Безопасность». Внизу страницы есть пункт «Использовать безопасный DNS-сервис». Необходимо выбрать «Другой» и ввести адрес шаблона, например, `https://dns.google/dns-query` или `https://cloudflare-dns.com/dns-query`.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Настройка DoH в браузере влияет только на трафик этого браузера. Остальные приложения на компьютере продолжат использовать системные настройки DNS.</p></div></aside>
+
+<p>В операционной системе Windows 10 и 11 поддержка DoH внедряется постепенно. В настройках сетевого адаптера можно прописать DNS-серверы, поддерживающие шифрование. Для macOS и мобильных устройств (iOS, Android) также существуют настройки для включения зашифрованного DNS в параметрах сети или через установку профилей конфигурации.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="использование-vpn-сервисов">Использование VPN-сервисов</h2>
+
+<p>Виртуальная частная сеть (VPN) создает зашифрованный туннель между устройством пользователя и удаленным сервером. Весь интернет-трафик проходит через этот сервер, поэтому провайдер видит только зашифрованный поток данных и не знает, какие сайты вы посещаете. Это наиболее надежный способ обхода любых блокировок.</p>
+
+<p>Существуют платные и бесплатные VPN-сервисы. Платные решения обычно предлагают более высокую скорость, стабильное соединение и отсутствие ограничений по трафику. Бесплатные сервисы могут ограничивать скорость, объем данных или показывать рекламу, а также вызывать вопросы к безопасности персональных данных.</p>
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Когда нужно остановиться</strong><p>Не используйте сомнительные бесплатные VPN для ввода банковских данных или работы с важными аккаунтами. Трафик может перехватываться владельцами сервиса.</p></div></aside>
+
+<p>Для настройки VPN достаточно установить приложение от выбранного провайдера на компьютер или смартфон, ввести логин и пароль. После подключения весь трафик устройства пойдет через защищенный канал. Некоторые продвинутые пользователи настраивают VPN непосредственно на роутере, что защищает все устройства в домашней сети сразу.</p>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/p/po/pochemu-ne-zakhodit-v-nastrojki-routera-rostelekom.html"><span>01</span><strong>Почему не заходит в настройки роутера Ростелеком и как исправить</strong><small>9 мин →</small></a><a href="/articles/t/te/telefon-vinks-rostelekom-kak.html"><span>02</span><strong>Как связаться с техподдержкой Ростелеком по телефону</strong><small>13 мин →</small></a><a href="/articles/p/po/pochemu-ne-rabotaet-rostelekom-segodnya.html"><span>03</span><strong>Почему не работает Ростелеком сегодня: диагностика и решения</strong><small>10 мин →</small></a></div></aside><h2 id="применение-протоколов-обхода-dpi">Применение протоколов обхода DPI</h2>
+
+<p>Системы глубокого анализа пакетов (DPI) позволяют провайдеру распознавать и блокировать трафик даже при использовании шифрования, анализируя заголовки пакетов. Для обхода таких систем используются специальные утилиты, которые фрагментируют пакеты или изменяют их заголовки, делая их нераспознаваемыми для оборудования провайдера.</p>
+
+<p>Популярным инструментом для Windows является утилита GoodbyeDPI. Она работает в фоновом режиме и не требует сложной настройки. После запуска программа перехватывает сетевые запросы и модифицирует их так, чтобы фильтры провайдера пропускали трафик. Это позволяет открывать заблокированные ресурсы без снижения скорости, характерного для VPN.</p>
+
+<div class="pc-code"><span>bash</span><pre><code>goodbyedpi.exe -9 -r 2</code></pre></div>
+
+<p>Для Linux и macOS существуют аналоги, такие как Zapret. Настройка этих инструментов требует работы с командной строкой и понимания сетевых процессов. Метод эффективен против блокировок по сигнатурам, но может перестать работать, если провайдер обновит правила фильтрации.</p>
+
+<h2 id="настройка-прокси-серверов">Настройка прокси-серверов</h2>
+
+<p>Прокси-сервер выступает посредником между вашим устройством и интернетом. Вы отправляете запрос на прокси, он загружает сайт и передает данные вам. В отличие от VPN, прокси обычно работает только для конкретного приложения (например, браузера) и не шифрует весь трафик системы.</p>
+
+<p>В настройках браузера или операционной системы можно указать адрес и порт прокси-сервера. Существуют списки бесплатных прокси, но их стабильность и скорость часто оставляют желать лучшего. Платные прокси обеспечивают лучшее качество соединения и поддержку протоколов SOCKS5, которые подходят для любого типа трафика.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Использование HTTP-прокси для HTTPS-сайтов без поддержки CONNECT</strong></div></article><article><span>02</span><div><strong>Ввод личных данных на сайтах через ненадежные бесплатные прокси</strong></div></article></div>
+
+<p>Прокси полезен для быстрого доступа к конкретному ресурсу без установки дополнительного ПО. Однако для постоянной защиты и анонимности он уступает VPN. Также стоит учитывать, что провайдер видит факт подключения к прокси-серверу, хотя и не видит содержимое запросов внутри туннеля (если используется HTTPS).</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="проброс-портов-и-статический-ip">Проброс портов и статический IP</h2>
+
+<p>Иногда ограничение доступа связано не с блокировкой сайтов, а с ограничениями на входящие соединения (NAT). Провайдеры часто используют технологию CGNAT, когда многим абонентам выдается один внешний IP-адрес. Это может мешать работе торрент-клиентов, игровых серверов или систем видеонаблюдения.</p>
+
+<p>Решением является заказ услуги «Статический IP-адрес» у провайдера. Это выделенный адрес, который закрепляется только за вашим договором. После подключения услуги необходимо настроить проброс портов (Port Forwarding) в роутере, указав, какой внешний порт соответствует какому внутреннему устройству.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Как выбрать действие</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>Не работают торренты или онлайн-игры с друзьями</span><strong>Заказать статический IP и настроить проброс портов</strong></div><div class="pc-decision-row"><span>Не открываются конкретные сайты</span><strong>Использовать DNS, DoH или VPN</strong></div></div></section>
+
+<p>Услуга статического IP платная и подключается через личный кабинет или службу поддержки. Это легальный метод решения проблем с соединением, который не нарушает правила использования сети. Он не помогает обойти блокировку сайтов, но решает проблемы с доступностью ваших сервисов извне.</p>
+
+<h2 id="частые-вопросы-faq">Частые вопросы (FAQ)</h2>
+
+<details>
+<summary>Замедлит ли интернет использование VPN?</summary>
+<p>Да, скорость может снизиться из-за шифрования трафика и расстояния до сервера VPN. Выбор сервера, географически близкого к вам, минимизирует потери скорости.</p>
+</details>
+
+<details>
+<summary>Безопасно ли менять DNS на сторонние?</summary>
+<p>Использование надежных публичных DNS (Google, Cloudflare) безопасно и часто даже быстрее серверов провайдера. Избегайте неизвестных бесплатных DNS-сервисов.</p>
+</details>
+
+<details>
+<summary>Может ли провайдер узнать, что я использую VPN?</summary>
+<p>Провайдер видит факт зашифрованного соединения с сервером VPN, но не видит, какие сайты вы посещаете внутри туннеля. Некоторые провайдеры могут блокировать известные VPN-протоколы.</p>
+</details>
+
+<details>
+<summary>Нужно ли настраивать обход блокировок на каждом устройстве?</summary>
+<p>Если настройка сделана в роутере (DNS), то она применится ко всем устройствам в сети. Браузерные настройки (DoH) и программы (VPN, GoodbyeDPI) действуют только на конкретном устройстве.</p>
+</details>
+
+<details>
+<summary>Что делать, если ничего не помогает?</summary>
+<p>Попробуйте протоколы обфускации (маскировки) в VPN-клиентах, которые делают трафик похожим на обычный HTTPS. Также можно использовать сеть Tor для максимальной анонимности.</p>
+</details>
+
+<details>
+<summary>Влияет ли смена DNS на скорость загрузки файлов?</summary>
+<p>Смена DNS влияет только на время нахождения адреса сайта (разрешение имени). Скорость скачивания файлов после начала загрузки от DNS не зависит.</p>
+</details>
+
+<div class="pc-summary"><span>Итог</span><h2>Что важно запомнить</h2><p>Начните с простой смены DNS в роутере. Если не помогло — используйте зашифрованный DNS в браузере. Для гарантированного доступа ко всем ресурсам применяйте надежный VPN.</p></div></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/p/po/pochemu-ne-zakhodit-v-nastrojki-routera-rostelekom.html"><span>9 мин</span><strong>Почему не заходит в настройки роутера Ростелеком и как исправить</strong><b>Читать ↗</b></a><a href="/articles/t/te/telefon-vinks-rostelekom-kak.html"><span>13 мин</span><strong>Как связаться с техподдержкой Ростелеком по телефону</strong><b>Читать ↗</b></a><a href="/articles/p/po/pochemu-ne-rabotaet-rostelekom-segodnya.html"><span>10 мин</span><strong>Почему не работает Ростелеком сегодня: диагностика и решения</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-uznat-rabotaet-li-internet-rostelekom.html"><span>13 мин</span><strong>Как узнать работает ли интернет Ростелеком: методы диагностики</strong><b>Читать ↗</b></a><a href="/articles/r/ro/rostelekom-kakoj-tip-podklyucheniya-k-internetu-i-adres.html"><span>12 мин</span><strong>Тип подключения Ростелеком и поиск IP-адреса</strong><b>Читать ↗</b></a><a href="/articles/c/ch/chto-oznachaet-indikator-na-routere-rostelekom.html"><span>11 мин</span><strong>Расшифровка индикаторов на роутере Ростелеком</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

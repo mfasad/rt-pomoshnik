@@ -1,0 +1,133 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>DNS-сервер недоступен Ростелеком: как исправить ошибку — РТ Помощник</title><meta name="description" content="Подробная инструкция: что делать, если DNS-сервер недоступен у провайдера Ростелеком. Способы настройки, сброса и проверки соединения.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/v/vo/vozmozhno-dns-server-nedostupen-rostelekom-chto-delat.html">
+<meta property="og:type" content="article"><meta property="og:title" content="DNS-сервер недоступен Ростелеком: как исправить ошибку — РТ Помощник">
+<meta property="og:description" content="Подробная инструкция: что делать, если DNS-сервер недоступен у провайдера Ростелеком. Способы настройки, сброса и проверки соединения."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/v/vo/vozmozhno-dns-server-nedostupen-rostelekom-chto-delat.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="DNS-сервер недоступен Ростелеком: как исправить ошибку — РТ Помощник">
+<meta name="twitter:description" content="Подробная инструкция: что делать, если DNS-сервер недоступен у провайдера Ростелеком. Способы настройки, сброса и проверки соединения.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/v/vo/vozmozhno-dns-server-nedostupen-rostelekom-chto-delat.html#article", "headline": "Диагностика и решение проблемы: DNS-сервер недоступен Ростелеком", "description": "Подробная инструкция: что делать, если DNS-сервер недоступен у провайдера Ростелеком. Способы настройки, сброса и проверки соединения.", "url": "https://rt-pomoshnik.vercel.app/articles/v/vo/vozmozhno-dns-server-nedostupen-rostelekom-chto-delat.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/v/vo/vozmozhno-dns-server-nedostupen-rostelekom-chto-delat.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/v/vo/vozmozhno-dns-server-nedostupen-rostelekom-chto-delat.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Решение проблем", "item": "https://rt-pomoshnik.vercel.app/category/reshenie-problem/"}, {"@type": "ListItem", "position": 3, "name": "Диагностика и решение проблемы: DNS-сервер недоступен Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/v/vo/vozmozhno-dns-server-nedostupen-rostelekom-chto-delat.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/v/vo/vozmozhno-dns-server-nedostupen-rostelekom-chto-delat.html#faq", "mainEntity": [{"@type": "Question", "name": "Почему мессенджеры работают, а сайты нет?", "acceptedAnswer": {"@type": "Answer", "text": "Мессенджеры (Telegram, WhatsApp) часто подключаются напрямую по IP-адресам своих серверов, минуя процедуру преобразования имени (DNS). Браузер же не может открыть сайт, пока не получит IP-адрес по его доменному имени, поэтому при сбое DNS сайты недоступны, а чаты работают."}}, {"@type": "Question", "name": "Какие DNS-серверы самые быстрые для Ростелеком?", "acceptedAnswer": {"@type": "Answer", "text": "Скорость зависит от вашего региона. Обычно серверы Google (8.8.8.8) и Яндекс (77.88.8.8) работают стабильно по всей России. Можно протестировать оба варианта, выбрав тот, при котором страницы открываются быстрее."}}, {"@type": "Question", "name": "Может ли вирус вызвать ошибку DNS?", "acceptedAnswer": {"@type": "Answer", "text": "Да, некоторые вредоносные программы подменяют DNS-адреса в системе на свои, чтобы перенаправлять вас на фишинговые сайты или блокировать доступ к антивирусам. В таком случае поможет только полная проверка системы антивирусом и сброс настроек сети."}}, {"@type": "Question", "name": "Что делать, если не заходит в настройки роутера 192.168.1.1?", "acceptedAnswer": {"@type": "Answer", "text": "Убедитесь, что компьютер подключен к роутеру кабелем или по Wi-Fi. Попробуйте адрес 192.168.0.1. Если страница не грузится, возможно, сбились настройки IP-адреса на компьютере — установите получение IP автоматически в свойствах адаптера."}}, {"@type": "Question", "name": "Нужно ли менять DNS на телефоне, если на ПК все работает?", "acceptedAnswer": {"@type": "Answer", "text": "Если на компьютере интернет есть, а на телефоне нет, значит, проблема в настройках конкретного телефона или в его подключении к Wi-Fi. В этом случае нужно «забыть» сеть Wi-Fi на телефоне и подключиться заново, либо прописать DNS в настройках Wi-Fi сети на устройстве."}}, {"@type": "Question", "name": "Сброс роутера к заводским настройкам поможет?", "acceptedAnswer": {"@type": "Answer", "text": "Сброс (кнопка Reset) вернет роутер в исходное состояние. Интернет заработает только если вы заново настроите подключение (введете логин/пароль из договора). Это крайняя мера, если другие способы не помогли и вы умеете настраивать роутер."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="is-active" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/reshenie-problem/">Решение проблем</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Решение проблем</span> · 10 мин</p><h1>Диагностика и решение проблемы: DNS-сервер недоступен Ростелеком</h1><p class="pc-deck">Подробная инструкция: что делать, если DNS-сервер недоступен у провайдера Ростелеком. Способы настройки, сброса и проверки соединения.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Короткий вывод</strong><span>Попробуйте перезагрузить роутер и компьютер. Если ошибка осталась, пропишите в настройках сети публичные DNS-адреса (например, 8.8.8.8) или сбросьте настройки сети командой в командной строке.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Решение проблем</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#быстрая-диагностика-и-первичные-действия">Быстрая диагностика и первичные действия</a></li><li><a href="#смена-dns-серверов-на-компьютере">Смена DNS-серверов на компьютере</a></li><li><a href="#настройка-dns-в-роутере-ростелеком">Настройка DNS в роутере Ростелеком</a></li><li><a href="#сброс-кэша-dns-и-сетевых-настроек">Сброс кэша DNS и сетевых настроек</a></li><li><a href="#влияние-антивируса-и-брандмауэра">Влияние антивируса и брандмауэра</a></li><li><a href="#проблемы-на-стороне-провайдера">Проблемы на стороне провайдера</a></li><li><a href="#сравнение-методов-решения">Сравнение методов решения</a></li></ol></nav>
+<div class="pc-prose"><p>Ошибку «DNS-сервер недоступен» пользователи Ростелеком часто воспринимают как полное отключение интернета, но проблема носит более локальный характер. Компьютер или маршрутизатор не может преобразовать понятное человеку имя сайта (например, rt.ru) в цифровой IP-адрес, необходимый для соединения. В результате браузер выдает сообщение об отсутствии доступа к сети, хотя физическое соединение с оборудованием провайдера может быть активным.</p>
+
+<p>Чаще всего сбой происходит из-за некорректных настроек сетевого адаптера, зависания маршрутизатора или временных проблем на стороне серверов провайдера. Иногда причиной становятся антивирусные программы или брандмауэры, которые ошибочно блокируют DNS-запросы. Также стоит учитывать возможность выхода из строя кабеля или сбоя в работе самого модема.</p>
+
+<p>Прежде чем предпринимать сложные действия по перепрошивке оборудования или вызову мастера, необходимо выполнить базовую проверку. Перезагрузка роутера и компьютера в правильном порядке устраняет до 70% подобных случаев. Если простые методы не помогают, потребуется ручная смена адресов DNS-серверов на публичные или сброс сетевых настроек.</p>
+
+
+
+<div class="pc-fact-grid" aria-label="Как оценить ситуацию"><div><span>Сайты не открываются по именам</span><strong>Ошибка DNS_PROBE_FINISHED_NO_INTERNET</strong><p>Проверьте, открываются ли сайты при вводе IP-адреса</p></div><div><span>Мессенджеры работают</span><strong>Есть связь с серверами</strong><p>Проблема именно в преобразовании имен доменов</p></div><div><span>Иконка сети с желтым треугольником</span><strong>Нет доступа к интернету</strong><p>Требуется диагностика адаптера или кабеля</p></div></div>
+
+<h2 id="быстрая-диагностика-и-первичные-действия">Быстрая диагностика и первичные действия</h2>
+<p>Первым шагом всегда должна стать проверка физического подключения и состояния индикаторов на роутере. Если горит красный индикатор потери связи (часто обозначается как LOS или Globe с крестиком), проблема может быть на линии провайдера, и настройки DNS здесь ни при чем. В этом случае необходимо позвонить в техническую поддержку по номеру 8 800 100 0 800.</p>
+
+<p>Если же индикаторы показывают стабильное соединение (горит зеленый «Интернет» или «Globe»), но страницы не грузятся, выполните полную перезагрузку оборудования. Выдерните шнур питания роутера из розетки, подождите не менее 30 секунд и включите обратно. Дождитесь полной загрузки устройства (2–3 минуты), прежде чем проверять доступ к сайтам на компьютере.</p>
+
+<p>На компьютере также полезно выполнить диагностику неполадок Windows. Нажмите правой кнопкой мыши на значок сети в трее (возле часов) и выберите «Диагностика неполадок». Система автоматически попытается сбросить адаптер и обновить конфигурацию DNS. Если встроенная утилита сообщит, что «DNS-сервер не отвечает», переходите к ручным методам настройки.</p>
+
+<h2 id="смена-dns-серверов-на-компьютере">Смена DNS-серверов на компьютере</h2>
+<p>Автоматическое получение адресов от провайдера иногда дает сбой. Принудительная установка надежных публичных серверов часто решает проблему мгновенно. Для этого откройте «Панель управления», перейдите в «Центр управления сетями и общим доступом» и выберите «Изменение параметров адаптера».</p>
+
+<p>Найдите ваше активное подключение (Ethernet или Беспроводная сеть), нажмите на него правой кнопкой мыши и выберите «Свойства». В списке компонентов найдите строку «IP версии 4 (TCP/IPv4)», выделите ее и снова нажмите «Свойства». Переключите точку на «Использовать следующие адреса DNS-серверов».</p>
+
+<div class="pc-code"><span>text</span><pre><code>Предпочитаемый DNS-сервер: 8.8.8.8
+Альтернативный DNS-сервер: 8.8.4.4</code></pre></div>
+
+<p>В качестве альтернативы можно использовать серверы Cloudflare (1.1.1.1) или Яндекс.DNS (77.88.8.8). После ввода адресов обязательно нажмите «ОК» во всех открытых окнах. Изменения вступают в силу сразу, но для гарантии лучше обновить страницу браузера или перезапустить его.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="настройка-dns-в-роутере-ростелеком">Настройка DNS в роутере Ростелеком</h2>
+<p>Если проблема наблюдается на всех устройствах в доме (телефоны, телевизоры, ноутбуки), менять настройки нужно непосредственно в роутере. Зайдите в веб-интерфейс устройства, введя в браузере адрес 192.168.1.1 или 192.168.0.1. Логин и пароль обычно указаны на наклейке на дне корпуса (часто admin/admin).</p>
+
+<p>В меню роутера найдите раздел, отвечающий за настройки подключения к интернету. В зависимости от модели (Sagemcom, Sercomm, Huawei) он может называться «WAN», «Интернет» или «Broadband». Найдите поля для ввода DNS-серверов и пропишите там те же публичные адреса (8.8.8.8 и 8.8.4.4), отключив опцию «Получить автоматически от провайдера».</p>
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Когда нужно остановиться</strong><p>Не меняйте настройки VLAN ID, тип соединения (PPPoE/IPoE) и данные авторизации, если не уверены в их значении. Ошибка здесь приведет к полному отсутствию интернета, а не только к проблеме с DNS.</p></div></aside>
+
+<p>После сохранения настроек роутер может перезагрузиться. Если интернет не появился сразу, попробуйте отключить кабель провайдера из порта WAN на 10 секунд и включить обратно, чтобы устройство заново установило сессию связи с оборудованием Ростелеком с новыми параметрами.</p>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-dozvonitsya-v-rostelekom-bez-avtootvetchika.html"><span>01</span><strong>Как быстро связаться с оператором Ростелеком в обход автоответчика</strong><small>11 мин →</small></a><a href="/articles/s/sg/sgorel-vaj-faj-router-rostelekom-chto-delat.html"><span>02</span><strong>Сгорел роутер Ростелеком: план действий и замена</strong><small>13 мин →</small></a><a href="/articles/i/iz/iz-za-chego-mozhet-upast-skorost-interneta-rostelekom.html"><span>03</span><strong>Почему падает скорость интернета Ростелеком</strong><small>11 мин →</small></a></div></aside><h2 id="сброс-кэша-dns-и-сетевых-настроек">Сброс кэша DNS и сетевых настроек</h2>
+<p>Иногда компьютер запоминает ошибочные адреса сайтов в своем кэше. Даже после смены серверов он может пытаться обратиться по старым, нерабочим данным. Для очистки кэша откройте командную строку от имени администратора (найдите cmd в поиске, нажмите правой кнопкой — «Запуск от имени администратора»).</p>
+
+<p>Введите команду <code>ipconfig /flushdns</code> и нажмите Enter. Система сообщит, что кэш сопоставителя DNS успешно очищен. Далее рекомендуется обновить IP-адрес и сбросить настройки TCP/IP. Введите по очереди команды: <code>ipconfig /release</code>, затем <code>ipconfig /renew</code> и <code>netsh int ip reset</code>.</p>
+
+<div class="pc-widget-title">Порядок действий</div><ol class="pc-steps"><li><span>1</span><div><strong>Откройте командную строку от имени администратора</strong></div></li><li><span>2</span><div><strong>Введите ipconfig /flushdns и нажмите Enter</strong></div></li><li><span>3</span><div><strong>Перезагрузите компьютер для применения изменений</strong></div></li></ol>
+
+<p>После ввода всех команд обязательно перезагрузите компьютер. Это действие пересобирает сетевой стек операционной системы и устраняет программные конфликты, которые могли возникнуть после обновлений Windows или установки нового софта.</p>
+
+<h2 id="влияние-антивируса-и-брандмауэра">Влияние антивируса и брандмауэра</h2>
+<p>Сторонние антивирусные программы (Kaspersky, ESET, Avast и др.) имеют собственные модули веб-защиты, которые фильтруют DNS-трафик. При сбоях в работе антивируса или устаревании баз он может блокировать легитимные запросы. Попробуйте временно приостановить защиту антивируса на 10–15 минут и проверить доступ к сайтам.</p>
+
+<p>Если после отключения защиты интернет заработал, проблема в настройках программы. Зайдите в настройки антивируса, найдите раздел «Сеть» или «Веб-контроль» и отключите функцию «Проверка защищенных соединений» или «Сканирование DNS». Также проверьте настройки брандмауэра Windows, убедившись, что он не блокирует работу браузера.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Пользователь меняет DNS только на одном устройстве, хотя проблема в роутере</strong></div></article><article><span>02</span><div><strong>Ввод адреса DNS с опечаткой (лишние пробелы или точки)</strong></div></article><article><span>03</span><div><strong>Отключение антивируса без последующего включения защиты</strong></div></article></div>
+
+<p>Не забывайте, что после решения проблемы защиту необходимо включить обратно. Работа без антивируса и брандмауэра делает устройство уязвимым для сетевых атак и вирусов, особенно в сетях общего доступа или при использовании Wi-Fi.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="проблемы-на-стороне-провайдера">Проблемы на стороне провайдера</h2>
+<p>Если все вышеперечисленные методы не помогли, высока вероятность технического сбоя на стороне Ростелеком. Это могут быть плановые работы, аварии на магистрали или перегрузка оборудования в вашем районе. В таких случаях локальные настройки не помогут.</p>
+
+<p>Проверить статус работ можно в личном кабинете my.rt.ru или в мобильном приложении. Часто там публикуются уведомления о профилактических работах. Также информацию можно найти в официальных группах провайдера в социальных сетях вашего региона.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Как выбрать действие</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>Сайты не открываются ни на одном устройстве в доме</span><strong>Проблема в роутере или на линии провайдера</strong></div><div class="pc-decision-row"><span>Интернет есть только на одном ПК</span><strong>Проблема в настройках конкретного компьютера или его антивирусе</strong></div><div class="pc-decision-row"><span>Индикатор LOS на роутере мигает красным</span><strong>Обрыв оптоволоконного кабеля, звоните в поддержку</strong></div></div></section>
+
+<p>При обращении в службу поддержки по номеру 8 800 100 0 800 подготовьте номер лицевого счета. Оператор сможет провести удаленную диагностику линии и, при необходимости, сбросить вашу сессию на сервере, что часто решает проблему «залипшего» DNS.</p>
+
+<h2 id="сравнение-методов-решения">Сравнение методов решения</h2>
+<p>Разные способы исправления ошибки требуют разных затрат времени и навыков. Автоматическая диагностика Windows — самый простой, но не всегда эффективный метод. Ручная прописка DNS надежнее, но требует внимательности при вводе цифр.</p>
+
+<section class="pc-compare"><h3>Сравнение вариантов</h3><div><div><strong>Перезагрузка роутера</strong><p>Быстро и безопасно. Помогает в 70% случаев временных сбоев.</p></div><div><strong>Смена DNS на публичные</strong><p>Требует настройки. Надежно решает проблемы с серверами провайдера.</p></div><div><strong>Сброс сети через консоль</strong><p>Для продвинутых пользователей. Устраняет глубокие ошибки системы.</p></div></div></section>
+
+<p>Наиболее комплексный подход — комбинация перезагрузки оборудования и смены DNS-серверов. Это покрывает большинство сценариев: от простого зависания до некорректной работы серверов имен провайдера.</p>
+
+<div class="pc-summary"><span>Итог</span><h2>Что важно запомнить</h2><p>Ошибка DNS чаще всего решается сменой адресов серверов на публичные (8.8.8.8) и перезагрузкой роутера. Если индикаторы на модеме горят красным, настройки не помогут — нужен вызов мастера.</p></div>
+
+<details>
+<summary>Почему мессенджеры работают, а сайты нет?</summary>
+<p>Мессенджеры (Telegram, WhatsApp) часто подключаются напрямую по IP-адресам своих серверов, минуя процедуру преобразования имени (DNS). Браузер же не может открыть сайт, пока не получит IP-адрес по его доменному имени, поэтому при сбое DNS сайты недоступны, а чаты работают.</p>
+</details>
+
+<details>
+<summary>Какие DNS-серверы самые быстрые для Ростелеком?</summary>
+<p>Скорость зависит от вашего региона. Обычно серверы Google (8.8.8.8) и Яндекс (77.88.8.8) работают стабильно по всей России. Можно протестировать оба варианта, выбрав тот, при котором страницы открываются быстрее.</p>
+</details>
+
+<details>
+<summary>Может ли вирус вызвать ошибку DNS?</summary>
+<p>Да, некоторые вредоносные программы подменяют DNS-адреса в системе на свои, чтобы перенаправлять вас на фишинговые сайты или блокировать доступ к антивирусам. В таком случае поможет только полная проверка системы антивирусом и сброс настроек сети.</p>
+</details>
+
+<details>
+<summary>Что делать, если не заходит в настройки роутера 192.168.1.1?</summary>
+<p>Убедитесь, что компьютер подключен к роутеру кабелем или по Wi-Fi. Попробуйте адрес 192.168.0.1. Если страница не грузится, возможно, сбились настройки IP-адреса на компьютере — установите получение IP автоматически в свойствах адаптера.</p>
+</details>
+
+<details>
+<summary>Нужно ли менять DNS на телефоне, если на ПК все работает?</summary>
+<p>Если на компьютере интернет есть, а на телефоне нет, значит, проблема в настройках конкретного телефона или в его подключении к Wi-Fi. В этом случае нужно «забыть» сеть Wi-Fi на телефоне и подключиться заново, либо прописать DNS в настройках Wi-Fi сети на устройстве.</p>
+</details>
+
+<details>
+<summary>Сброс роутера к заводским настройкам поможет?</summary>
+<p>Сброс (кнопка Reset) вернет роутер в исходное состояние. Интернет заработает только если вы заново настроите подключение (введете логин/пароль из договора). Это крайняя мера, если другие способы не помогли и вы умеете настраивать роутер.</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-dozvonitsya-v-rostelekom-bez-avtootvetchika.html"><span>11 мин</span><strong>Как быстро связаться с оператором Ростелеком в обход автоответчика</strong><b>Читать ↗</b></a><a href="/articles/s/sg/sgorel-vaj-faj-router-rostelekom-chto-delat.html"><span>13 мин</span><strong>Сгорел роутер Ростелеком: план действий и замена</strong><b>Читать ↗</b></a><a href="/articles/i/iz/iz-za-chego-mozhet-upast-skorost-interneta-rostelekom.html"><span>11 мин</span><strong>Почему падает скорость интернета Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-uvelichit-skorost-interneta-rostelekom-na-noutbuke.html"><span>9 мин</span><strong>Как ускорить интернет Ростелеком на ноутбуке</strong><b>Читать ↗</b></a><a href="/articles/p/pe/peregorela-pristavka-rostelekom-chto-delat.html"><span>13 мин</span><strong>Сгорела приставка Ростелеком: пошаговая инструкция по замене</strong><b>Читать ↗</b></a><a href="/articles/r/ro/rostelekom-kak-podat-zayavku-o-nerabotayushchem-internete.html"><span>12 мин</span><strong>Как подать заявку в Ростелеком о неработающем интернете</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

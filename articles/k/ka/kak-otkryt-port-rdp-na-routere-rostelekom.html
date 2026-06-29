@@ -1,0 +1,141 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как открыть порт RDP на роутере Ростелеком: инструкция — РТ Помощник</title><meta name="description" content="Инструкция по настройке переадресации портов на роутерах Ростелеком для удаленного доступа через RDP. Настройка статического IP и безопасности.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-port-rdp-na-routere-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как открыть порт RDP на роутере Ростелеком: инструкция — РТ Помощник">
+<meta property="og:description" content="Инструкция по настройке переадресации портов на роутерах Ростелеком для удаленного доступа через RDP. Настройка статического IP и безопасности."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-port-rdp-na-routere-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как открыть порт RDP на роутере Ростелеком: инструкция — РТ Помощник">
+<meta name="twitter:description" content="Инструкция по настройке переадресации портов на роутерах Ростелеком для удаленного доступа через RDP. Настройка статического IP и безопасности.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-port-rdp-na-routere-rostelekom.html#article", "headline": "Как открыть порт RDP на роутере Ростелеком", "description": "Инструкция по настройке переадресации портов на роутерах Ростелеком для удаленного доступа через RDP. Настройка статического IP и безопасности.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-port-rdp-na-routere-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-port-rdp-na-routere-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-port-rdp-na-routere-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Оборудование", "item": "https://rt-pomoshnik.vercel.app/category/oborudovanie/"}, {"@type": "ListItem", "position": 3, "name": "Как открыть порт RDP на роутере Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-port-rdp-na-routere-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-port-rdp-na-routere-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Можно ли открыть порт RDP, если у меня серый IP от Ростелекома?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, технически это невозможно. При сером IP ваш роутер находится за общим NAT провайдера, и входящие запросы из интернета просто не знают, к какому абонату их доставить. Требуется заказ услуги «Статический IP»."}}, {"@type": "Question", "name": "Почему онлайн-сканер показывает порт закрытым, хотя я все настроил?", "acceptedAnswer": {"@type": "Answer", "text": "Чаще всего проблема в брандмауэре Windows, который блокирует подключение в публичном профиле. Вторая причина — отсутствие реального публичного IP-адреса, даже если в настройках роутера все верно."}}, {"@type": "Question", "name": "Безопасно ли держать порт 3389 открытым постоянно?", "acceptedAnswer": {"@type": "Answer", "text": "Это рискованно. Порт RDP постоянно сканируется ботами. Обязательно используйте сложный пароль, отключите учетную запись Администратора для удаленного входа и рассмотрите смену порта на нестандартный через реестр."}}, {"@type": "Question", "name": "Что делать, если после перезагрузки роутера доступ пропал?", "acceptedAnswer": {"@type": "Answer", "text": "Скорее всего, у вашего компьютера изменился локальный IP-адрес. Проверьте, настроен ли статический IP в свойствах сетевого адаптера Windows. Правило в роутере привязано к конкретному адресу."}}, {"@type": "Question", "name": "Можно ли использовать UDP для RDP?", "acceptedAnswer": {"@type": "Answer", "text": "Современные версии RDP используют UDP для ускорения передачи графики, но базовое соединение устанавливается по TCP. Для максимальной совместимости и работы старых клиентов достаточно открыть только TCP 3389."}}, {"@type": "Question", "name": "Как сменить стандартный порт RDP в Windows?", "acceptedAnswer": {"@type": "Answer", "text": "Это делается через редактор реестра (regedit) в ветке HKLM\\SYSTEM\\CurrentControlSet\\Control\\Terminal Server\\WinStations\\RDP-Tcp, параметр PortNumber. После смены порта его нужно указать в правиле роутера и в строке подключения (IP:Порт)."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="is-active" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/oborudovanie/">Оборудование</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Оборудование</span> · 11 мин</p><h1>Как открыть порт RDP на роутере Ростелеком</h1><p class="pc-deck">Инструкция по настройке переадресации портов на роутерах Ростелеком для удаленного доступа через RDP. Настройка статического IP и безопасности.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Короткий ответ</strong><span>Для открытия RDP зайдите в веб-интерфейс роутера (192.168.1.1), найдите раздел NAT или Переадресация портов и создайте правило для TCP порта 3389 на локальный IP вашего компьютера. Обязательно установите статический IP для ПК.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Оборудование</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#проверка-типа-ip-адреса-и-подготовка">Проверка типа IP-адреса и подготовка</a></li><li><a href="#настройка-статического-ip-на-компьютере">Настройка статического IP на компьютере</a></li><li><a href="#вход-в-интерфейс-роутера-ростелеком">Вход в интерфейс роутера Ростелеком</a></li><li><a href="#создание-правила-переадресации-портов-port-forwarding">Создание правила переадресации портов (Port Forwarding)</a></li><li><a href="#настройка-брандмауэра-windows">Настройка брандмауэра Windows</a></li><li><a href="#проверка-работоспособности-и-безопасность">Проверка работоспособности и безопасность</a></li><li><a href="#альтернативные-способы-удаленного-доступа">Альтернативные способы удаленного доступа</a></li></ol></nav>
+<div class="pc-prose"><p>Открытие порта RDP (Remote Desktop Protocol) на домашнем роутере Ростелеком необходимо для организации удаленного доступа к рабочему компьютеру из любой точки мира. Стандартный протокол использует TCP порт 3389, и без правильной настройки сетевого оборудования внешние подключения будут блокироваться встроенным межсетевым экраном (NAT). Процедура требует точного следования шагам, так как некорректная настройка может оставить вашу систему уязвимой для атак или просто не заработать из-за конфликтов адресации.</p>
+
+<p>Перед началом настройки важно убедиться, что ваш компьютер в локальной сети имеет статический IP-адрес. Динамическая выдача адресов по DHCP может привести к тому, что после перезагрузки роутера или компьютера внутренний адрес изменится, и правило переадресации перестанет работать, так как будет на несуществующее устройство. Также критически важно понимать разницу между «белым» (публичным) и «серым» (частным) IP-адресом, который провайдер выдает на входной интерфейс вашего роутера.</p>
+
+
+
+<p>Самая распространенная причина неработающей настройки — отсутствие у абонента публичного IP-адреса. Если провайдер выдает адрес из внутренней сети (например, начинающийся с 10.x.x.x или 100.x.x.x), открытие портов на вашем роутере не даст результата, так как входящий трафик не доходит до вашего устройства. В таком случае требуется подключение услуги «Статический IP» или «Белый IP» у оператора связи.</p>
+
+<h2 id="проверка-типа-ip-адреса-и-подготовка">Проверка типа IP-адреса и подготовка</h2>
+
+<p>Первым шагом является диагностика текущего подключения. Вам необходимо узнать, какой IP-адрес видит ваш роутер на внешнем интерфейсе (WAN). Зайдите в веб-интерфейс устройства, обычно доступный по адресу 192.168.1.1 или 192.168.0.1, и найдите страницу «Состояние» или «Информация о системе». Сравните IP-адрес в поле WAN с тем, что показывает любой сервис проверки IP в интернете.</p>
+
+<p>Если адреса совпадают, у вас есть публичный IP, и можно proceed к настройке. Если же в интерфейсе роутера указан адрес из диапазона частных сетей, а в интернете определяется другой, значит, вы находитесь за NAT провайдера. В этой ситуации открытие портов технически невозможно без смены тарифа или заказа отдельной услуги у Ростелекома. Без этого шага все дальнейшие действия будут бесполезны.</p>
+
+<div class="pc-fact-grid" aria-label="Как оценить ситуацию"><div><span>Адрес WAN в роутере</span><strong>Совпадает с внешним</strong><p>Можно открывать порты</p></div><div><span>Адрес WAN в роутере</span><strong>Отличается от внешнего</strong><p>Нужен белый IP от провайдера</p></div><div><span>Локальный адрес ПК</span><strong>Динамический (DHCP)</strong><p>Риск сбоя настройки после перезагрузки</p></div></div>
+
+<p>Параллельно с проверкой внешнего адреса необходимо зафиксировать локальный адрес вашего компьютера. В командной строке Windows введите команду <code>ipconfig</code> и запишите IPv4-адрес, маску подсети и основной шлюз. Для надежной работы RDP рекомендуется настроить статический IP непосредственно в свойствах сетевого адаптера Windows, чтобы он не менялся со временем.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="настройка-статического-ip-на-компьютере">Настройка статического IP на компьютере</h2>
+
+<p>Использование статического адреса внутри локальной сети — фундаментальное требование для проброса портов. Если компьютер получит новый адрес от роутера, правило NAT будет перенаправлять трафик на старый, уже свободный адрес, и соединение не установится. Это частая ошибка, из-за которой пользователи думают, что настройка роутера не сработала.</p>
+
+<p>Для настройки зайдите в «Панель управления» -> «Сеть и Интернет» -> «Центр управления сетями и общим доступом». Выберите ваше подключение, нажмите «Свойства», затем «IP версии 4 (TCP/IPv4)» и снова «Свойства». Переключите режим на «Использовать следующий IP-адрес». Введите адрес, совпадающий с подсетью роутера (например, 192.168.1.50), маску (обычно 255.255.255.0) и шлюз (адрес вашего роутера).</p>
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Когда нужно остановиться</strong><p>Не устанавливайте статический IP, если не знаете адрес шлюза вашего роутера. Ошибка в адресе шлюза приведет к полной потере доступа в интернет на этом компьютере.</p></div></aside>
+
+<p>В поле DNS-серверов можно указать адреса провайдера или публичные сервисы, например, 8.8.8.8. После сохранения настроек проверьте доступ в интернет. Если сайты открываются, значит, статическая адресация настроена верно, и компьютер готов к привязке правил маршрутизации на роутере.</p>
+
+<h2 id="вход-в-интерфейс-роутера-ростелеком">Вход в интерфейс роутера Ростелеком</h2>
+
+<p>Интерфейсы роутеров Ростелеком могут отличаться в зависимости от модели (Sagemcom, Eltex, Huawei, Sercomm). Однако логика настройки остается единой. Откройте браузер и введите адрес шлюза (чаще всего 192.168.1.1). Для авторизации используйте данные, указанные на наклейке на дне устройства, либо стандартные логин и пароль (часто admin/admin или admin/пароль из договора).</p>
+
+<p>В новых моделях с обновленной прошивкой интерфейс может быть упрощенным. Если вы не видите расширенных настроек, поищите переключатель режимов отображения или раздел «Дополнительные настройки». Вам потребуется доступ к разделам, отвечающим за безопасность, NAT или межсетевые экраны. В старых моделях эти настройки могут быть скрыты в глубине меню.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Если вы сменили пароль от роутера и забыли его, потребуется сброс устройства к заводским настройкам кнопкой Reset. Это удалит все текущие настройки интернета и Wi-Fi.</p></div></aside>
+
+<p>Убедитесь, что вы подключены к роутеру по кабелю, а не по Wi-Fi, во время процесса настройки. Хотя это не строгое требование, проводное соединение исключает риск разрыва связи в момент применения новых конфигураций безопасности, что особенно важно при изменении правил фаервола.</p>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/p/pl/plc-adapter-rostelekom-chto-eto-foto.html"><span>01</span><strong>PLC-адаптер Ростелеком: что это такое и как его настроить</strong><small>15 мин →</small></a><a href="/articles/k/ka/kak-zakrepit-router-rostelekom-na-stene.html"><span>02</span><strong>Как закрепить роутер Ростелеком на стене</strong><small>15 мин →</small></a><a href="/articles/k/ka/kak-zapisat-peredachu-s-pristavki-rostelekom-na-fleshku.html"><span>03</span><strong>Запись телепередач на флешку с приставки Ростелеком</strong><small>11 мин →</small></a></div></aside><h2 id="создание-правила-переадресации-портов-port-forwarding">Создание правила переадресации портов (Port Forwarding)</h2>
+
+<p>Основной этап настройки происходит в разделе, который может называться «NAT», «Переадресация портов», «Виртуальные серверы» (Virtual Servers) или «Межсетевый экран». Интерфейс разных вендоров использует разную терминологию, но суть одна: создание правила, связывающего внешний порт с внутренним IP и портом.</p>
+
+<p>Создайте новое правило. В поле «Имя службы» или «Описание» укажите любое понятное название, например, RDP_PC. В поле «Протокол» обязательно выберите TCP (можно выбрать TCP/UDP, но для RDP достаточно TCP). Внешний порт (Start Port / End Port) укажите 3389. Внутренний порт также должен быть 3389.</p>
+
+<div class="pc-widget-title">Порядок действий</div><ol class="pc-steps"><li><span>1</span><div><strong>Найдите раздел NAT или Виртуальные серверы</strong></div></li><li><span>2</span><div><strong>Создайте новое правило с портом 3389</strong></div></li><li><span>3</span><div><strong>Укажите локальный IP компьютера и сохраните</strong></div></li></ol>
+
+<p>В поле «Внутренний IP-адрес» (Internal Host / LAN IP) введите тот статический адрес, который вы ранее закрепили за компьютером. Убедитесь, что галочка «Включить» (Enable) активна. Сохраните настройки. В некоторых моделях роутеров требуется отдельная кнопка «Применить» или «Сохранить конфигурацию», чтобы изменения вступили в силу немедленно.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="настройка-брандмауэра-windows">Настройка брандмауэра Windows</h2>
+
+<p>Открытие порта на роутере — это только половина дела. Встроенный брандмауэр Windows по умолчанию разрешает подключения RDP только из локальной сети (профиль «Частная»). Для доступа из интернета необходимо разрешить подключение в профиле «Публичная» сеть, так как для компьютера внешний мир является публичным.</p>
+
+<p>Откройте «Панель управления» -> «Брандмауэр Защитника Windows» -> «Дополнительные параметры». Перейдите в раздел «Правила для входящих подключений». Найдите правило «Удаленный рабочий стол - Пользовательский режим (TCP-In)». Откройте свойства правила и на вкладке «Область» или в общих настройках убедитесь, что профиль «Публичный» отмечен галочкой.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Открыт порт на роутере, но закрыт в Windows</strong></div></article><article><span>02</span><div><strong>Использование динамического IP на компьютере вместо статического</strong></div></article></div>
+
+<p>Также проверьте, включена ли сама функция удаленного рабочего стола. Для этого нажмите правой кнопкой на «Этот компьютер» -> «Свойства» -> «Настройка удаленного доступа». Выберите опцию «Разрешить удаленные подключения к этому компьютеру». Если стоит галочка «Разрешать подключения только с компьютеров, на которых работает удаленный рабочий стол с проверкой подлинности на уровне сети», убедитесь, что ваша версия Windows и клиент подключения поддерживают эту функцию.</p>
+
+<h2 id="проверка-работоспособности-и-безопасность">Проверка работоспособности и безопасность</h2>
+
+<p>После применения всех настроек необходимо проверить результат. Не пытайтесь подключиться, находясь внутри той же сети Wi-Fi, используя внешний IP-адрес — многие роутеры не поддерживают NAT Loopback (подключение к себе через внешний адрес). Для проверки используйте мобильный интернет на смартфоне или попросите друга попробовать подключиться к вашему компьютеру.</p>
+
+<p>Используйте онлайн-сервисы для проверки открытых портов. Введите свой внешний IP-адрес и порт 3389. Если сервис показывает статус «Open» или «Открыт», значит, роутер корректно пропускает трафик. Если статус «Closed» или «Filtered», проблема либо в правиле NAT, либо в брандмауэре Windows, либо провайдер блокирует порты.</p>
+
+<section class="pc-verify"><div class="pc-verify-head"><span>Контрольные точки</span><h3>Как проверить результат</h3></div><div class="pc-verify-grid"><article class="pc-verify-card"><strong>Онлайн-сканер портов</strong><div><span>Норма</span><p>Статус Open для порта 3389</p></div><div><span>Тревожный признак</span><p>Статус Closed или Filtered</p></div></article><article class="pc-verify-card"><strong>Подключение с телефона (4G)</strong><div><span>Норма</span><p>Появляется окно ввода пароля RDP</p></div><div><span>Тревожный признак</span><p>Таймаут соединения или отказ</p></div></article></div></section>
+
+<p>Вопросы безопасности при открытии RDP критически важны. Порт 3389 является одной из самых популярных мишеней для брутфорс-атак (подбора паролей). Настоятельно рекомендуется использовать сложные пароли длиной не менее 12 символов для учетной записи, через которую осуществляется вход. Идеальным вариантом является смена стандартного порта RDP в реестре Windows на нестандартный (например, 3390) и открытие именно его на роутере.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Как выбрать действие</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>Пароль простой (12345, qwerty)</span><strong>Смените пароль немедленно перед открытием порта</strong></div><div class="pc-decision-row"><span>Нужен доступ только из одного места</span><strong>Используйте VPN вместо открытия порта</strong></div></div></section>
+
+<h2 id="альтернативные-способы-удаленного-доступа">Альтернативные способы удаленного доступа</h2>
+
+<p>Если открытие портов кажется слишком рискованным или сложным из-за отсутствия белого IP, рассмотрите альтернативы. Программы вроде AnyDesk, TeamViewer или RustDesk работают через свои серверы и не требуют настройки роутера. Они обходят NAT провайдера, что удобно для разовых подключений.</p>
+
+<p>Для постоянного и безопасного доступа лучшим решением является организация VPN-сервера. Вы можете поднять VPN на самом роутере (если модель поддерживает, например, OpenVPN или L2TP) или на компьютере. Подключившись к VPN, вы попадаете в локальную сеть как «свой», и можете использовать RDP без открытия портов наружу, что значительно безопаснее.</p>
+
+<section class="pc-compare"><h3>Сравнение вариантов</h3><div><div><strong>Прямой RDP через порт</strong><p>Быстро, но высокий риск взлома при слабом пароле</p></div><div><strong>VPN + RDP</strong><p>Безопасно, требует настройки VPN, скрыто от сканеров</p></div></div></section>
+
+<p>Еще одним вариантом является использование облачных шлюзов или туннелирования (например, ngrok или Cloudflare Tunnel), но эти методы требуют установки дополнительного ПО на компьютер и наличия аккаунтов в сторонних сервисах. Для домашнего использования связка «Статический IP от Ростелекома + Смена стандартного порта RDP + Сложный пароль» является оптимальным балансом удобства и безопасности.</p>
+
+<details>
+<summary>Можно ли открыть порт RDP, если у меня серый IP от Ростелекома?</summary>
+<p>Нет, технически это невозможно. При сером IP ваш роутер находится за общим NAT провайдера, и входящие запросы из интернета просто не знают, к какому абонату их доставить. Требуется заказ услуги «Статический IP».</p>
+</details>
+
+<details>
+<summary>Почему онлайн-сканер показывает порт закрытым, хотя я все настроил?</summary>
+<p>Чаще всего проблема в брандмауэре Windows, который блокирует подключение в публичном профиле. Вторая причина — отсутствие реального публичного IP-адреса, даже если в настройках роутера все верно.</p>
+</details>
+
+<details>
+<summary>Безопасно ли держать порт 3389 открытым постоянно?</summary>
+<p>Это рискованно. Порт RDP постоянно сканируется ботами. Обязательно используйте сложный пароль, отключите учетную запись Администратора для удаленного входа и рассмотрите смену порта на нестандартный через реестр.</p>
+</details>
+
+<details>
+<summary>Что делать, если после перезагрузки роутера доступ пропал?</summary>
+<p>Скорее всего, у вашего компьютера изменился локальный IP-адрес. Проверьте, настроен ли статический IP в свойствах сетевого адаптера Windows. Правило в роутере привязано к конкретному адресу.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать UDP для RDP?</summary>
+<p>Современные версии RDP используют UDP для ускорения передачи графики, но базовое соединение устанавливается по TCP. Для максимальной совместимости и работы старых клиентов достаточно открыть только TCP 3389.</p>
+</details>
+
+<details>
+<summary>Как сменить стандартный порт RDP в Windows?</summary>
+<p>Это делается через редактор реестра (regedit) в ветке HKLM\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp, параметр PortNumber. После смены порта его нужно указать в правиле роутера и в строке подключения (IP:Порт).</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/p/pl/plc-adapter-rostelekom-chto-eto-foto.html"><span>15 мин</span><strong>PLC-адаптер Ростелеком: что это такое и как его настроить</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-zakrepit-router-rostelekom-na-stene.html"><span>15 мин</span><strong>Как закрепить роутер Ростелеком на стене</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-zapisat-peredachu-s-pristavki-rostelekom-na-fleshku.html"><span>11 мин</span><strong>Запись телепередач на флешку с приставки Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-soedinit-dva-pulta-v-odin-ot-televizora-i-pristavki-rostelekom-video.html"><span>14 мин</span><strong>Управление двумя устройствами одним пультом: ТВ и приставка Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-router-rostelekom-posle-sbrosa.html"><span>8 мин</span><strong>Как настроить роутер Ростелеком после сброса</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-zajti-v-interfejs-modema-rostelekom.html"><span>10 мин</span><strong>Как зайти в интерфейс модема Ростелеком</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

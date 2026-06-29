@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rt-pomoshnik.vercel.app/sitemap.xml

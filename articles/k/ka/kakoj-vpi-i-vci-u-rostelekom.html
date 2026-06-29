@@ -1,0 +1,236 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>VPI и VCI Ростелеком: таблица значений по регионам — РТ Помощник</title><meta name="description" content="Узнайте правильные VPI и VCI для настройки Ростелеком в вашем городе. Таблица параметров PPPoE, IPoE, VLAN и инструкции по вводу.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kakoj-vpi-i-vci-u-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="VPI и VCI Ростелеком: таблица значений по регионам — РТ Помощник">
+<meta property="og:description" content="Узнайте правильные VPI и VCI для настройки Ростелеком в вашем городе. Таблица параметров PPPoE, IPoE, VLAN и инструкции по вводу."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kakoj-vpi-i-vci-u-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="VPI и VCI Ростелеком: таблица значений по регионам — РТ Помощник">
+<meta name="twitter:description" content="Узнайте правильные VPI и VCI для настройки Ростелеком в вашем городе. Таблица параметров PPPoE, IPoE, VLAN и инструкции по вводу.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kakoj-vpi-i-vci-u-rostelekom.html#article", "headline": "Значения VPI и VCI для Ростелеком по регионам", "description": "Узнайте правильные VPI и VCI для настройки Ростелеком в вашем городе. Таблица параметров PPPoE, IPoE, VLAN и инструкции по вводу.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kakoj-vpi-i-vci-u-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kakoj-vpi-i-vci-u-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kakoj-vpi-i-vci-u-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Оборудование", "item": "https://rt-pomoshnik.vercel.app/category/oborudovanie/"}, {"@type": "ListItem", "position": 3, "name": "Значения VPI и VCI для Ростелеком по регионам", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kakoj-vpi-i-vci-u-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kakoj-vpi-i-vci-u-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Можно ли подобрать VPI и VCI методом тыка?", "acceptedAnswer": {"@type": "Answer", "text": "Теоретически можно перебрать все комбинации, так как их количество ограничено (VPI обычно от 0 до 8, VCI от 32 до 255). Однако это неэффективно и может занять много времени. Кроме того, на некоторых АТС неверные запросы могут временно блокировать порт безопасности. Лучше сразу узнать точные данные в договоре или у поддержки."}}, {"@type": "Question", "name": "Влияют ли VPI и VCI на скорость интернета?", "acceptedAnswer": {"@type": "Answer", "text": "Сами по себе эти идентификаторы не влияют на скорость. Они лишь указывают маршрут до оборудования провайдера. Однако выбор неверного типа инкапсуляции (LLC вместо VC-MUX) может добавить лишние заголовки к пакетам данных, что незначительно снизит полезную пропускную способность канала, но критичным это бывает редко."}}, {"@type": "Question", "name": "Нужно ли менять VPI/VCI при смене тарифа?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, при смене тарифного плана (например, увеличении скорости) параметры VPI и VCI остаются прежними. Изменения происходят только на стороне оборудования провайдера, где перенастраивается профиль скорости для вашего порта. Вам нужно только перезагрузить модем после смены тарифа."}}, {"@type": "Question", "name": "Где найти логин и пароль для PPPoE, если я знаю VPI/VCI?", "acceptedAnswer": {"@type": "Answer", "text": "Логин и пароль для подключения PPPoE указаны в вашем договоре на оказание услуг. Обычно логин — это номер лицевого счета или номер телефона, а пароль выдается при подключении. Если пароль утерян, его можно сбросить или посмотреть в личном кабинете на сайте my.rt.ru в разделе настроек услуги."}}, {"@type": "Question", "name": "Что делать, если в настройках модема нет полей VPI и VCI?", "acceptedAnswer": {"@type": "Answer", "text": "Отсутствие этих полей означает, что ваш модем работает в режиме чистого Ethernet (для оптоволокна FTTB) или использует автоматическое определение (Auto-PVC), которое в данный момент не сработало. Попробуйте создать новое подключение вручную, выбрав тип «ADSL» или «PPP over ATM», чтобы поля появились."}}, {"@type": "Question", "name": "Может ли провайдер изменить VPI/VCI без предупреждения?", "acceptedAnswer": {"@type": "Answer", "text": "Такое случается крайне редко, только в случае глобальной модернизации сети или замены оборудования на АТС. Обычно провайдер информирует об этом через SMS или звонки. Если интернет пропал внезапно без причин на вашей стороне, стоит позвонить в поддержку и уточнить, не менялись ли технические параметры доступа."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="is-active" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/oborudovanie/">Оборудование</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Оборудование</span> · 12 мин</p><h1>Значения VPI и VCI для Ростелеком по регионам</h1><p class="pc-deck">Узнайте правильные VPI и VCI для настройки Ростелеком в вашем городе. Таблица параметров PPPoE, IPoE, VLAN и инструкции по вводу.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Основные значения VPI/VCI</strong><span>Самые частые комбинации для Ростелеком: 0/33, 0/35, 1/32, 8/35. Точное значение зависит от вашего региона и типа подключения (ADSL или оптоволокно).</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Оборудование</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#таблица-значений-vpi-и-vci-по-регионам">Таблица значений VPI и VCI по регионам</a></li><li><a href="#как-найти-свои-параметры-в-договоре">Как найти свои параметры в договоре</a></li><li><a href="#настройка-adsl-модема-пошаговая-инструкция">Настройка ADSL модема: пошаговая инструкция</a></li><li><a href="#особенности-настройки-оптоволоконных-терминалов-pon">Особенности настройки оптоволоконных терминалов (PON)</a></li><li><a href="#типичные-ошибки-при-вводе-параметров">Типичные ошибки при вводе параметров</a></li><li><a href="#что-делать-если-значения-не-подходят">Что делать, если значения не подходят</a></li><li><a href="#проверка-работоспособности-соединения">Проверка работоспособности соединения</a></li><li><a href="#часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</a></li></ol></nav>
+<div class="pc-prose"><p>Параметры VPI (Virtual Path Identifier) и VCI (Virtual Channel Identifier) являются критически важными настройками для установления соединения с сетью провайдера по технологии ADSL и, в некоторых случаях, для настройки оптоволоконных терминалов в режиме моста. Эти цифры определяют виртуальный путь и канал, по которым данные от вашего модема будут доставлены на оборудование провайдера.</p>
+
+<p>Для абонентов Ростелеком значения этих идентификаторов не являются универсальными для всей страны. Они жестко привязаны к конкретному региону, городу и даже типу оборудования, установленного в вашем доме. Неправильный ввод даже одной цифры приведет к тому, что индикатор связи на модеме будет гореть, но доступа в интернет не будет, так как устройство не сможет пройти авторизацию на стороне АТС.</p>
+
+<p>Наиболее распространенные комбинации для сетей Ростелеком варьируются в диапазонах от 0/33 до 8/35, однако существуют и специфические значения для отдельных филиалов. Если вы сбрасываете настройки роутера до заводских или меняете оборудование, вам необходимо вручную ввести актуальные параметры для вашего населенного пункта, так как автоматическое определение (Auto-PVC) поддерживается не всеми моделями устройств и не во всех локациях.</p>
+
+<p>В современных сетях FTTB (оптика в дом) и GPON эти параметры часто заменяются настройками VLAN, но принцип остается тем же: нужно указать правильный идентификатор трафика. Ниже приведены подробные данные, которые помогут корректно настроить соединение и избежать типичных ошибок при конфигурации сетевого оборудования.</p>
+
+
+
+<aside class="pc-definition"><strong>Что такое VPI и VCI</strong><p>VPI (Virtual Path Identifier) и VCI (Virtual Channel Identifier) — это числовые идентификаторы виртуальных путей и каналов в сетях ATM. Они используются для маршрутизации трафика от вашего модема до оборудования провайдера.</p></aside>
+
+<h2 id="таблица-значений-vpi-и-vci-по-регионам">Таблица значений VPI и VCI по регионам</h2>
+
+<p>Поскольку сеть Ростелеком объединяет множество бывших региональных операторов, единого стандарта для всей России не существует. Ниже представлена таблица наиболее распространенных значений. Если вашего города нет в списке, ориентируйтесь на значения для ближайшего крупного центра или свяжитесь с технической поддержкой.</p>
+
+<div class="pc-table-wrap"><table>
+<thead>
+<tr>
+<th>Регион / Город</th>
+<th>VPI</th>
+<th>VCI</th>
+<th>Примечание</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Москва и МО</td>
+<td>0</td>
+<td>35</td>
+<td>Наиболее часто для ADSL</td>
+</tr>
+<tr>
+<td>Санкт-Петербург</td>
+<td>0</td>
+<td>35</td>
+<td>Также встречается 0/33</td>
+</tr>
+<tr>
+<td>Екатеринбург</td>
+<td>0</td>
+<td>35</td>
+<td>Стандартное значение</td>
+</tr>
+<tr>
+<td>Нижний Новгород</td>
+<td>0</td>
+<td>33</td>
+<td>Часто используется в старых сетях</td>
+</tr>
+<tr>
+<td>Новосибирск</td>
+<td>0</td>
+<td>35</td>
+<td>Основной профиль</td>
+</tr>
+<tr>
+<td>Казань</td>
+<td>0</td>
+<td>35</td>
+<td>Реже 0/32</td>
+</tr>
+<tr>
+<td>Челябинск</td>
+<td>0</td>
+<td>35</td>
+<td>Стандарт</td>
+</tr>
+<tr>
+<td>Самара</td>
+<td>0</td>
+<td>35</td>
+<td>Универсальное значение</td>
+</tr>
+<tr>
+<td>Омск</td>
+<td>0</td>
+<td>35</td>
+<td>Основной профиль</td>
+</tr>
+<tr>
+<td>Ростов-на-Дону</td>
+<td>8</td>
+<td>35</td>
+<td>Специфично для южных регионов</td>
+</tr>
+<tr>
+<td>Уфа</td>
+<td>0</td>
+<td>35</td>
+<td>Стандарт</td>
+</tr>
+<tr>
+<td>Красноярск</td>
+<td>0</td>
+<td>35</td>
+<td>Основной профиль</td>
+</tr>
+<tr>
+<td>Воронеж</td>
+<td>0</td>
+<td>35</td>
+<td>Стандарт</td>
+</tr>
+<tr>
+<td>Пермь</td>
+<td>0</td>
+<td>35</td>
+<td>Основной профиль</td>
+</tr>
+<tr>
+<td>Волгоград</td>
+<td>8</td>
+<td>35</td>
+<td>Южный регион</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Важно понимать, что эта таблица охватывает наиболее массовые профили подключения. В сельской местности или в домах старой застройки могут использоваться альтернативные значения, такие как 1/32, 0/32 или 8/32. Если подключение по значениям из таблицы не удается, необходимо проверить договор или уточнить данные у оператора.</p>
+
+<p>Для оптоволоконных сетей (PON/FTTB) понятие VPI/VCI часто заменяется на VLAN ID. В настройках таких терминалов (ONT) вы можете увидеть поле «VLAN» или «802.1p». Значения VLAN для интернета Ростелеком также региональны и часто составляют 10, 20, 30 или 100, но в режиме прозрачного моста (Bridge) эти поля могут не требовать заполнения, если провайдер не использует тегирование на стороне абонента.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важное уточнение</strong><p>Значения VPI/VCI актуальны преимущественно для ADSL-модемов. Для оптоволоконных терминалов (ONT) в режиме моста чаще требуется настройка VLAN ID или выбор режима IPoE/PPPoE без указания PVC.</p></div></aside>
+
+<h2 id="как-найти-свои-параметры-в-договоре">Как найти свои параметры в договоре</h2>
+
+<p>Самый надежный способ узнать точные значения VPI и VCI — обратиться к договору об оказании услуг связи, который вы подписывали при подключении. В приложении к договору или в техническом задании обычно содержится раздел «Параметры доступа» или «Настройки оборудования».</p>
+
+<p>Ищите таблицу или список, где указаны следующие поля: «Инкапсуляция» (обычно PPPoE или IPoE), «VPI», «VCI», «Логин» и «Пароль». Эти данные являются уникальными для вашего порта на АТС. Даже если вы меняете роутер, эти цифры остаются неизменными, пока провайдер не проведет модернизацию сети в вашем доме.</p>
+
+<p>Если бумажный договор утерян, проверьте электронную почту, на которую регистрировался личный кабинет. Часто при подключении сотрудники провайдера высылали приветственное письмо с техническими деталями. Также информацию можно найти в личном кабинете на портале <code>my.rt.ru</code> в разделе информации об услуге или оборудовании, хотя там эти параметры отображаются не всегда.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="настройка-adsl-модема-пошаговая-инструкция">Настройка ADSL модема: пошаговая инструкция</h2>
+
+<p>Процесс ввода параметров VPI и VCI происходит в веб-интерфейсе модема. Для начала подключите компьютер к модему кабелем Ethernet и откройте браузер. В адресной строке введите IP-адрес устройства (часто это 192.168.1.1 или 192.168.0.1) и введите логин и пароль администратора (по умолчанию часто admin/admin).</p>
+
+<p>После входа в меню найдите раздел, отвечающий за настройку интерфейсов. Он может называться «WAN», «Интернет», «Network» или «Broadband». Вам нужно создать новое соединение или отредактировать существующее. Выберите тип инкапсуляции. Для большинства домашних сетей Ростелеком это <strong>PPPoE</strong> (требуется логин и пароль) или <strong>IPoE</strong> (динамический IP).</p>
+
+
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-vojti-v-router-zte-rostelekom.html"><span>01</span><strong>Как войти в настройки роутера ZTE Ростелеком</strong><small>10 мин →</small></a><a href="/articles/k/ka/kak-zamenit-router-rostelekom-na-svoj.html"><span>02</span><strong>Как заменить роутер Ростелеком на свой</strong><small>13 мин →</small></a><a href="/articles/r/ro/rostelekom-kak-podklyuchit-novyj-router-vmesto-starogo.html"><span>03</span><strong>Как подключить новый роутер Ростелеком вместо старого</strong><small>9 мин →</small></a></div></aside><h2 id="типичные-ошибки-при-вводе-параметров">Типичные ошибки при вводе параметров</h2>
+
+<p>Одной из самых частых ошибок является путаница между VPI и VCI. Пользователи часто вводят значение VCI в поле VPI и наоборот. Это приводит к тому, что модем отправляет пакеты данных по неверному виртуальному каналу, и оборудование провайдера их просто отбрасывает. В результате индикатор DSL горит, а интернет не работает.</p>
+
+<p>Другая распространенная проблема — выбор неверного типа инкапсуляции. Для старых ADSL линий Ростелеком часто используется <strong>LLC</strong>, но в некоторых регионах может требоваться <strong>VC-MUX</strong>. Если вы ввели верные цифры VPI/VCI, но соединения нет, попробуйте сменить этот параметр в настройках интерфейса.</p>
+
+<p>Также стоит помнить о привязке по MAC-адресу. В некоторых регионах при смене оборудования (даже при верных VPI/VCI) интернет не появляется, потому что провайдер запомнил MAC-адрес старого модема. В этом случае нужно либо клонировать MAC-адрес в настройках нового роутера, либо позвонить в поддержку для отвязки.</p>
+
+
+
+<h2 id="что-делать-если-значения-не-подходят">Что делать, если значения не подходят</h2>
+
+<p>Если перебор всех популярных значений из таблицы не дал результата, и интернет не появляется, значит, в вашем доме используется уникальный профиль подключения. Это характерно для зданий, подключенных по индивидуальным проектам, или для регионов с нестандартным оборудованием на АТС.</p>
+
+<p>В такой ситуации единственным верным решением является обращение в техническую поддержку. Оператор проверит вашу линию по базе данных и назовет точные цифры VPI и VCI, а также тип инкапсуляции. Подготовьте номер лицевого счета или договор перед звонком для ускорения процедуры.</p>
+
+<p>Вы можете связаться со службой поддержки по единому номеру для физических лиц <strong>8 800 100 0 800</strong>. Звонок бесплатный по России. Также можно воспользоваться онлайн-чатом на официальном сайте <code>rt.ru</code> или в личном кабинете, где техник может продиктовать параметры или отправить их в чат.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Алгоритм действий при неудаче</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>Значения из таблицы не работают</span><strong>Позвоните в поддержку 8 800 100 0 800 для уточнения индивидуальных параметров.</strong></div><div class="pc-decision-row"><span>Интернет есть, но работает медленно</span><strong>Проверьте тип инкапсуляции (LLC/VC-MUX) и уровень шума на линии.</strong></div><div class="pc-decision-row"><span>Модем новый, но не видит сеть</span><strong>Убедитесь, что выбран правильный тип соединения (ADSL/VDSL) в базовых настройках.</strong></div></div></section>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="проверка-работоспособности-соединения">Проверка работоспособности соединения</h2>
+
+<p>После ввода параметров и сохранения настроек модем должен перезагрузиться. Индикатор связи (часто подписан как DSL, Link или Internet) должен перестать мигать и загореться ровным зеленым светом. Это означает, что физический уровень и уровень канала (VPI/VCI) настроены верно и синхронизация с АТС установлена.</p>
+
+<p>Однако зеленый индикатор еще не гарантирует доступ в интернет. Необходимо проверить уровень сети. Зайдите в статус модема и посмотрите на параметры затухания (Attenuation) и отношение сигнал/шум (SNR). Если затухание выше 50-60 дБ или SNR ниже 6-10 дБ, связь будет нестабильной даже при верных VPI/VCI.</p>
+
+<p>Для окончательной проверки попробуйте открыть любой веб-сайт. Если страница не грузится, проверьте настройки DNS. Иногда провайдер не выдает DNS-серверы автоматически. В таком случае пропишите в настройках WAN или в компьютере публичные DNS, например, от Google (8.8.8.8) или Яндекс (77.88.8.8).</p>
+
+<section class="pc-verify"><div class="pc-verify-head"><span>Контрольные точки</span><h3>Контрольные точки успеха</h3></div><div class="pc-verify-grid"><article class="pc-verify-card"><strong>Индикатор DSL/Link</strong><div><span>Норма</span><p>Горит постоянно зеленым</p></div><div><span>Тревожный признак</span><p>Мигает или не горит</p></div></article><article class="pc-verify-card"><strong>Статус PPPoE</strong><div><span>Норма</span><p>Connected (Подключено)</p></div><div><span>Тревожный признак</span><p>Connecting или Disconnected</p></div></article><article class="pc-verify-card"><strong>Получение IP-адреса</strong><div><span>Норма</span><p>Есть адрес вида 10.x.x.x или 188.x.x.x</p></div><div><span>Тревожный признак</span><p>0.0.0.0 или 169.254.x.x</p></div></article></div></section>
+
+<div class="pc-summary"><span>Итог</span><h2>Главное о настройке</h2><p>VPI и VCI — это адрес вашего подключения в сети провайдера. Для Ростелеком чаще всего используются пары 0/35 или 0/33, но точное значение зависит от региона. При сбоях всегда сверяйтесь с договором или звоните в поддержку.</p></div>
+
+<h2 id="часто-задаваемые-вопросы-faq">Часто задаваемые вопросы (FAQ)</h2>
+
+<details>
+<summary>Можно ли подобрать VPI и VCI методом тыка?</summary>
+<p>Теоретически можно перебрать все комбинации, так как их количество ограничено (VPI обычно от 0 до 8, VCI от 32 до 255). Однако это неэффективно и может занять много времени. Кроме того, на некоторых АТС неверные запросы могут временно блокировать порт безопасности. Лучше сразу узнать точные данные в договоре или у поддержки.</p>
+</details>
+
+<details>
+<summary>Влияют ли VPI и VCI на скорость интернета?</summary>
+<p>Сами по себе эти идентификаторы не влияют на скорость. Они лишь указывают маршрут до оборудования провайдера. Однако выбор неверного типа инкапсуляции (LLC вместо VC-MUX) может добавить лишние заголовки к пакетам данных, что незначительно снизит полезную пропускную способность канала, но критичным это бывает редко.</p>
+</details>
+
+<details>
+<summary>Нужно ли менять VPI/VCI при смене тарифа?</summary>
+<p>Нет, при смене тарифного плана (например, увеличении скорости) параметры VPI и VCI остаются прежними. Изменения происходят только на стороне оборудования провайдера, где перенастраивается профиль скорости для вашего порта. Вам нужно только перезагрузить модем после смены тарифа.</p>
+</details>
+
+<details>
+<summary>Где найти логин и пароль для PPPoE, если я знаю VPI/VCI?</summary>
+<p>Логин и пароль для подключения PPPoE указаны в вашем договоре на оказание услуг. Обычно логин — это номер лицевого счета или номер телефона, а пароль выдается при подключении. Если пароль утерян, его можно сбросить или посмотреть в личном кабинете на сайте my.rt.ru в разделе настроек услуги.</p>
+</details>
+
+<details>
+<summary>Что делать, если в настройках модема нет полей VPI и VCI?</summary>
+<p>Отсутствие этих полей означает, что ваш модем работает в режиме чистого Ethernet (для оптоволокна FTTB) или использует автоматическое определение (Auto-PVC), которое в данный момент не сработало. Попробуйте создать новое подключение вручную, выбрав тип «ADSL» или «PPP over ATM», чтобы поля появились.</p>
+</details>
+
+<details>
+<summary>Может ли провайдер изменить VPI/VCI без предупреждения?</summary>
+<p>Такое случается крайне редко, только в случае глобальной модернизации сети или замены оборудования на АТС. Обычно провайдер информирует об этом через SMS или звонки. Если интернет пропал внезапно без причин на вашей стороне, стоит позвонить в поддержку и уточнить, не менялись ли технические параметры доступа.</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-vojti-v-router-zte-rostelekom.html"><span>10 мин</span><strong>Как войти в настройки роутера ZTE Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-zamenit-router-rostelekom-na-svoj.html"><span>13 мин</span><strong>Как заменить роутер Ростелеком на свой</strong><b>Читать ↗</b></a><a href="/articles/r/ro/rostelekom-kak-podklyuchit-novyj-router-vmesto-starogo.html"><span>9 мин</span><strong>Как подключить новый роутер Ростелеком вместо старого</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-razobrat-blok-pitaniya-pristavki-rostelekom.html"><span>13 мин</span><strong>Как разобрать блок питания приставки Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-router-d-link-dsl-2640u-dlya-rostelekom-posle-sbrosa-nastroek.html"><span>10 мин</span><strong>Как настроить роутер D-Link DSL-2640U для Ростелеком после сброса</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-router-kinetik-k-rostelekomu.html"><span>11 мин</span><strong>Настройка роутера Keenetic для Ростелекома</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

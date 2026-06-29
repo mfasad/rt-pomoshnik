@@ -1,0 +1,135 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Настройка Qtech QDSL 1040WU Ростелеком: инструкция — РТ Помощник</title><meta name="description" content="Как настроить Qtech QDSL 1040WU Ростелеком: вход в веб-интерфейс, настройка PPPoE/VLAN и Wi-Fi. Полное руководство.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-qtech-qdsl-1040wu-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Настройка Qtech QDSL 1040WU Ростелеком: инструкция — РТ Помощник">
+<meta property="og:description" content="Как настроить Qtech QDSL 1040WU Ростелеком: вход в веб-интерфейс, настройка PPPoE/VLAN и Wi-Fi. Полное руководство."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-qtech-qdsl-1040wu-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Настройка Qtech QDSL 1040WU Ростелеком: инструкция — РТ Помощник">
+<meta name="twitter:description" content="Как настроить Qtech QDSL 1040WU Ростелеком: вход в веб-интерфейс, настройка PPPoE/VLAN и Wi-Fi. Полное руководство.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-qtech-qdsl-1040wu-rostelekom.html#article", "headline": "Настройка Qtech QDSL 1040WU Ростелеком", "description": "Как настроить Qtech QDSL 1040WU Ростелеком: вход в веб-интерфейс, настройка PPPoE/VLAN и Wi-Fi. Полное руководство.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-qtech-qdsl-1040wu-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-qtech-qdsl-1040wu-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-qtech-qdsl-1040wu-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Оборудование", "item": "https://rt-pomoshnik.vercel.app/category/oborudovanie/"}, {"@type": "ListItem", "position": 3, "name": "Настройка Qtech QDSL 1040WU Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-qtech-qdsl-1040wu-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-qtech-qdsl-1040wu-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Какой адрес использовать для входа в настройки Qtech?", "acceptedAnswer": {"@type": "Answer", "text": "Стандартный адрес для доступа к веб-интерфейсу — 192.168.1.1. В редких случаях адрес может быть изменен, проверить его можно в настройках сетевого адаптера компьютера как «Основной шлюз»."}}, {"@type": "Question", "name": "Что делать, если забыл пароль от Wi-Fi?", "acceptedAnswer": {"@type": "Answer", "text": "Если вы не можете вспомнить пароль от беспроводной сети, подключите компьютер к роутеру кабелем, войдите в настройки под логином admin и посмотрите ключ безопасности в разделе Wireless. Если доступа к кабелю нет, потребуется сброс роутера кнопкой Reset."}}, {"@type": "Question", "name": "Нужно ли указывать MAC-адрес при настройке?", "acceptedAnswer": {"@type": "Answer", "text": "Обычно клонирование MAC-адреса для оборудования Ростелеком не требуется. Привязка осуществляется по логину и паролю PPPoE. Оставьте поле MAC Address пустым или установите значение по умолчанию."}}, {"@type": "Question", "name": "Почему не работает IPTV после настройки?", "acceptedAnswer": {"@type": "Answer", "text": "Для работы телевидения часто требуется создание отдельного подключения (второй WAN) с другим VLAN ID (обычно 20 или 100) и режимом Bridge. Уточните параметры для IPTV в технической поддержке."}}, {"@type": "Question", "name": "Как сбросить роутер к заводским настройкам?", "acceptedAnswer": {"@type": "Answer", "text": "На задней панели найдите утопленную кнопку Reset. При включенном роутере нажмите на нее скрепкой и удерживайте около 10-15 секунд, пока индикаторы не мигнут одновременно. После этого устройство перезагрузится с заводскими параметрами."}}, {"@type": "Question", "name": "Где взять логин и пароль для подключения?", "acceptedAnswer": {"@type": "Answer", "text": "Данные для авторизации PPPoE указаны в вашем договоре на оказание услуг связи. Если договор утерян, логин можно узнать в Личном кабинете my.rt.ru или позвонив в контактный центр по номеру 8 800 100 0 800."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="is-active" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/oborudovanie/">Оборудование</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Оборудование</span> · 10 мин</p><h1>Настройка Qtech QDSL 1040WU Ростелеком</h1><p class="pc-deck">Как настроить Qtech QDSL 1040WU Ростелеком: вход в веб-интерфейс, настройка PPPoE/VLAN и Wi-Fi. Полное руководство.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Краткий вывод</strong><span>Для настройки введите IP 192.168.1.1 в браузере, логин admin и пароль admin. Создайте соединение типа PPPoE с VLAN ID 10 (для большинства регионов) и введите данные из договора.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Оборудование</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#подготовка-оборудования-и-вход-в-интерфейс">Подготовка оборудования и вход в интерфейс</a></li><li><a href="#быстрая-настройка-через-мастер-quick-start">Быстрая настройка через мастер (Quick Start)</a></li><li><a href="#ручная-настройка-wan-соединения">Ручная настройка WAN-соединения</a></li><li><a href="#настройка-беспроводной-сети-wi-fi">Настройка беспроводной сети Wi-Fi</a></li><li><a href="#проверка-статуса-подключения">Проверка статуса подключения</a></li><li><a href="#смена-пароля-администратора-роутера">Смена пароля администратора роутера</a></li><li><a href="#возможные-проблемы-и-их-решение">Возможные проблемы и их решение</a></li></ol></nav>
+<div class="pc-prose"><p>Маршрутизатор Qtech QDSL 1040WU часто используется оператором Ростелеком для подключения абонентов по технологии ADSL и VDSL. Это устройство объединяет в себе функции модема и беспроводной точки доступа, обеспечивая доступ к сети Интернет и создание локальной сети. Для полноценного использования возможностей роутера необходимо правильно настроить параметры соединения, которые предоставляются провайдером, а также защитить беспроводную сеть паролем.</p>
+
+<p>Процесс настройки обычно требуется при первичном подключении услуги, после сброса устройства к заводским настройкам или при замене оборудования. Важно понимать, что современные сети Ростелеком часто используют специфические параметры, такие как VLAN ID, которые обязательны для успешной авторизации в сети оператора. Без их указания соединение установить не удастся, даже если логин и пароль введены верно.</p>
+
+<p>В данном руководстве подробно описан процесс входа в панель управления устройством, настройки интернет-соединения по протоколу PPPoE и конфигурации беспроводной сети Wi-Fi. Следование инструкции позволит избежать типичных ошибок, таких как неверный тип инкапсуляции или отсутствие тегирования трафика. Перед началом работ убедитесь, что у вас есть договор с оператором, где указаны логин, пароль и технические параметры подключения.</p>
+
+
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Когда нужно остановиться</strong><p>Не сбрасывайте настройки кнопкой Reset, если у вас нет договора с логином и паролем от интернета. Восстановить доступ без этих данных самостоятельно невозможно.</p></div></aside>
+
+<h2 id="подготовка-оборудования-и-вход-в-интерфейс">Подготовка оборудования и вход в интерфейс</h2>
+
+<p>Первым шагом является физическое подключение роутера к компьютеру и линии связи. Возьмите телефонный кабель (RJ-11) и подключите его в порт с надписью DSL или LINE на задней панели устройства. Если у вас установлены сплиттеры, убедитесь, что кабель идет от выхода MODEM сплиттера. Для первичной настройки рекомендуется использовать проводное соединение: подключите компьютер к любому желтому порту LAN (1-4) с помощью сетевого кабеля Ethernet.</p>
+
+<p>После включения питания дождитесь загрузки устройства. Индикаторы Power и DSL должны гореть или мигать стабильно. Если индикатор DSL не загорается, проверьте целостность телефонного кабеля и наличие сигнала на линии. Компьютер должен получить IP-адрес автоматически, так как по умолчанию на роутере включен DHCP-сервер.</p>
+
+<p>Для входа в панель управления откройте любой веб-браузер и в адресной строке введите IP-адрес шлюза. Стандартный адрес для Qtech QDSL 1040WU — 192.168.1.1. Нажмите Enter. Появится окно авторизации. Заводские учетные данные обычно указаны на наклейке на дне устройства. В большинстве случаев логин: <strong>admin</strong>, пароль: <strong>admin</strong>.</p>
+
+<div class="pc-fact-grid" aria-label="Диагностика подключения"><div><span>Индикатор DSL</span><strong>Не горит</strong><p>Нет сигнала от провайдера, проверьте кабель и сплиттер</p></div><div><span>Индикатор LAN</span><strong>Не горит</strong><p>Нет связи с компьютером, замените патч-корд</p></div><div><span>Страница не грузится</span><strong>Ошибка адреса</strong><p>Проверьте, что в адресе нет http:// или пробелов</p></div></div>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="быстрая-настройка-через-мастер-quick-start">Быстрая настройка через мастер (Quick Start)</h2>
+
+<p>После успешной авторизации вы попадете на главную страницу веб-интерфейса. Многие версии прошивки Qtech предлагают автоматический мастер настройки при первом входе. Если окно мастера появилось автоматически, следуйте подсказкам на экране. Система предложит выбрать часовой пояс и тип подключения.</p>
+
+<p>В списке типов подключения выберите PPPoE. Это стандартный протокол для сетей Ростелеком, требующий ввода имени пользователя и пароля. Не выбирайте Bridge, если вы хотите, чтобы роутер сам устанавливал соединение, а не компьютер. В следующих полях введите логин и пароль из вашего договора с оператором. Логин часто имеет вид идентификатора или номера лицевого счета.</p>
+
+<p>Особое внимание уделите настройкам VLAN. В современных сетях Ростелеком интернет-трафик должен быть помечен тегом VLAN. В мастере настройки найдите поле VLAN ID и впишите значение <strong>10</strong>. Это наиболее распространенный идентификатор для услуги доступа в Интернет. Если оставить это поле пустым или указать неверное значение, роутер не сможет пройти авторизацию на оборудовании провайдера.</p>
+
+<h2 id="ручная-настройка-wan-соединения">Ручная настройка WAN-соединения</h2>
+
+<p>Если автоматический мастер не запустился или вы пропустили его, настройку необходимо выполнить вручную через меню. Перейдите в раздел <strong>Advanced Setup</strong> (Расширенная настройка) и выберите пункт <strong>WAN</strong>. Здесь отображается список существующих подключений. Для создания нового нажмите кнопку <strong>Add</strong> (Добавить) или <strong>New</strong>.</p>
+
+<p>В открывшемся окне настройки нового соединения выберите тип инкапсуляции. Для Ростелеком оптимальным выбором является <strong>PPPoE LLC</strong> или просто <strong>PPPoE</strong>. Режим инкапсуляции LLC является стандартом для большинства DSL-линий. Убедитесь, что выбран правильный интерфейс VPI/VCI. Для России стандартными значениями часто являются VPI: <strong>0</strong> и VCI: <strong>35</strong> или VPI: <strong>8</strong> и VCI: <strong>35</strong>. Если вы не знаете точные значения, попробуйте вариант 0/35.</p>
+
+<p>Далее необходимо настроить тегирование VLAN. Найдите опцию <strong>802.1Q</strong> или <strong>VLAN ID</strong> и активируйте её. В поле ID введите число <strong>10</strong>. Это критически важный параметр для работы в сети Ростелеком. Без него пакеты данных не будут маршрутизироваться корректно. После указания VLAN ID введите ваши учетные данные: Username (логин) и Password (пароль). Повторите пароль в поле подтверждения.</p>
+
+<div class="pc-widget-title">Алгоритм настройки WAN</div><ol class="pc-steps"><li><span>1</span><div><strong>Перейдите в Advanced Setup -&gt; WAN</strong></div></li><li><span>2</span><div><strong>Нажмите Add и выберите PPPoE LLC</strong></div></li><li><span>3</span><div><strong>Включите 802.1Q и укажите VLAN ID 10</strong></div></li><li><span>4</span><div><strong>Введите логин и пароль из договора</strong></div></li><li><span>5</span><div><strong>Сохраните настройки кнопкой Save/Apply</strong></div></li></ol>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-pereproshit-vaj-faj-router-rostelekom.html"><span>01</span><strong>Как перепрошить вай фай роутер Ростелеком</strong><small>13 мин →</small></a><a href="/articles/k/ka/kak-nastroit-knopku-gromkosti-na-pulte-rostelekom.html"><span>02</span><strong>Настройка кнопок громкости на пульте Ростелеком</strong><small>11 мин →</small></a><a href="/articles/r/ro/rostelekom-kak-podklyuchit-televizor-k-pultu-ot-pristavki.html"><span>03</span><strong>Настройка пульта Ростелеком для управления телевизором</strong><small>13 мин →</small></a></div></aside><h2 id="настройка-беспроводной-сети-wi-fi">Настройка беспроводной сети Wi-Fi</h2>
+
+<p>После настройки интернета необходимо обезопасить беспроводную сеть. Перейдите в раздел <strong>Interface Setup</strong> и выберите подраздел <strong>Wireless</strong>. Убедитесь, что функция беспроводной сети включена (Access Point: Activated). В поле SSID введите желаемое имя вашей сети, которое будет отображаться на телефонах и ноутбуках.</p>
+
+<p>Для защиты сети от несанкционированного доступа обязательно измените параметры безопасности. В поле <strong>Authentication Type</strong> выберите <strong>WPA2-PSK</strong>. Это самый надежный стандарт шифрования на данный момент. Избегайте использования устаревшего WEP или открытой сети (None). В поле Pre-Shared Key придумайте и введите сложный пароль длиной не менее 8 символов, содержащий буквы и цифры.</p>
+
+<p>Также рекомендуется настроить канал беспроводной сети, чтобы избежать помех от соседских роутеров. В поле <strong>Channel</strong> выберите значение <strong>Auto</strong> для автоматического выбора наименее загруженного канала, либо зафиксируйте один из незашумленных каналов (например, 1, 6 или 11). Ширина канала (Channel Width) должна быть установлена в значение <strong>20MHz</strong> или <strong>20/40MHz</strong> для обеспечения стабильности сигнала.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="проверка-статуса-подключения">Проверка статуса подключения</h2>
+
+<p>После сохранения всех настроек роутер перезагрузит сетевые интерфейсы. Для проверки успешности подключения перейдите в раздел <strong>Status</strong> или <strong>Device Info</strong>, затем выберите вкладку <strong>WAN</strong> или <strong>Connection Status</strong>. Здесь вы увидите созданное вами подключение (PPPoE).</p>
+
+<p>Если настройка выполнена верно, в столбце Status будет указано <strong>Connected</strong> (Подключено), а в поле IP Address будет отображаться выданный провайдером адрес. Также будут видны значения DNS-серверов. Если статус показывает <strong>Disconnected</strong> или <strong>Connecting</strong>, проверьте правильность ввода логина, пароля и VLAN ID. Частой ошибкой является лишние пробелы в полях с паролем.</p>
+
+<p>Проверьте работу интернета на подключенном устройстве. Откройте браузер и попробуйте загрузить несколько сайтов. Если страницы не открываются, но статус подключения активен, попробуйте очистить кэш DNS на компьютере или перезагрузить роутер полным циклом (выключение из розетки на 10 секунд и включение).</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Отсутствие VLAN ID 10 приводит к статусу Connected, но сайты не грузятся</strong></div></article><article><span>02</span><div><strong>Неверный VPI/VCI (0/35 вместо 8/35) не дает установить соединение</strong></div></article></div>
+
+<h2 id="смена-пароля-администратора-роутера">Смена пароля администратора роутера</h2>
+
+<p>В целях безопасности рекомендуется сменить заводской пароль для входа в настройки роутера. Это предотвратит изменение параметров сети посторонними лицами, имеющими доступ к Wi-Fi. Перейдите в раздел <strong>Maintenance</strong> (Обслуживание) и выберите пункт <strong>Admin</strong> или <strong>Access Control</strong>.</p>
+
+<p>Введите текущий пароль (admin) в соответствующее поле. Затем введите новый пароль в поля New Password и Confirm Password. Придумайте надежную комбинацию символов. После сохранения настроек роутер попросит авторизоваться заново с новым паролем. Запишите его в надежном месте, так как при утере придется сбрасывать устройство до заводских настроек.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Пароль администратора роутера и пароль от интернета (PPPoE) — это разные вещи. Не перепутайте их при вводе.</p></div></aside>
+
+<h2 id="возможные-проблемы-и-их-решение">Возможные проблемы и их решение</h2>
+
+<p>Если после настройки интернет не работает, проверьте физическое состояние линии. Частые обрывы связи или низкая скорость могут быть связаны с качеством телефонного кабеля, наличием лишних скруток или плохим контактом в сплиттере. Попробуйте подключить роутер напрямую в телефонную розетку, минуя сплиттер и другие телефоны, для проверки чистоты линии.</p>
+
+<p>Еще одной причиной проблем может быть устаревшая прошивка устройства. Проверить версию можно в разделе Status -> Device Info. Если оператор предоставляет новые функции или исправляет ошибки безопасности, может потребоваться обновление ПО. Однако эту процедуру лучше доверить специалисту, так как неправильное обновление может вывести роутер из строя.</p>
+
+<p>В случае непрекращающихся проблем со связью, когда индикатор DSL мигает или гаснет, проблема находится на стороне провайдера или внешней линии. В этом случае самостоятельная настройка роутера не поможет. Необходимо обратиться в техническую поддержку для замера параметров линии и проверки порта на станции.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Диагностика проблем</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>Индикатор DSL не горит</span><strong>Проверьте кабель и звоните в поддержку</strong></div><div class="pc-decision-row"><span>Статус Connected, но нет интернета</span><strong>Проверьте VLAN ID и DNS</strong></div><div class="pc-decision-row"><span>Нет доступа к 192.168.1.1</span><strong>Проверьте IP-адрес сети на компьютере</strong></div></div></section>
+
+<details>
+<summary>Какой адрес использовать для входа в настройки Qtech?</summary>
+<p>Стандартный адрес для доступа к веб-интерфейсу — 192.168.1.1. В редких случаях адрес может быть изменен, проверить его можно в настройках сетевого адаптера компьютера как «Основной шлюз».</p>
+</details>
+
+<details>
+<summary>Что делать, если забыл пароль от Wi-Fi?</summary>
+<p>Если вы не можете вспомнить пароль от беспроводной сети, подключите компьютер к роутеру кабелем, войдите в настройки под логином admin и посмотрите ключ безопасности в разделе Wireless. Если доступа к кабелю нет, потребуется сброс роутера кнопкой Reset.</p>
+</details>
+
+<details>
+<summary>Нужно ли указывать MAC-адрес при настройке?</summary>
+<p>Обычно клонирование MAC-адреса для оборудования Ростелеком не требуется. Привязка осуществляется по логину и паролю PPPoE. Оставьте поле MAC Address пустым или установите значение по умолчанию.</p>
+</details>
+
+<details>
+<summary>Почему не работает IPTV после настройки?</summary>
+<p>Для работы телевидения часто требуется создание отдельного подключения (второй WAN) с другим VLAN ID (обычно 20 или 100) и режимом Bridge. Уточните параметры для IPTV в технической поддержке.</p>
+</details>
+
+<details>
+<summary>Как сбросить роутер к заводским настройкам?</summary>
+<p>На задней панели найдите утопленную кнопку Reset. При включенном роутере нажмите на нее скрепкой и удерживайте около 10-15 секунд, пока индикаторы не мигнут одновременно. После этого устройство перезагрузится с заводскими параметрами.</p>
+</details>
+
+<details>
+<summary>Где взять логин и пароль для подключения?</summary>
+<p>Данные для авторизации PPPoE указаны в вашем договоре на оказание услуг связи. Если договор утерян, логин можно узнать в Личном кабинете my.rt.ru или позвонив в контактный центр по номеру 8 800 100 0 800.</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-pereproshit-vaj-faj-router-rostelekom.html"><span>13 мин</span><strong>Как перепрошить вай фай роутер Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-knopku-gromkosti-na-pulte-rostelekom.html"><span>11 мин</span><strong>Настройка кнопок громкости на пульте Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/r/ro/rostelekom-kak-podklyuchit-televizor-k-pultu-ot-pristavki.html"><span>13 мин</span><strong>Настройка пульта Ростелеком для управления телевизором</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-zajti-v-nastrojki-routera-zte-rostelekom-cherez-brauzer.html"><span>9 мин</span><strong>Как зайти в настройки роутера ZTE Ростелеком через браузер</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-polzovatsya-odnim-pultom-rostelekom.html"><span>11 мин</span><strong>Настройка универсального пульта Ростелеком для управления телевизором</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-pult-rostelekom-na-televizor-ksiomi.html"><span>11 мин</span><strong>Как настроить пульт Ростелеком на телевизор Xiaomi</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

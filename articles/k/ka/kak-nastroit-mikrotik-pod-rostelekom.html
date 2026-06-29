@@ -1,0 +1,157 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как настроить роутер MikroTik для Ростелеком: полная инструкция — РТ Помощник</title><meta name="description" content="Пошаговая настройка MikroTik для Ростелеком: PPPoE, VLAN 100, IPTV и Wi-Fi. Решение проблем, скрипты и частые ошибки.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-mikrotik-pod-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как настроить роутер MikroTik для Ростелеком: полная инструкция — РТ Помощник">
+<meta property="og:description" content="Пошаговая настройка MikroTik для Ростелеком: PPPoE, VLAN 100, IPTV и Wi-Fi. Решение проблем, скрипты и частые ошибки."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-mikrotik-pod-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как настроить роутер MikroTik для Ростелеком: полная инструкция — РТ Помощник">
+<meta name="twitter:description" content="Пошаговая настройка MikroTik для Ростелеком: PPPoE, VLAN 100, IPTV и Wi-Fi. Решение проблем, скрипты и частые ошибки.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-mikrotik-pod-rostelekom.html#article", "headline": "Настройка MikroTik для работы с Ростелеком", "description": "Пошаговая настройка MikroTik для Ростелеком: PPPoE, VLAN 100, IPTV и Wi-Fi. Решение проблем, скрипты и частые ошибки.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-mikrotik-pod-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-mikrotik-pod-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-mikrotik-pod-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Оборудование", "item": "https://rt-pomoshnik.vercel.app/category/oborudovanie/"}, {"@type": "ListItem", "position": 3, "name": "Настройка MikroTik для работы с Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-mikrotik-pod-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-nastroit-mikrotik-pod-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Где узнать точный VLAN ID для своего региона?", "acceptedAnswer": {"@type": "Answer", "text": "Универсального номера не существует, хотя 100 для интернета и 10 для ТВ встречаются чаще всего. Точную информацию можно получить в технической поддержке Ростелеком по телефону 8 800 100 0 800, назвав номер своего лицевого счета, или посмотреть в договоре на оказание услуг."}}, {"@type": "Question", "name": "Роутер загружает процессор на 100% при включении IPTV, что делать?", "acceptedAnswer": {"@type": "Answer", "text": "Микропроцессоры бюджетных моделей MikroTik могут не справляться с потоками мультикаст-трафика высокой четкости. Попробуйте ограничить скорость порта, к которому подключена приставка, или обновите RouterOS до последней стабильной версии. В крайнем случае, для IPTV лучше использовать отдельный не нагруженный порт в режиме прозрачного моста без участия CPU роутера в обработке пакетов ТВ."}}, {"@type": "Question", "name": "Можно ли использовать Wi-Fi роутер Ростелеком вместе с MikroTik?", "acceptedAnswer": {"@type": "Answer", "text": "Да, можно. Подключите роутер Ростелеком к порту LAN MikroTik и переведите его в режим точки доступа (отключив DHCP сервер на роутере Ростелеком). Однако это создаст двойной NAT, что может вызвать проблемы в онлайн-играх. Лучше настроить Wi-Fi непосредственно на MikroTik, если его мощности достаточно, или использовать режим бриджа на оборудовании провайдера."}}, {"@type": "Question", "name": "Как изменить пароль от веб-интерфейса WinBox?", "acceptedAnswer": {"@type": "Answer", "text": "В меню WinBox перейдите в `System` -> `Users`. Выберите пользователя `admin`, нажмите кнопку `Password` и задайте новый сложный пароль. Запишите его в надежное место. Без пароля любой человек, подключившийся к вашей сети, сможет получить полный контроль над роутером."}}, {"@type": "Question", "name": "Почему скорость интернета ниже заявленной в тарифе?", "acceptedAnswer": {"@type": "Answer", "text": "Проверьте, не настроено ли ограничение скорости (Simple Queues) в меню `Queues`. Убедитесь, что вы тестируете скорость по кабелю, а не по Wi-Fi, где скорость всегда ниже из-за помех. Также убедитесь, что кабель провайдера подключен в гигабитный порт (если тариф выше 100 Мбит/с) и сам кабель исправен (все 8 жил контактируют)."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="is-active" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/oborudovanie/">Оборудование</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Оборудование</span> · 13 мин</p><h1>Настройка MikroTik для работы с Ростелеком</h1><p class="pc-deck">Пошаговая настройка MikroTik для Ростелеком: PPPoE, VLAN 100, IPTV и Wi-Fi. Решение проблем, скрипты и частые ошибки.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Короткий вывод</strong><span>Для работы с Ростелеком на MikroTik необходимо создать PPPoE-клиент, добавить тег VLAN 100 на физический порт (WAN) и настроить правило NAT (masquerade). Без тега VLAN интернет работать не будет.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Оборудование</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#подготовка-оборудования-и-сброс-настроек">Подготовка оборудования и сброс настроек</a></li><li><a href="#создание-pppoe-подключения-с-тегом-vlan">Создание PPPoE подключения с тегом VLAN</a></li><li><a href="#настройка-маршрутизации-и-nat">Настройка маршрутизации и NAT</a></li><li><a href="#настройка-локальной-сети-и-dhcp-сервера">Настройка локальной сети и DHCP сервера</a></li><li><a href="#настройка-беспроводной-сети-wi-fi">Настройка беспроводной сети Wi-Fi</a></li><li><a href="#организация-работы-iptv-ростелеком">Организация работы IPTV Ростелеком</a></li><li><a href="#диагностика-и-решение-проблем">Диагностика и решение проблем</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+<div class="pc-prose"><p>Настройка маршрутизатора MikroTik для работы с провайдером Ростелеком требует внимательности к деталям, так как в разных регионах используются различные технологии доступа. В большинстве случаев абонентам предоставляется доступ по протоколу PPPoE с обязательной маркировкой трафика VLAN 100. Игнорирование тега VLAN является самой распространенной причиной отсутствия интернета даже при верном вводе логина и пароля.</p>
+
+<p>Перед началом работ необходимо убедиться, что у вас есть действующий договор с провайдером, где указаны логин и пароль для доступа в сеть. Также потребуется компьютер с сетевой картой, подключенный к любому LAN-порту роутера кабелем, и утилита WinBox или доступ к веб-интерфейсу устройства. Сброс настроек до заводских значений рекомендуется выполнять перед каждой новой конфигурацией, чтобы избежать конфликтов со старыми правилами файрвола или маршрутизации.</p>
+
+<p>Процесс настройки включает в себя создание интерфейса подключения, настройку правил NAT для выхода в интернет, конфигурацию беспроводной сети и, при необходимости, организацию работы интерактивного телевидения. Ошибки на любом из этапов могут привести к полной неработоспособности сети или отсутствию доступа к определенным сервисам провайдера.</p>
+
+
+
+<h2 id="подготовка-оборудования-и-сброс-настроек">Подготовка оборудования и сброс настроек</h2>
+
+<p>Первым шагом является подключение компьютера к роутеру. Соедините сетевой кабель с любым портом LAN (обычно они пронумерованы от 2 до 5, порт 1 часто используется как WAN, но на чистом MikroTik все порты равнозначны до настройки). Убедитесь, что на компьютере настроено автоматическое получение IP-адреса (DHCP). По умолчанию MikroTik раздает адреса в подсети 192.168.88.0/24.</p>
+
+<p>Если роутер ранее использовался или настройки неизвестны, выполните аппаратный сброс. На включенном устройстве зажмите кнопку Reset (или кнопку под корпусом, если она совмещена с WPS) и удерживайте её около 10–15 секунд, пока индикатор ACT не начнет мигать. После этого устройство перезагрузится с заводскими настройками.</p>
+
+<p>Для первичной настройки удобнее всего использовать утилиту WinBox, которую можно скачать с официального сайта производителя. Она позволяет подключаться к роутеру по MAC-адресу, что удобно, если IP-адрес устройства был изменен. Запустите WinBox, перейдите на вкладку Neighbors, найдите свое устройство в списке и нажмите на его MAC-адрес, затем введите логин `admin` (пароль по умолчанию пустой).</p>
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Риск потери доступа</strong><p>При смене IP-адреса роутера или настройке правил файрвола вы можете потерять доступ к веб-интерфейсу. Всегда имейте под рукой консольный кабель или будьте готовы к аппаратному сбросу.</p></div></aside>
+
+<h2 id="создание-pppoe-подключения-с-тегом-vlan">Создание PPPoE подключения с тегом VLAN</h2>
+
+<p>Основная задача — настроить подключение к сети провайдера. Ростелеком использует протокол PPPoE, который требует аутентификации. Критически важным моментом является добавление тега VLAN. В большинстве регионов России для услуг домашнего интернета используется VLAN ID 100. Без этого тега пакеты данных не пройдут через оборудование провайдера на узле доступа.</p>
+
+<p>В интерфейсе WinBox или WebFig перейдите в меню `Interfaces`. Нажмите на знак «плюс» для добавления нового интерфейса и выберите тип `PPPoE Client`. В открывшемся окне на вкладке `General` дайте интерфейсу понятное имя, например, `pppoe-out1`. В поле `Interface` выберите физический порт, в который вставлен кабель от провайдера (обычно это `ether1`).</p>
+
+<p>Далее необходимо добавить тег VLAN. В современных версиях RouterOS это можно сделать прямо в настройках PPPoE клиента или предварительно создав VLAN-интерфейс. Надежнее создать отдельный VLAN-интерфейс. Перейдите в меню `Interfaces`, добавьте новый интерфейс типа `VLAN`. В поле `Name` укажите `vlan100-internet`, в поле `Interface` выберите ваш WAN-порт (например, `ether1`), а в поле `VLAN ID` впишите `100`.</p>
+
+<div class="pc-widget-title">Порядок создания подключения</div><ol class="pc-steps"><li><span>1</span><div><strong>Создайте VLAN интерфейс с ID 100 на порту WAN</strong></div></li><li><span>2</span><div><strong>Создайте PPPoE Client интерфейс</strong></div></li><li><span>3</span><div><strong>В настройках PPPoE выберите созданный VLAN интерфейс как базовый</strong></div></li><li><span>4</span><div><strong>Введите логин и пароль из договора</strong></div></li><li><span>5</span><div><strong>Нажмите Apply и OK</strong></div></li></ol>
+
+<p>После создания VLAN-интерфейса вернитесь к настройке `PPPoE Client`. В поле `Interface` теперь выберите не физический порт `ether1`, а созданный вами `vlan100-internet`. Перейдите на вкладку `Dial Out` (или `PPP` в старых версиях). В полях `User` и `Password` введите данные из вашего договора с Ростелеком. Убедитесь, что галочка `Use Peer DNS` установлена, чтобы роутер автоматически получил адреса DNS-серверов провайдера. Нажмите `Apply` и `OK`.</p>
+
+<p>Если все сделано верно, в списке интерфейсов рядом с `pppoe-out1` появится буква `R` (Running), а в логине (`/log`) вы увидите сообщение об успешной аутентификации. Также проверьте вкладку `IP` -> `Addresses`. Там должен появиться новый адрес, выданный провайдером, привязанный к интерфейсу `pppoe-out1`.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="настройка-маршрутизации-и-nat">Настройка маршрутизации и NAT</h2>
+
+<p>Даже если PPPoE подключение установлено и статус «Running», интернет на подключенных устройствах работать не будет без настройки трансляции адресов (NAT). По умолчанию MikroTik не разрешает перенаправлять трафик из локальной сети во внешнюю.</p>
+
+<p>Перейдите в меню `IP` -> `Firewall` и откройте вкладку `NAT`. Нажмите на знак «плюс» для добавления нового правила. В поле `Chain` выберите `srcnat`. В поле `Out. Interface` укажите ваш PPPoE интерфейс (`pppoe-out1`). Это правило указывает роутеру, что весь исходящий трафик, идущий через этот интерфейс, должен быть обработан.</p>
+
+<p>Перейдите на вкладку `Action`. В поле `Action` выберите `masquerade`. Этот тип NAT динамически подменяет внутренний IP-адрес устройства на внешний адрес, выданный провайдером. Нажмите `Apply` и `OK`. Это базовое правило необходимо для работы любого устройства в вашей сети.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Правило Masquerade должно стоять в списке NAT самым первым или выше любых правил блокировки. Порядок правил в MikroTik имеет критическое значение: обработка идет сверху вниз.</p></div></aside>
+
+<p>Дополнительно проверьте настройки DNS. Перейдите в `IP` -> `DNS`. Убедитесь, что поле `Servers` не пустое. Если вы ставили галочку `Use Peer DNS` в настройках PPPoE, адреса должны подтянуться автоматически. Рекомендуется добавить галочку `Allow Remote Requests`, чтобы роутер мог выступать в роли DNS-сервера для ваших устройств, кэшируя запросы и ускоряя загрузку страниц.</p>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-zajti-v-nastrojki-pristavki-rostelekom-cherez-kompyuter.html"><span>01</span><strong>Управление настройками приставки Ростелеком через компьютер</strong><small>11 мин →</small></a><a href="/articles/g/gd/gde-na-routere-imya-polzovatelya-i-parol-rostelekom.html"><span>02</span><strong>Где найти логин и пароль от роутера Ростелеком</strong><small>11 мин →</small></a><a href="/articles/k/ka/kak-obnovit-router-gpon-rostelekom.html"><span>03</span><strong>Как обновить роутер GPON Ростелеком</strong><small>13 мин →</small></a></div></aside><h2 id="настройка-локальной-сети-и-dhcp-сервера">Настройка локальной сети и DHCP сервера</h2>
+
+<p>Для того чтобы ваши устройства (телефоны, ноутбуки, телевизоры) получали IP-адреса автоматически, необходимо настроить DHCP-сервер. В MikroTik есть удобный мастер настройки, но лучше проверить параметры вручную для полного контроля.</p>
+
+<p>Перейдите в меню `IP` -> `Pool` и создайте пул адресов. Назовите его, например, `local-pool`. Укажите диапазон адресов, например, `192.168.88.10-192.168.88.200`. Этот диапазон не должен пересекаться с адресом самого роутера (обычно 192.168.88.1).</p>
+
+<p>Затем перейдите в `IP` -> `DHCP Server`. Нажмите кнопку `DHCP Setup» (если мастер не был запущен автоматически при сбросе) или добавьте сервер вручную. Выберите интерфейс, к которому будет привязан сервер (обычно это `bridge-local` или конкретный LAN-порт, если порты не объединены в бридж). Укажите созданный пул адресов (`local-pool`), шлюз (Gateway) — адрес самого роутера (192.168.88.1), и DNS-серверы (можно указать адрес роутера или публичные DNS, например, 8.8.8.8).</p>
+
+<section class="pc-compare"><h3>Варианты организации LAN</h3><div><div><strong>Bridge (Мост)</strong><p>Объединяет все LAN-порты и Wi-Fi в одну сеть. Рекомендуется для дома. Упрощает настройку DHCP.</p></div><div><strong>Отдельные подсети</strong><p>Каждый порт в своей сети. Сложно в настройке, требует отдельного DHCP на каждый порт. Нужно только для специфических задач изоляции.</p></div></div></section>
+
+<p>Если вы объединили порты в бридж (что является стандартом для домашних роутеров), убедитесь, что IP-адрес роутера присвоен именно интерфейсу бриджа, а не физическому порту. DHCP-сервер также должен быть запущен на интерфейсе бриджа. Это обеспечит работу сети как по кабелю, так и по Wi-Fi.</p>
+
+<h2 id="настройка-беспроводной-сети-wi-fi">Настройка беспроводной сети Wi-Fi</h2>
+
+<p>Настройка Wi-Fi на MikroTik выполняется в меню `Wireless`. Выберите вашу радиомодуль (обычно `wlan1` для 2.4 ГГц и `wlan2` для 5 ГГц, если модель двухдиапазонная). Дважды кликните по интерфейсу для открытия настроек.</p>
+
+<p>На вкладке `Wireless` задайте `Mode` в значение `ap bridge`. В поле `SSID` введите имя вашей сети, которое будет видно устройствам. В поле `Frequency` выберите `auto` или конкретную частоту, если в вашем доме много соседских сетей и есть помехи. Для 2.4 ГГц лучше выбирать каналы 1, 6 или 11.</p>
+
+<p>Перейдите на вкладку `Security Profile`. Нажмите кнопку со стрелкой, чтобы открыть профиль безопасности. Создайте новый профиль или отредактируйте существующий (default). В поле `Mode` выберите `dynamic keys`. Обязательно установите галочки `WPA Pre-Shared Key` и `WPA2 Pre-Shared Key`. В поле `WPA/WPA2 Pre-Shared Key` придумайте и введите сложный пароль (минимум 8 символов, буквы и цифры).</p>
+
+<div class="pc-widget-title">Типичные ошибки Wi-Fi</div><div class="pc-mistakes"><article><span>01</span><div><strong>Использование шифрования WEP или открытой сети — низкая безопасность</strong></div></article><article><span>02</span><div><strong>Выбор ширины канала 40 МГц в диапазоне 2.4 ГГц — сильные помехи и нестабильность</strong></div></article><article><span>03</span><div><strong>Отсутствие страны в настройках Wireless — незаконный диапазон частот</strong></div></article></div>
+
+<p>После настройки профиля вернитесь в главное окно интерфейса `Wireless` и убедитесь, что `Security Profile` выбран правильный. Нажмите `Apply` и `OK`. Не забудьте включить интерфейс, нажав синюю галочку в списке интерфейсов или кнопку `Enable` в окне настроек.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="организация-работы-iptv-ростелеком">Организация работы IPTV Ростелеком</h2>
+
+<p>Интерактивное телевидение от Ростелеком также работает через VLAN, но с другим идентификатором. В большинстве регионов для IPTV используется VLAN 10, однако в некоторых областях этот номер может отличаться (например, 20, 30 или отсутствовать вовсе). Точный номер VLAN для ТВ необходимо уточнить в технической поддержке по телефону 8 800 100 0 800 или в личном кабинете.</p>
+
+<p>Для настройки IPTV необходимо создать отдельный VLAN-интерфейс на том же физическом порту WAN, что и для интернета. В меню `Interfaces` добавьте новый VLAN. Назовите его `vlan-iptv`, выберите интерфейс `ether1` (WAN) и укажите соответствующий VLAN ID (например, `10`).</p>
+
+<p>Далее нужно решить, куда будет подаваться сигнал ТВ.</p>
+<strong>Вариант 1: Приставка подключена к роутеру.</strong>
+<p>Создайте бридж (меню `Bridge`), добавьте в него порт, к которому подключена ТВ-приставка (например, `ether2`), и добавьте в этот же бридж созданный интерфейс `vlan-iptv`. В настройках бриджа (`Bridge` -> `Settings`) рекомендуется включить `Use IP Firewall` для корректной обработки мультикаст-трафика, хотя для простой прозрачной трансляции это не всегда обязательно.</p>
+
+<strong>Вариант 2: IGMP Proxy.</strong>
+<p>Если приставка подключена к другому роутеру или требует специфической маршрутизации, можно использовать IGMP Proxy. В меню `IP` -> `IGMP Proxy` включите сервис. Добавьте интерфейс `pppoe-out1` (или vlan-iptv) как `upstream`, а интерфейс локальной сети с приставкой как `downstream`. Однако для Ростелеком чаще всего достаточно прозрачного бриджа с VLAN.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Как выбрать метод IPTV</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>Приставка стоит рядом с роутером и подключена кабелем</span><strong>Используйте Bridge с VLAN интерфейсом (Вариант 1). Это самое надежное решение.</strong></div><div class="pc-decision-row"><span>Нужно раздать ТВ по Wi-Fi или на несколько устройств</span><strong>Требуется настройка UDP Proxy или отдельного стримингового сервера, стандартный бридж не подойдет для транскодинга.</strong></div></div></section>
+
+<p>После настройки перезагрузите ТВ-приставку. Она должна получить IP-адрес от провайдера (или от роутера, в зависимости от схемы) и начать загрузку портала. Если изображения нет, проверьте, тот ли VLAN ID вы указали, и не блокирует ли файрвол мультикаст-трафик.</p>
+
+<h2 id="диагностика-и-решение-проблем">Диагностика и решение проблем</h2>
+
+<p>Если интернет не появился после всех настроек, воспользуйтесь инструментами диагностики. В первую очередь проверьте статус PPPoE соединения. Если оно не поднимается (нет буквы R), проверьте логин и пароль. Часто проблема кроется в опечатке или в том, что услуга заблокирована на стороне провайдера за неуплату.</p>
+
+<p>Используйте инструмент `Torch` (меню `Tools` -> `Torch`). Выберите интерфейс `pppoe-out1` и нажмите `Start`. Если вы видите проходящие пакеты, значит, физическое соединение и VLAN работают. Если трафика нет совсем, проблема на уровне провайдера или кабеля.</p>
+
+<p>Для проверки DNS попробуйте пропинговать внешний адрес. Откройте `New Terminal` и введите команду:</p>
+<p>`/ping 8.8.8.8`</p>
+<p>Если пинг проходит, но сайты не открываются в браузере, проблема в DNS. Проверьте настройки в `IP` -> `DNS`. Попробуйте прописать вручную серверы `1.1.1.1` и `8.8.8.8`.</p>
+
+<section class="pc-verify"><div class="pc-verify-head"><span>Контрольные точки</span><h3>Контрольные точки</h3></div><div class="pc-verify-grid"><article class="pc-verify-card"><strong>Статус PPPoE</strong><div><span>Норма</span><p>Флаг R (Running) активен</p></div><div><span>Тревожный признак</span><p>Статус &#x27;dialing&#x27; или &#x27;terminated&#x27;</p></div></article><article class="pc-verify-card"><strong>Получение IP</strong><div><span>Норма</span><p>В IP -&gt; Addresses есть адрес на pppoe-out1</p></div><div><span>Тревожный признак</span><p>Список пуст или адрес 0.0.0.0</p></div></article><article class="pc-verify-card"><strong>Пинг до шлюза</strong><div><span>Норма</span><p>Есть ответ от провайдера</p></div><div><span>Тревожный признак</span><p>Request timeout</p></div></article></div></section>
+
+<p>Частой проблемой является MTU (Maximum Transmission Unit). Для PPPoE оптимальное значение MTU часто меньше стандартного 1500 байт из-за накладных расходов заголовков. Попробуйте установить значение MTU на интерфейсе `pppoe-out1` равным `1492` или `1480`. Это делается в настройках интерфейса на вкладке `General`. Неправильный MTU может приводить к тому, что некоторые сайты (особенно с тяжелым контентом) не будут загружаться, а мессенджеры будут работать.</p>
+
+<h2 id="faq">FAQ</h2>
+
+<details>
+<summary>Где узнать точный VLAN ID для своего региона?</summary>
+<p>Универсального номера не существует, хотя 100 для интернета и 10 для ТВ встречаются чаще всего. Точную информацию можно получить в технической поддержке Ростелеком по телефону 8 800 100 0 800, назвав номер своего лицевого счета, или посмотреть в договоре на оказание услуг.</p>
+</details>
+
+<details>
+<summary>Роутер загружает процессор на 100% при включении IPTV, что делать?</summary>
+<p>Микропроцессоры бюджетных моделей MikroTik могут не справляться с потоками мультикаст-трафика высокой четкости. Попробуйте ограничить скорость порта, к которому подключена приставка, или обновите RouterOS до последней стабильной версии. В крайнем случае, для IPTV лучше использовать отдельный не нагруженный порт в режиме прозрачного моста без участия CPU роутера в обработке пакетов ТВ.</p>
+</details>
+
+<details>
+<summary>Можно ли использовать Wi-Fi роутер Ростелеком вместе с MikroTik?</summary>
+<p>Да, можно. Подключите роутер Ростелеком к порту LAN MikroTik и переведите его в режим точки доступа (отключив DHCP сервер на роутере Ростелеком). Однако это создаст двойной NAT, что может вызвать проблемы в онлайн-играх. Лучше настроить Wi-Fi непосредственно на MikroTik, если его мощности достаточно, или использовать режим бриджа на оборудовании провайдера.</p>
+</details>
+
+<details>
+<summary>Как изменить пароль от веб-интерфейса WinBox?</summary>
+<p>В меню WinBox перейдите в `System` -> `Users`. Выберите пользователя `admin`, нажмите кнопку `Password` и задайте новый сложный пароль. Запишите его в надежное место. Без пароля любой человек, подключившийся к вашей сети, сможет получить полный контроль над роутером.</p>
+</details>
+
+<details>
+<summary>Почему скорость интернета ниже заявленной в тарифе?</summary>
+<p>Проверьте, не настроено ли ограничение скорости (Simple Queues) в меню `Queues`. Убедитесь, что вы тестируете скорость по кабелю, а не по Wi-Fi, где скорость всегда ниже из-за помех. Также убедитесь, что кабель провайдера подключен в гигабитный порт (если тариф выше 100 Мбит/с) и сам кабель исправен (все 8 жил контактируют).</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-zajti-v-nastrojki-pristavki-rostelekom-cherez-kompyuter.html"><span>11 мин</span><strong>Управление настройками приставки Ростелеком через компьютер</strong><b>Читать ↗</b></a><a href="/articles/g/gd/gde-na-routere-imya-polzovatelya-i-parol-rostelekom.html"><span>11 мин</span><strong>Где найти логин и пароль от роутера Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-obnovit-router-gpon-rostelekom.html"><span>13 мин</span><strong>Как обновить роутер GPON Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/r/ro/rostelekom-kak-popast-v-nastrojki-routera.html"><span>9 мин</span><strong>Вход в панель управления роутером Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/c/ch/chem-zamenit-modem-ot-rostelekom.html"><span>15 мин</span><strong>Как и чем заменить модем Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/c/ch/chem-mozhno-zamenit-plc-adapter-rostelekom.html"><span>13 мин</span><strong>Чем заменить PLC-адаптер Ростелеком</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

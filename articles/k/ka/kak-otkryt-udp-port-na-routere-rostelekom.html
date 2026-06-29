@@ -1,0 +1,137 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как открыть UDP порт на роутере Ростелеком: пошаговая инструкция — РТ Помощник</title><meta name="description" content="Инструкция по пробросу UDP портов на роутерах Ростелеком. Настройка NAT, статического IP и проверка доступности портов для игр и программ.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-udp-port-na-routere-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как открыть UDP порт на роутере Ростелеком: пошаговая инструкция — РТ Помощник">
+<meta property="og:description" content="Инструкция по пробросу UDP портов на роутерах Ростелеком. Настройка NAT, статического IP и проверка доступности портов для игр и программ."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-udp-port-na-routere-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как открыть UDP порт на роутере Ростелеком: пошаговая инструкция — РТ Помощник">
+<meta name="twitter:description" content="Инструкция по пробросу UDP портов на роутерах Ростелеком. Настройка NAT, статического IP и проверка доступности портов для игр и программ.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-udp-port-na-routere-rostelekom.html#article", "headline": "Настройка проброса UDP портов на роутерах Ростелеком", "description": "Инструкция по пробросу UDP портов на роутерах Ростелеком. Настройка NAT, статического IP и проверка доступности портов для игр и программ.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-udp-port-na-routere-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-udp-port-na-routere-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-udp-port-na-routere-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Оборудование", "item": "https://rt-pomoshnik.vercel.app/category/oborudovanie/"}, {"@type": "ListItem", "position": 3, "name": "Настройка проброса UDP портов на роутерах Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-udp-port-na-routere-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-udp-port-na-routere-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Почему порт не открывается, хотя все настройки верны?", "acceptedAnswer": {"@type": "Answer", "text": "Чаще всего причина в двойном NAT (серый IP-адрес от провайдера) или блокировке трафика встроенным антивирусом/брандмауэром Windows на самом компьютере. Проверьте соответствие внешнего и внутреннего IP-адресов."}}, {"@type": "Question", "name": "Можно ли открыть диапазон портов сразу?", "acceptedAnswer": {"@type": "Answer", "text": "Да, в поле номера порта можно указать диапазон через дефис (например, 27000-27050). Это удобно для игровых серверов, но открывает больше уязвимостей, чем одиночный порт."}}, {"@type": "Question", "name": "Нужно ли перезагружать роутер после каждого изменения?", "acceptedAnswer": {"@type": "Answer", "text": "Не обязательно, обычно настройки применяются сразу после нажатия кнопки «Сохранить». Однако перезагрузка помогает сбросить зависшие сетевые таблицы и гарантирует применение всех правил."}}, {"@type": "Question", "name": "Безопасно ли открывать UDP порты для игр?", "acceptedAnswer": {"@type": "Answer", "text": "Это стандартная практика для мультиплеерных игр. Риск минимален, если открыт только конкретный порт игры, а не весь диапазон. Главное — поддерживать актуальность ПО на игровом устройстве."}}, {"@type": "Question", "name": "Где найти логин и пароль от роутера, если наклейка стерлась?", "acceptedAnswer": {"@type": "Answer", "text": "Попробуйте стандартные комбинации admin/admin. Если они не подходят, придется сбрасывать роутер до заводских настроек кнопкой Reset на корпусе, но тогда потребуется заново настраивать подключение к интернету."}}, {"@type": "Question", "name": "Влияет ли открытие портов на скорость интернета?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, проброс портов сам по себе не влияет на скорость. Он лишь разрешает входящие соединения. Снижение скорости может быть вызвано нагрузкой от приложения (например, торрента), использующего этот порт."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="is-active" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/oborudovanie/">Оборудование</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Оборудование</span> · 10 мин</p><h1>Настройка проброса UDP портов на роутерах Ростелеком</h1><p class="pc-deck">Инструкция по пробросу UDP портов на роутерах Ростелеком. Настройка NAT, статического IP и проверка доступности портов для игр и программ.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Краткий вывод</strong><span>Для открытия UDP порта зайдите в веб-интерфейс роутера, найдите раздел NAT или Виртуальные серверы, создайте новое правило с протоколом UDP, укажите внутренний IP устройства и номер порта, затем сохраните настройки.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Оборудование</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#подготовка-сетевого-оборудования-и-адреса">Подготовка сетевого оборудования и адреса</a></li><li><a href="#поиск-раздела-настройки-nat-и-виртуальных-серверов">Поиск раздела настройки NAT и Виртуальных серверов</a></li><li><a href="#создание-правила-проброса-для-udp">Создание правила проброса для UDP</a></li><li><a href="#настройка-внутреннего-ip-и-сохранение-конфигурации">Настройка внутреннего IP и сохранение конфигурации</a></li><li><a href="#особенности-настройки-на-разных-моделях-роутеров">Особенности настройки на разных моделях роутеров</a></li><li><a href="#проверка-открытия-порта-и-диагностика">Проверка открытия порта и диагностика</a></li><li><a href="#проблема-cgnat-и-белый-ip-адрес">Проблема CGNAT и белый IP-адрес</a></li></ol></nav>
+<div class="pc-prose"><p>Открытие UDP порта (проброс или Port Forwarding) необходимо для корректной работы онлайн-игр, торрент-клиентов, IP-телефонии и специализированного программного обеспечения. В отличие от TCP, протокол UDP не устанавливает предварительное соединение, поэтому роутеры часто блокируют входящие пакеты на эти порты в целях безопасности, если не задано явное правило перенаправления трафика на конкретное устройство в локальной сети.</p>
+
+<p>Процедура настройки на оборудовании Ростелеком зависит от модели устройства (Sagemcom, Huawei, Sercomm, Eltex) и версии прошивки, но общий алгоритм действий остается единым. Ключевым условием успешной настройки является наличие у вашего роутера «белого» (публичного) IP-адреса. Если провайдер выдает «серый» адрес (за NAT провайдера), открытие портов на самом роутере не даст результата, так как внешний трафик просто не дойдет до вашего устройства.</p>
+
+<p>Перед началом работы рекомендуется зафиксировать локальный IP-адрес компьютера или консоли, на которую будет идти трафик. Динамическая смена адреса внутри сети приведет к тому, что правило проброса перестанет действовать, и соединение прервется. Также важно понимать разницу между внешним портом (через который идет запрос из интернета) и внутренним (который слушает приложение на вашем устройстве); в большинстве случаев они совпадают.</p>
+
+
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Риски безопасности</strong><p>Открытие портов делает ваше устройство видимым для внешней сети. Не открывайте ненужные порты и убедитесь, что на компьютере установлены антивирус и файервол, чтобы избежать несанкционированного доступа.</p></div></aside>
+
+<h2 id="подготовка-сетевого-оборудования-и-адреса">Подготовка сетевого оборудования и адреса</h2>
+
+<p>Первым шагом является вход в панель управления роутером. Откройте браузер на устройстве, подключенном к сети Ростелеком, и введите в адресную строку IP-адрес шлюза. Чаще всего это 192.168.1.1 или 192.168.0.1. Точный адрес, а также логин и пароль для входа обычно указаны на наклейке на нижней части корпуса устройства. Стандартные учетные данные часто бывают admin/admin или admin/пароль из наклейки.</p>
+
+<p>После авторизации необходимо закрепить IP-адрес за устройством, для которого открывается порт. Это можно сделать двумя способами: настроить статический IP в сетевых параметрах самого компьютера или зарезервировать адрес через DHCP-сервер роутера. Второй способ надежнее, так как исключает человеческий фактор при настройке ОС.</p>
+
+<p>Для резервирования адреса найдите в меню раздел «Локальная сеть» (LAN) или «DHCP-сервер». В списке клиентов найдите ваше устройство по MAC-адресу или имени и выберите опцию «Закрепить IP» или «Статическая аренда». Запишите выданный адрес, например, 192.168.1.55, он понадобится при создании правила проброса.</p>
+
+<div class="pc-widget-title">Порядок действий</div><ol class="pc-steps"><li><span>1</span><div><strong>Войдите в веб-интерфейс роутера по адресу 192.168.1.1</strong></div></li><li><span>2</span><div><strong>Закрепите статический IP-адрес за нужным устройством в настройках DHCP</strong></div></li><li><span>3</span><div><strong>Перейдите в раздел NAT / Виртуальные серверы</strong></div></li><li><span>4</span><div><strong>Создайте новое правило, выбрав протокол UDP и указав порт</strong></div></li><li><span>5</span><div><strong>Сохраните настройки и перезагрузите роутер</strong></div></li></ol>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="поиск-раздела-настройки-nat-и-виртуальных-серверов">Поиск раздела настройки NAT и Виртуальных серверов</h2>
+
+<p>Интерфейсы роутеров Ростелеком могут отличаться, но логика группировки настроек схожа. Искомый раздел может называться «NAT», «Виртуальные серверы» (Virtual Servers), «Переадресация портов» (Port Forwarding) или находиться внутри вкладки «Безопасность» (Security) и «Дополнительно» (Advanced). На некоторых моделях Sagemcom этот пункт вынесен в главное меню слева.</p>
+
+<p>Если вы используете современную модель с поддержкой технологии TR-069 и обновленным интерфейсом, ищите раздел «Приложения» или «Игры». Там часто присутствуют предустановленные профили для популярных игр и программ, которые автоматически настраивают необходимые порты. Однако для специфических задач лучше использовать ручную настройку.</p>
+
+<p>В старых версиях прошивок Huawei или Sercomm нужный раздел может скрываться под вкладкой «Firewall» или «Фильтрация». Внимательно изучите все пункты меню, если не нашли явного указания на проброс портов. Иногда функция называется «Проброс портов» (Port Mapping).</p>
+
+<h2 id="создание-правила-проброса-для-udp">Создание правила проброса для UDP</h2>
+
+<p>В найденном разделе нажмите кнопку «Добавить» или «Создать новое правило». Вам потребуется заполнить несколько полей. В поле «Имя службы» (Service Name) введите произвольное название, например, «Game_UDP» или «Torrent», чтобы не запутаться в списке правил в будущем.</p>
+
+<p>Критически важный параметр — «Протокол» (Protocol). По умолчанию часто стоит TCP или «Все» (All). Для вашей задачи необходимо выбрать строго «UDP» или «UDP/TCP», если приложение требует работы обоих протоколов на одном порту. Выбор неверного протокола приведет к тому, что порт останется закрытым для нужного типа трафика.</p>
+
+<p>В полях «Внешний порт» (External Port) и «Внутренний порт» (Internal Port) укажите номер порта, который использует ваше приложение. Часто это диапазон, например, 27015-27030 для игровых серверов, или одиночное число. Убедитесь, что указанный порт не занят другими службами на роутере.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Если приложение не работает после настройки, попробуйте создать два отдельных правила: одно для TCP, другое для UDP с теми же портами, вместо выбора опции &#x27;Все&#x27; (All), так как некоторые роутеры некорректно обрабатывают смешанный трафик в одном правиле.</p></div></aside>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-vklyuchit-televizor-s-pristavkoj-rostelekom-s-pultom-kakie-knopki.html"><span>01</span><strong>Как включить телевизор с приставкой Ростелеком с пульта</strong><small>12 мин →</small></a><a href="/articles/k/ka/kak-na-pulte-rostelekom-nastroit-zvuk-ot-televizora.html"><span>02</span><strong>Как настроить звук телевизора пультом Ростелеком</strong><small>12 мин →</small></a><a href="/articles/r/ro/rostelekom-gde-vzyat-proshivku.html"><span>03</span><strong>Где взять прошивку для роутера Ростелеком</strong><small>11 мин →</small></a></div></aside><h2 id="настройка-внутреннего-ip-и-сохранение-конфигурации">Настройка внутреннего IP и сохранение конфигурации</h2>
+
+<p>В поле «Внутренний IP-адрес» (Internal IP / Host IP) введите тот статический адрес, который вы закрепили за компьютером или консолью на этапе подготовки (например, 192.168.1.55). Ошибка в одной цифре приведет к тому, что пакеты будут уходить в никуда или на чужое устройство в сети.</p>
+
+<p>Опция «Включить» (Enable) должна быть активна. Некоторые интерфейсы требуют отдельной галочки для активации правила сразу после создания. Проверьте, чтобы статус правила был «Активно» или «Включено».</p>
+
+<p>После заполнения всех полей нажмите кнопку «Применить» (Apply) или «Сохранить» (Save). На некоторых моделях роутеров изменения вступают в силу только после перезагрузки устройства. Рекомендуется выполнить перезагрузку через веб-интерфейс, чтобы гарантировать корректное применение правил фильтрации.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Выбор протокола TCP вместо UDP: порт будет открыт, но нужный трафик блокируется</strong></div></article><article><span>02</span><div><strong>Указание динамического IP: после перезагрузки ПК правило перестанет работать</strong></div></article><article><span>03</span><div><strong>Игнорирование файервола Windows: порт открыт на роутере, но закрыт на компьютере</strong></div></article></div>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="особенности-настройки-на-разных-моделях-роутеров">Особенности настройки на разных моделях роутеров</h2>
+
+<p>Роутеры Sagemcom (серии F@st 2804, 3804) имеют классический интерфейс. Раздел проброса портов находится по пути: Расширенные настройки -> NAT -> Виртуальные серверы. Здесь важно внимательно следить за полем «Интерфейс», обычно следует выбирать WAN или PPPoE, через который приходит интернет.</p>
+
+<p>На устройствах Huawei (HG8245, HG8247) интерфейс может быть упрощенным. Путь часто выглядит так: Безопасность -> NAT. В некоторых версиях прошивок для домашнего интернета эта функция может быть скрыта или ограничена провайдером. Если пункта нет в меню, возможно, требуется доступ с правами суперпользователя, что не рекомендуется делать без опыта.</p>
+
+<p>Оборудование Eltex и более новые модели Sercomm часто используют обновленный темно-синий или белый интерфейс. Там раздел может называться «Port Forwarding» и иметь более наглядный мастер настройки. Принцип остается тем же: выбор протокола UDP, указание IP и порта.</p>
+
+<h2 id="проверка-открытия-порта-и-диагностика">Проверка открытия порта и диагностика</h2>
+
+<p>После настройки необходимо убедиться, что порт действительно открыт и доступен из внешней сети. Внутренняя проверка (telnet на свой IP) не покажет результата, так как трафик не выходит за пределы роутера. Используйте онлайн-сервисы для проверки портов, например, 2ip.ru или portscanner.ru.</p>
+
+<p>Введите номер порта в сервисе проверки. Если статус «Открыт» (Open), настройка выполнена успешно. Если статус «Закрыт» (Closed), проблема может быть на стороне роутера, провайдера или локального файервола. Попробуйте временно отключить брандмауэр Windows для теста.</p>
+
+<p>Для продвинутой диагностики можно использовать утилиту командной строки netstat. Запустите приложение, которое должно слушать порт, и введите команду <code>netstat -an | find "номер_порта"</code>. Вы должны увидеть строку с состоянием LISTENING и адресом 0.0.0.0:порт. Если адрес 127.0.0.1, приложение слушает только локальные подключения, и проброс не сработает.</p>
+
+<section class="pc-verify"><div class="pc-verify-head"><span>Контрольные точки</span><h3>Как проверить результат</h3></div><div class="pc-verify-grid"><article class="pc-verify-card"><strong>Онлайн-сканер портов</strong><div><span>Норма</span><p>Статус Open (Открыт)</p></div><div><span>Тревожный признак</span><p>Статус Closed (Закрыт) или Filtered</p></div></article><article class="pc-verify-card"><strong>Команда netstat в Windows</strong><div><span>Норма</span><p>Состояние LISTENING на 0.0.0.0</p></div><div><span>Тревожный признак</span><p>Состояние LISTENING только на 127.0.0.1</p></div></article></div></section>
+
+<h2 id="проблема-cgnat-и-белый-ip-адрес">Проблема CGNAT и белый IP-адрес</h2>
+
+<p>Самая частая причина неудачи при открытии портов — технология CGNAT (Carrier Grade NAT). В этом случае ваш роутер получает «серый» IP-адрес из диапазона 100.64.x.x – 100.127.x.x или 10.x.x.x, который является внутренним для сети провайдера. В такой ситуации открытие портов на вашем роутере бесполезно, так как внешний запрос не доходит до него.</p>
+
+<p>Чтобы проверить тип адреса, сравните IP в настройках роутера (раздел WAN или Интернет) с тем, что показывает сайт 2ip.ru. Если адреса отличаются, у вас серый IP. Для решения проблемы необходимо подать заявку в поддержку Ростелеком на подключение услуги «Статический IP» или «Белый IP».</p>
+
+<p>Услуга обычно платная, но без нее полноценная работа игровых серверов, видеонаблюдения и удаленного доступа невозможна. После подключения услуги роутер получит публичный адрес, и настроенные правила проброса UDP начнут работать корректно.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Как выбрать действие</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>IP в роутере совпадает с IP на сайте 2ip.ru</span><strong>Проблема в настройках роутера или файерволе ПК, проверяйте правила NAT</strong></div><div class="pc-decision-row"><span>IP в роутере начинается на 100.64 или 10.</span><strong>У вас серый IP (CGNAT), необходимо заказать белый IP у провайдера</strong></div></div></section>
+
+<details>
+<summary>Почему порт не открывается, хотя все настройки верны?</summary>
+<p>Чаще всего причина в двойном NAT (серый IP-адрес от провайдера) или блокировке трафика встроенным антивирусом/брандмауэром Windows на самом компьютере. Проверьте соответствие внешнего и внутреннего IP-адресов.</p>
+</details>
+
+<details>
+<summary>Можно ли открыть диапазон портов сразу?</summary>
+<p>Да, в поле номера порта можно указать диапазон через дефис (например, 27000-27050). Это удобно для игровых серверов, но открывает больше уязвимостей, чем одиночный порт.</p>
+</details>
+
+<details>
+<summary>Нужно ли перезагружать роутер после каждого изменения?</summary>
+<p>Не обязательно, обычно настройки применяются сразу после нажатия кнопки «Сохранить». Однако перезагрузка помогает сбросить зависшие сетевые таблицы и гарантирует применение всех правил.</p>
+</details>
+
+<details>
+<summary>Безопасно ли открывать UDP порты для игр?</summary>
+<p>Это стандартная практика для мультиплеерных игр. Риск минимален, если открыт только конкретный порт игры, а не весь диапазон. Главное — поддерживать актуальность ПО на игровом устройстве.</p>
+</details>
+
+<details>
+<summary>Где найти логин и пароль от роутера, если наклейка стерлась?</summary>
+<p>Попробуйте стандартные комбинации admin/admin. Если они не подходят, придется сбрасывать роутер до заводских настроек кнопкой Reset на корпусе, но тогда потребуется заново настраивать подключение к интернету.</p>
+</details>
+
+<details>
+<summary>Влияет ли открытие портов на скорость интернета?</summary>
+<p>Нет, проброс портов сам по себе не влияет на скорость. Он лишь разрешает входящие соединения. Снижение скорости может быть вызвано нагрузкой от приложения (например, торрента), использующего этот порт.</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-vklyuchit-televizor-s-pristavkoj-rostelekom-s-pultom-kakie-knopki.html"><span>12 мин</span><strong>Как включить телевизор с приставкой Ростелеком с пульта</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-na-pulte-rostelekom-nastroit-zvuk-ot-televizora.html"><span>12 мин</span><strong>Как настроить звук телевизора пультом Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/r/ro/rostelekom-gde-vzyat-proshivku.html"><span>11 мин</span><strong>Где взять прошивку для роутера Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-pult-k-televizoru-ot-pristavki-rostelekom.html"><span>13 мин</span><strong>Настройка управления телевизором через пульт Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-sovmestit-dva-pulta-v-odnom-rostelekom.html"><span>8 мин</span><strong>Объединение пультов Ростелеком в одном устройстве</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-poluchit-router-rostelekom.html"><span>11 мин</span><strong>Способы получения роутера Ростелеком</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

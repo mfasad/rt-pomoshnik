@@ -1,0 +1,125 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как сбросить камеру Ростелеком DS-2CD на заводские настройки — РТ Помощник</title><meta name="description" content="Инструкция по сбросу IP-камеры Ростелеком серии DS-2CD. Методы через кнопку reset, веб-интерфейс и приложение. Решение проблем после возврата к системе.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-sbrosit-kameru-rostelekom-na-zavodskie-nastrojki-ds-2cd.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как сбросить камеру Ростелеком DS-2CD на заводские настройки — РТ Помощник">
+<meta property="og:description" content="Инструкция по сбросу IP-камеры Ростелеком серии DS-2CD. Методы через кнопку reset, веб-интерфейс и приложение. Решение проблем после возврата к системе."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-sbrosit-kameru-rostelekom-na-zavodskie-nastrojki-ds-2cd.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как сбросить камеру Ростелеком DS-2CD на заводские настройки — РТ Помощник">
+<meta name="twitter:description" content="Инструкция по сбросу IP-камеры Ростелеком серии DS-2CD. Методы через кнопку reset, веб-интерфейс и приложение. Решение проблем после возврата к системе.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-sbrosit-kameru-rostelekom-na-zavodskie-nastrojki-ds-2cd.html#article", "headline": "Сброс IP-камеры Ростелеком DS-2CD к заводским настройкам", "description": "Инструкция по сбросу IP-камеры Ростелеком серии DS-2CD. Методы через кнопку reset, веб-интерфейс и приложение. Решение проблем после возврата к системе.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-sbrosit-kameru-rostelekom-na-zavodskie-nastrojki-ds-2cd.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-sbrosit-kameru-rostelekom-na-zavodskie-nastrojki-ds-2cd.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-sbrosit-kameru-rostelekom-na-zavodskie-nastrojki-ds-2cd.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Видеонаблюдение", "item": "https://rt-pomoshnik.vercel.app/category/videonablyudenie/"}, {"@type": "ListItem", "position": 3, "name": "Сброс IP-камеры Ростелеком DS-2CD к заводским настройкам", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-sbrosit-kameru-rostelekom-na-zavodskie-nastrojki-ds-2cd.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-sbrosit-kameru-rostelekom-na-zavodskie-nastrojki-ds-2cd.html#faq", "mainEntity": [{"@type": "Question", "name": "Какой пароль по умолчанию у камеры после сброса?", "acceptedAnswer": {"@type": "Answer", "text": "У современных камер серии DS-2CD нет универсального заводского пароля. При первом включении или после сброса система требует придумать и установить новый пароль администратора в обязательном порядке. Поле для ввода старого пароля будет пустым."}}, {"@type": "Question", "name": "Что делать, если кнопка Reset не нажимается?", "acceptedAnswer": {"@type": "Answer", "text": "В некоторых герметичных корпусах кнопка утоплена глубоко. Используйте тонкую канцелярскую скрепку. Если кнопка физически сломана или недоступна, сброс возможен только через консольный кабель (UART) специалистами сервисного центра."}}, {"@type": "Question", "name": "Сбрасываются ли настройки облачного доступа P2P?", "acceptedAnswer": {"@type": "Answer", "text": "Да, привязка к облачному сервису (Hik-Connect) удаляется. После настройки нового пароля и сети вам придется заново отсканировать QR-код с корпуса камеры или ввести код верификации в приложении на смартфоне."}}, {"@type": "Question", "name": "Можно ли сбросить камеру, не снимая её с потолка?", "acceptedAnswer": {"@type": "Answer", "text": "Только если кнопка Reset выведена наружу. В большинстве купольных моделей для доступа к плате требуется демонтировать купол. Для уличных пуль требуется откручивать защитный кожух. Без физического доступа к плате сброс невозможен."}}, {"@type": "Question", "name": "Камера не видна в сети после сброса, что делать?", "acceptedAnswer": {"@type": "Answer", "text": "Скорее всего, ваш компьютер находится в другой подсети. Временно пропишите на сетевой карте ПК статический IP из диапазона 192.168.1.x (маска 255.255.255.0). Используйте утилиту SADP Tool для поиска устройства независимо от адреса."}}, {"@type": "Question", "name": "Стирается ли прошивка при сбросе настроек?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, операция сброса затрагивает только конфигурационные файлы пользователя. Версия микропрограммы (firmware) остается той, которая была установлена до сброса. Для обновления прошивки требуется отдельная процедура загрузки файла."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="is-active" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/videonablyudenie/">Видеонаблюдение</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Видеонаблюдение</span> · 7 мин</p><h1>Сброс IP-камеры Ростелеком DS-2CD к заводским настройкам</h1><p class="pc-deck">Инструкция по сбросу IP-камеры Ростелеком серии DS-2CD. Методы через кнопку reset, веб-интерфейс и приложение. Решение проблем после возврата к системе.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Краткий вывод</strong><span>Сброс выполняется удержанием физической кнопки Reset на корпусе в течение 10–20 секунд при включенном питании. Альтернативный способ — через веб-интерфейс в разделе «Обслуживание», если известен текущий пароль.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Видеонаблюдение</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#физический-сброс-кнопкой-reset">Физический сброс кнопкой Reset</a></li><li><a href="#сброс-через-веб-интерфейс">Сброс через веб-интерфейс</a></li><li><a href="#настройка-сети-после-сброса">Настройка сети после сброса</a></li><li><a href="#использование-утилиты-sadp-tool">Использование утилиты SADP Tool</a></li><li><a href="#работа-с-приложением-hilookvision">Работа с приложением HiLookVision</a></li><li><a href="#особенности-моделей-с-poe-питанием">Особенности моделей с PoE питанием</a></li><li><a href="#проверка-работоспособности">Проверка работоспособности</a></li></ol></nav>
+<div class="pc-prose"><p>Возврат видеонаблюдения к первоначальному состоянию требуется, когда забыт пароль администратора, камера переехала в другую сеть или возникли программные сбои. Модельный ряд DS-2CD, устанавливаемый провайдером, базируется на платформе Hikvision, поэтому процедуры аппаратного сброса у них идентичны. Важно понимать, что операция удаляет все пользовательские конфигурации, включая сетевые адреса, настройки детекции движения и записи на карту памяти.</p>
+
+<p>Процесс обнуления параметров является необратимым для текущих настроек, но позволяет восстановить доступ к устройству. Перед началом работ необходимо обеспечить физический доступ к корпусу устройства и наличие питания. Если камера установлена высоко или в труднодоступном месте, потребуется стремянка или помощь специалиста, так как манипуляции с кнопкой требуют точности и времени.</p>
+
+
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Риск потери доступа</strong><p>После сброса камера вернется к IP-адресу по умолчанию. Если ваш компьютер находится в другой подсети, вы потеряете соединение с устройством до ручной смены сетевых настроек ПК.</p></div></aside>
+
+<h2 id="физический-сброс-кнопкой-reset">Физический сброс кнопкой Reset</h2>
+
+<p>Самый надежный способ восстановить доступ — использование аппаратной кнопки. Она расположена непосредственно на печатной плате внутри корпуса или выведена наружу в защищенный отсек. Для моделей в антивандальном исполнении (купольные камеры) потребуется снять прозрачный или тонированный колпак, отвернув фиксирующие винты.</p>
+
+<p>Найдите кнопку с маркировкой Reset. В некоторых модификациях это отдельная кнопка, в других — совмещенная с кнопкой включения или скрытая вблизи слота для карты памяти. Нажатие должно быть произведено тонким предметом, например, скрепкой или зубочисткой, чтобы избежать повреждения контактов.</p>
+
+<p>Процедура требует строгого соблюдения тайминга. Удерживайте кнопку в нажатом состоянии в момент подачи питания или при уже работающем устройстве. Индикаторы на плате могут мигать, сигнализируя о начале процесса перезагрузки ядра системы. Не отпускайте кнопку раньше времени, иначе сброс не активируется.</p>
+
+<div class="pc-widget-title">Порядок действий при аппаратном сбросе</div><ol class="pc-steps"><li><span>1</span><div><strong>Обеспечьте питание камеры и снимите защитный кожух.</strong></div></li><li><span>2</span><div><strong>Найдите кнопку Reset и нажмите её тонким предметом.</strong></div></li><li><span>3</span><div><strong>Удерживайте кнопку 15–20 секунд до изменения индикации или перезагрузки.</strong></div></li><li><span>4</span><div><strong>Отпустите кнопку и дождитесь полной загрузки устройства (около 2 минут).</strong></div></li></ol>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="сброс-через-веб-интерфейс">Сброс через веб-интерфейс</h2>
+
+<p>Если вы помните пароль администратора и имеете доступ к локальной сети, проще использовать программный метод. Откройте браузер и введите текущий IP-адрес камеры в адресную строку. Для входа используйте логин admin и действующий пароль.</p>
+
+<p>В главном меню перейдите в раздел «Конфигурация» (Configuration). В левом вертикальном меню найдите пункт «Обслуживание» (Maintenance) или «Система». Внутри этого раздела обычно присутствует вкладка «Заводские настройки» (Default).</p>
+
+<p>Система предложит два варианта: сбросить только параметры сети или восстановить все заводские установки полностью. Для полного возврата к состоянию «из коробки» выберите второй вариант. Подтвердите действие в появившемся диалоговом окне. Камера перезагрузится автоматически.</p>
+
+<h2 id="настройка-сети-после-сброса">Настройка сети после сброса</h2>
+
+<p>После успешного обнуления камера получает стандартный IP-адрес. Для оборудования серии DS-2CD это обычно 192.168.1.64. Ваш компьютер должен находиться в той же подсети для установления соединения. Если ваш роутер выдает адреса вида 192.168.0.x, прямого соединения не будет.</p>
+
+<p>Измените IP-адрес сетевой карты вашего компьютера вручную. Установите адрес, например, 192.168.1.100 с маской подсети 255.255.255.0. Шлюз можно не указывать, так как работа ведется локально. После применения настроек попробуйте пропинговать адрес камеры.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Не забудьте вернуть настройки сетевой карты компьютера в режим «Получать IP автоматически» после завершения настройки камеры, иначе у вас пропадет доступ в интернет.</p></div></aside>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-podklyuchit-videoregistrator-k-modemu-rostelekom.html"><span>01</span><strong>Подключение видеорегистратора к модему Ростелеком</strong><small>11 мин →</small></a><a href="/articles/k/ka/kak-posmotret-arkhiv-kamery-rostelekom.html"><span>02</span><strong>Инструкция по просмотру архива камеры Ростелеком</strong><small>12 мин →</small></a><a href="/articles/k/ka/kakie-kamery-ustanavlivaet-rostelekom-ulichnye.html"><span>03</span><strong>Какие уличные камеры устанавливает Ростелеком</strong><small>14 мин →</small></a></div></aside><h2 id="использование-утилиты-sadp-tool">Использование утилиты SADP Tool</h2>
+
+<p>Для поиска устройства в сети после сброса удобно использовать фирменную утилиту SADP Tool. Она работает независимо от текущей подсети и обнаруживает все активные камеры бренда на физическом уровне. Скачайте программу с официального ресурса производителя оборудования.</p>
+
+<p>Запустите утилиту на компьютере, подключенном к тому же коммутатору или роутеру, что и камера. В списке устройств выберите вашу модель по серийному номеру или MAC-адресу. Программа покажет текущий статус и IP-адрес.</p>
+
+<p>Через интерфейс утилиты можно не только увидеть адрес, но и сразу изменить его на нужный вам, а также сбросить пароль, если устройство было активировано ранее. Для изменения IP введите новые данные в поля справа и нажмите кнопку «Применить» (Apply), введя текущий пароль (после сброса поля пароля могут быть пустыми или требовать создания нового).</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="работа-с-приложением-hilookvision">Работа с приложением HiLookVision</h2>
+
+<p>Мобильные приложения и клиентский софт для ПК (например, HiLookVision или iVMS-4200) также позволяют управлять камерами. Однако после сброса устройство исчезнет из списка ваших устройств, так как изменятся его учетные данные.</p>
+
+<p>Вам потребуется удалить старую запись о камере из приложения и добавить её заново. При добавлении используйте новый IP-адрес и пароль, который вы задали при первичной активации после сброса. Если камера поддерживала облачные сервисы, потребуется повторная привязка к аккаунту.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Отпускание кнопки Reset слишком рано — сброс не происходит, камера просто перезагружается.</strong></div></article><article><span>02</span><div><strong>Попытка входа по старому IP-адресу — соединение не устанавливается из-за смены подсети после возврата к заводским параметрам.</strong></div></article></div>
+
+<h2 id="особенности-моделей-с-poe-питанием">Особенности моделей с PoE питанием</h2>
+
+<p>Камеры с питанием через Ethernet (PoE) не имеют отдельного гнезда для блока питания. Для проведения сброса кнопкой необходимо, чтобы коммутатор или инжектор подавал напряжение. Убедитесь, что индикатор линка на сетевой карте или свитче горит или мигает.</p>
+
+<p>Если вы используете PoE-инжектор, процедура не отличается от обычной. Если камера подключена к видеорегистратору с встроенным PoE, доступ к веб-интерфейсу может быть ограничен внутренней сетью регистратора. В таком случае аппаратный сброс кнопкой является единственным способом разорвать связь с регистратором и настроить камеру отдельно.</p>
+
+<h2 id="проверка-работоспособности">Проверка работоспособности</h2>
+
+<p>После выполнения всех процедур убедитесь, что устройство функционирует корректно. Проверьте видеопоток на предмет артефактов или задержек. Убедитесь, что дата и время синхронизированы, так как после сброса они часто возвращаются к заводскому значению (например,  год).</p>
+
+<p>Проверьте запись на карту памяти, если она установлена. После сброса карта может требовать форматирования через интерфейс камеры. Зайдите в раздел «Хранение» и инициируйте форматирование, чтобы избежать ошибок записи.</p>
+
+
+
+<details>
+<summary>Какой пароль по умолчанию у камеры после сброса?</summary>
+<p>У современных камер серии DS-2CD нет универсального заводского пароля. При первом включении или после сброса система требует придумать и установить новый пароль администратора в обязательном порядке. Поле для ввода старого пароля будет пустым.</p>
+</details>
+
+<details>
+<summary>Что делать, если кнопка Reset не нажимается?</summary>
+<p>В некоторых герметичных корпусах кнопка утоплена глубоко. Используйте тонкую канцелярскую скрепку. Если кнопка физически сломана или недоступна, сброс возможен только через консольный кабель (UART) специалистами сервисного центра.</p>
+</details>
+
+<details>
+<summary>Сбрасываются ли настройки облачного доступа P2P?</summary>
+<p>Да, привязка к облачному сервису (Hik-Connect) удаляется. После настройки нового пароля и сети вам придется заново отсканировать QR-код с корпуса камеры или ввести код верификации в приложении на смартфоне.</p>
+</details>
+
+<details>
+<summary>Можно ли сбросить камеру, не снимая её с потолка?</summary>
+<p>Только если кнопка Reset выведена наружу. В большинстве купольных моделей для доступа к плате требуется демонтировать купол. Для уличных пуль требуется откручивать защитный кожух. Без физического доступа к плате сброс невозможен.</p>
+</details>
+
+<details>
+<summary>Камера не видна в сети после сброса, что делать?</summary>
+<p>Скорее всего, ваш компьютер находится в другой подсети. Временно пропишите на сетевой карте ПК статический IP из диапазона 192.168.1.x (маска 255.255.255.0). Используйте утилиту SADP Tool для поиска устройства независимо от адреса.</p>
+</details>
+
+<details>
+<summary>Стирается ли прошивка при сбросе настроек?</summary>
+<p>Нет, операция сброса затрагивает только конфигурационные файлы пользователя. Версия микропрограммы (firmware) остается той, которая была установлена до сброса. Для обновления прошивки требуется отдельная процедура загрузки файла.</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-podklyuchit-videoregistrator-k-modemu-rostelekom.html"><span>11 мин</span><strong>Подключение видеорегистратора к модему Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-posmotret-arkhiv-kamery-rostelekom.html"><span>12 мин</span><strong>Инструкция по просмотру архива камеры Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kakie-kamery-ustanavlivaet-rostelekom-ulichnye.html"><span>14 мин</span><strong>Какие уличные камеры устанавливает Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/c/ch/chto-mozhno-sdelat-s-kameroj-rostelekom.html"><span>11 мин</span><strong>Что можно сделать с камерой видеонаблюдения Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/v/va/vaj-faj-kamera-rostelekom-umnyj-dom-kak-rabotaet.html"><span>14 мин</span><strong>Принцип работы и настройка Wi-Fi камеры Ростелеком Умный дом</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-videokameru-k-routeru-rostelekom.html"><span>12 мин</span><strong>Как подключить видеокамеру к роутеру Ростелеком</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

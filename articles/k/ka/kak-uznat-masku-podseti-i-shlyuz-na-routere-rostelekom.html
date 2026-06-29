@@ -1,0 +1,144 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как узнать маску подсети и шлюз на роутере Ростелеком — РТ Помощник</title><meta name="description" content="Инструкция по поиску IP-шлюза и маски подсети в настройках роутеров Ростелеком через веб-интерфейс и командную строку.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-masku-podseti-i-shlyuz-na-routere-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как узнать маску подсети и шлюз на роутере Ростелеком — РТ Помощник">
+<meta property="og:description" content="Инструкция по поиску IP-шлюза и маски подсети в настройках роутеров Ростелеком через веб-интерфейс и командную строку."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-masku-podseti-i-shlyuz-na-routere-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как узнать маску подсети и шлюз на роутере Ростелеком — РТ Помощник">
+<meta name="twitter:description" content="Инструкция по поиску IP-шлюза и маски подсети в настройках роутеров Ростелеком через веб-интерфейс и командную строку.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-masku-podseti-i-shlyuz-na-routere-rostelekom.html#article", "headline": "Поиск адреса шлюза и маски подсети на оборудовании Ростелеком", "description": "Инструкция по поиску IP-шлюза и маски подсети в настройках роутеров Ростелеком через веб-интерфейс и командную строку.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-masku-podseti-i-shlyuz-na-routere-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-masku-podseti-i-shlyuz-na-routere-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-masku-podseti-i-shlyuz-na-routere-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Оборудование", "item": "https://rt-pomoshnik.vercel.app/category/oborudovanie/"}, {"@type": "ListItem", "position": 3, "name": "Поиск адреса шлюза и маски подсети на оборудовании Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-masku-podseti-i-shlyuz-na-routere-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-masku-podseti-i-shlyuz-na-routere-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Что делать, если команда ipconfig не показывает шлюз?", "acceptedAnswer": {"@type": "Answer", "text": "Если в строке «Основной шлюз» пусто, значит, компьютер не подключен к роутеру физически или логически. Проверьте кабель, статус подключения Wi-Fi или попробуйте обновить адрес командой ipconfig /release и затем ipconfig /renew в командной строке."}}, {"@type": "Question", "name": "Можно ли изменить маску подсети на более широкую?", "acceptedAnswer": {"@type": "Answer", "text": "Технически можно, изменив маску на 255.255.0.0, но в домашних сетях Ростелекома это не имеет практического смысла и может нарушить работу некоторых служб автообнаружения устройств. Оставьте стандартное значение 255.255.255.0."}}, {"@type": "Question", "name": "Где найти пароль от роутера, если наклейка стерлась?", "acceptedAnswer": {"@type": "Answer", "text": "Если стандартные admin/admin не подходят, а наклейка нечитаема, поможет только полный сброс настроек кнопкой Reset. Пароли от личного кабинета my.rt.ru не подходят для входа в настройки самого устройства."}}, {"@type": "Question", "name": "Почему адрес шлюза не 192.168.0.1?", "acceptedAnswer": {"@type": "Answer", "text": "Некоторые модели роутеров (особенно новые или специфические прошивки) могут использовать адрес 192.168.1.1 или 10.0.0.1 по умолчанию. Точный адрес всегда указан на заводской этикетке на дне устройства."}}, {"@type": "Question", "name": "Влияет ли смена шлюза на скорость интернета?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, изменение локального IP-адреса роутера (шлюза) не влияет на скорость доступа в глобальную сеть. Это лишь внутренний адрес для управления устройствами внутри вашей квартиры или офиса."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="is-active" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/oborudovanie/">Оборудование</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Оборудование</span> · 9 мин</p><h1>Поиск адреса шлюза и маски подсети на оборудовании Ростелеком</h1><p class="pc-deck">Инструкция по поиску IP-шлюза и маски подсети в настройках роутеров Ростелеком через веб-интерфейс и командную строку.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Короткий вывод</strong><span>Адрес шлюза — это обычно 192.168.0.1 или 192.168.1.1, маска подсети — 255.255.255.0. Их можно увидеть в веб-интерфейсе роутера или через командную строку Windows командой ipconfig.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Оборудование</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#быстрый-поиск-через-командную-строку-windows">Быстрый поиск через командную строку Windows</a></li><li><a href="#вход-в-веб-интерфейс-роутера-ростелеком">Вход в веб-интерфейс роутера Ростелеком</a></li><li><a href="#поиск-параметров-в-разделе-lan">Поиск параметров в разделе LAN</a></li><li><a href="#особенности-интерфейсов-разных-моделей">Особенности интерфейсов разных моделей</a></li><li><a href="#настройка-статического-ip-на-компьютере">Настройка статического IP на компьютере</a></li><li><a href="#диагностика-проблем-с-адресацией">Диагностика проблем с адресацией</a></li><li><a href="#сброс-настроек-сети-при-утере-доступа">Сброс настроек сети при утере доступа</a></li></ol></nav>
+<div class="pc-prose"><p>Определение адреса шлюза и маски подсети является базовой процедурой при настройке локальной сети, диагностике подключений или организации доступа к конкретным устройствам. В экосистеме Ростелеком эти параметры обычно задаются автоматически при первой активации оборудования, но пользователю может потребоваться узнать их вручную для прописки статического IP на компьютере, настройки принтера или устранения конфликтов адресации.</p>
+
+<p>Шлюз по умолчанию (Default Gateway) — это адрес самого роутера в вашей локальной сети, через который все устройства выходят в глобальную сеть. Маска подсети определяет диапазон адресов, которые роутер считает «своими» и может обслуживать напрямую без обращения к вышестоящим узлам. На устройствах оператора (серии Sagemcom, Sercomm, Eltex) эти настройки находятся в разделе локальной сети (LAN).</p>
+
+
+
+<p>Существует два основных способа получения этих данных: программный (через операционную систему подключенного устройства) и аппаратный (через веб-интерфейс самого роутера). Первый способ быстрее и подходит для большинства задач, второй необходим, если требуется изменить параметры сети или проверить настройки DHCP-сервера.</p>
+
+<h2 id="быстрый-поиск-через-командную-строку-windows">Быстрый поиск через командную строку Windows</h2>
+
+<p>Самый оперативный способ узнать текущие сетевые параметры — использовать встроенные утилиты операционной системы. Этот метод показывает информацию именно так, как её видит ваше устройство в данный момент, что полезно для проверки фактического подключения, а не только конфигурации роутера.</p>
+
+<p>Для начала нажмите комбинацию клавиш Win + R на клавиатуре, в появившемся окне «Выполнить» введите команду <code>cmd</code> и нажмите Enter. Откроется окно командной строки. Введите команду <code>ipconfig</code> и нажмите Enter. Система выведет список всех сетевых адаптеров.</p>
+
+<p>Найдите в списке раздел, соответствующий вашему типу подключения: «Адаптер беспроводной локальной сети» для Wi-Fi или «Адаптер Ethernet» для кабеля. В этом блоке найдите строки «Основной шлюз» (Default Gateway) и «Маска подсети» (Subnet Mask). Значение шлюза — это и есть IP-адрес вашего роутера.</p>
+
+<div class="pc-code"><span>bash</span><pre><code>ipconfig | findstr /i &quot;Gateway Subnet&quot;</code></pre></div>
+
+<p>Если вы используете macOS или Linux, откройте терминал и введите команду <code>ifconfig</code> (для Linux/macOS) или <code>ipconfig getifaddr en0</code> для получения шлюза. В Linux также эффективна команда <code>ip route | grep default</code>, которая покажет шлюз в первой строке вывода после слова <code>via</code>.</p>
+
+<h2 id="вход-в-веб-интерфейс-роутера-ростелеком">Вход в веб-интерфейс роутера Ростелеком</h2>
+
+<p>Для просмотра настроек непосредственно на устройстве необходимо войти в его панель управления. Это требуется, если компьютер не получает IP-адрес автоматически, или если вы хотите изменить диапазон адресации локальной сети.</p>
+
+<p>Откройте любой браузер и в адресной строке введите IP-адрес шлюза, который вы узнали на предыдущем этапе (чаще всего это 192.168.0.1 или 192.168.1.1). Появится страница авторизации. Логин и пароль для входа обычно указаны на наклейке на дне корпуса устройства.</p>
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Риск блокировки настроек</strong><p>Не меняйте IP-адрес LAN (шлюз) без необходимости. Если вы зададите адрес из другой подсети, все устройства потеряют связь с роутером, и для доступа придется сбрасывать настройки кнопкой Reset.</p></div></aside>
+
+<p>Стандартные учетные данные для оборудования Ростелеком часто выглядят как <code>admin</code> / <code>admin</code> или <code>admin</code> / уникальный пароль с наклейки. Для некоторых старых моделей Sagemcom пароль может совпадать с последними цифрами MAC-адреса или серийного номера.</p>
+
+<p>После успешного входа вы попадете на главную страницу статуса или в меню настройки. Интерфейс может отличаться в зависимости от модели (Sagemcom F@st 2804, Sercomm RV6688, Eltex NTU-2), но логика расположения разделов едина.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="поиск-параметров-в-разделе-lan">Поиск параметров в разделе LAN</h2>
+
+<p>В веб-интерфейсе ищите раздел, называющийся «Локальная сеть», «LAN», «Настройка IP» или «Сеть». Именно здесь хранятся конфигурации внутренней адресации. На устройствах с новым интерфейсом (часто зеленый или синий фон) этот пункт может находиться в верхнем меню или в боковой панели.</p>
+
+<p>Внутри раздела LAN вы увидите поле «IP-адрес» или «IP Address» — это и есть адрес шлюза. Ниже или рядом будет поле «Маска подсети» (Subnet Mask). Стандартное значение для домашних сетей — 255.255.255.0, что соответствует префиксу /24 и позволяет подключить до 254 устройств.</p>
+
+<div class="pc-fact-grid" aria-label="Как оценить ситуацию"><div><span>Адрес шлюза</span><strong>192.168.0.1 / 1.1</strong><p>Проверьте наклейку на роутере</p></div><div><span>Маска подсети</span><strong>255.255.255.0</strong><p>Стандарт для домашних сетей</p></div><div><span>DHCP включен</span><strong>Да/Нет</strong><p>Определяет, выдается ли IP автоматически</p></div></div>
+
+<p>Здесь же часто располагается настройка DHCP-сервера. Если он включен, роутер сам раздает адреса подключенным устройствам. Диапазон раздаваемых адресов (Start IP / End IP) должен находиться в той же подсети, что и адрес шлюза. Например, при шлюзе 192.168.0.1 диапазон может быть от 192.168.0.10 до 192.168.0.200.</p>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/r/ro/rostelekom-kak-vernut-staryj-interfejs-pristavki-2021.html"><span>01</span><strong>Возврат старого интерфейса приставки Ростелеком</strong><small>10 мин →</small></a><a href="/articles/k/ka/kak-vernut-kolonku-marusya-v-rostelekom.html"><span>02</span><strong>Инструкция по возврату умной колонки Маруся в Ростелеком</strong><small>14 мин →</small></a><a href="/articles/k/ka/kak-smotret-rostelekom-na-smart-tv-bez-pristavki-na-soni.html"><span>03</span><strong>Настройка просмотра Ростелеком на телевизорах Sony без приставки</strong><small>11 мин →</small></a></div></aside><h2 id="особенности-интерфейсов-разных-моделей">Особенности интерфейсов разных моделей</h2>
+
+<p>Оборудование Ростелеком поставляется различными вендорами, и расположение меню может отличаться. Понимание различий поможет быстрее найти нужный пункт в специфичном интерфейсе.</p>
+
+<p>На роутерах <strong>Sagemcom</strong> (серии 2804, 1744) настройки сети часто скрыты в расширенном меню. Нажмите кнопку «Расширенные настройки» (Advanced), затем перейдите в «Сеть» (Network) -> «LAN». Здесь вы увидите сводную таблицу с IP и маской.</p>
+
+<p>Устройства <strong>Sercomm</strong> (RV6688, RV6699) имеют более современный интерфейс. Параметры LAN находятся в разделе «Настройки сети» -> «Локальная сеть». Обратите внимание, что на некоторых прошивках изменение IP-адреса требует перезагрузки устройства для вступления в силу.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Если вы сменили IP-адрес роутера (шлюз), ваш компьютер потеряет связь с ним, если у него прописан статический IP от старого шлюза. Временно верните настройки сетевого адаптера в режим «Получать IP автоматически».</p></div></aside>
+
+<p>Терминалы <strong>Eltex</strong> (NTU-2, WEP-2) имеют строгий интерфейс. Раздел «IP» или «Network» -> «LAN Interface» содержит основные параметры. В этих устройствах часто встречается разделение на несколько интерфейсов (LAN1, LAN2), убедитесь, что смотрите настройки активного порта.</p>
+
+<h2 id="настройка-статического-ip-на-компьютере">Настройка статического IP на компьютере</h2>
+
+<p>Знание шлюза и маски необходимо для ручной прописки IP-адреса на ПК. Это требуется для сетевых принтеров, NAS-накопителей или игровых консолей, чтобы их адрес не менялся со временем.</p>
+
+<p>В Windows зайдите в «Панель управления» -> «Центр управления сетями» -> «Изменение параметров адаптера». Нажмите правой кнопкой мыши на активное подключение, выберите «Свойства», затем «IP версии 4 (TCP/IPv4)» и снова «Свойства».</p>
+
+<p>Выберите пункт «Использовать следующий IP-адрес». В поле «IP-адрес» введите адрес из той же подсети, что и шлюз, но с уникальным последним числом (например, если шлюз 192.168.0.1, задайте ПК 192.168.0.50). В поле «Маска подсети» впишите значение из настроек роутера (обычно 255.255.255.0).</p>
+
+<div class="pc-widget-title">Порядок действий</div><ol class="pc-steps"><li><span>1</span><div><strong>Узнайте IP шлюза через ipconfig</strong></div></li><li><span>2</span><div><strong>Выберите свободный адрес (например, .50)</strong></div></li><li><span>3</span><div><strong>Введите шлюз и DNS в настройках адаптера</strong></div></li><li><span>4</span><div><strong>Проверьте связь командой ping</strong></div></li></ol>
+
+<p>В поле «Основной шлюз» обязательно укажите адрес вашего роутера. В полях DNS-серверов можно прописать адреса Ростелеком (например, 8.8.8.8 или серверы оператора), либо оставить их пустыми, если они выдаются автоматически, но для статического IP их лучше указать явно.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="диагностика-проблем-с-адресацией">Диагностика проблем с адресацией</h2>
+
+<p>Иногда компьютер показывает адрес шлюза, но доступа в интернет нет, или адрес начинается с 169.254.x.x. Это признак того, что устройство не смогло получить настройки от роутера автоматически (ошибка DHCP).</p>
+
+<p>В такой ситуации проверьте, включен ли DHCP-сервер в настройках роутера (раздел LAN). Если он выключен, а на компьютере не прописан статический IP, связи не будет. Включите DHCP или пропишите адреса вручную, используя известные вам шлюз и маску.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Конфликт IP-адресов: двум устройствам назначен один адрес</strong></div></article><article><span>02</span><div><strong>Неверная маска подсети: устройство не видит шлюз как соседа</strong></div></article></div>
+
+<p>Также частой ошибкой является ввод неверной маски подсети. Если на роутере стоит 255.255.255.0, а на компьютере 255.255.0.0, устройства могут работать нестабильно или не видеть друг друга в локальной сети, хотя интернет может функционировать.</p>
+
+<h2 id="сброс-настроек-сети-при-утере-доступа">Сброс настроек сети при утере доступа</h2>
+
+<p>Если вы изменили настройки LAN на роутере и забыли новый адрес шлюза, либо устройство работает некорректно после экспериментов с подсетями, самым надежным решением является сброс к заводским настройкам.</p>
+
+<p>Найдите на корпусе роутера утопленную кнопку <code>Reset</code>. При включенном питании нажмите её скрепкой и удерживайте около 10–15 секунд, пока индикаторы не мигнут одновременно. После перезагрузки адрес шлюза вернется к значению по умолчанию (указанному на наклейке).</p>
+
+<section class="pc-compare"><h3>Сравнение вариантов</h3><div><div><strong>Динамический IP (DHCP)</strong><p>Удобно для телефонов и ноутбуков, адрес может меняться</p></div><div><strong>Статический IP</strong><p>Нужен для принтеров и камер, адрес закреплен навсегда</p></div></div></section>
+
+<p>Помните, что после сброса настройки Wi-Fi (имя сети и пароль) также вернутся к заводским. Вам потребуется заново подключиться к беспроводной сети, используя данные с наклейки на корпусе устройства.</p>
+
+<details>
+<summary>Что делать, если команда ipconfig не показывает шлюз?</summary>
+<p>Если в строке «Основной шлюз» пусто, значит, компьютер не подключен к роутеру физически или логически. Проверьте кабель, статус подключения Wi-Fi или попробуйте обновить адрес командой <code>ipconfig /release</code> и затем <code>ipconfig /renew</code> в командной строке.</p>
+</details>
+
+<details>
+<summary>Можно ли изменить маску подсети на более широкую?</summary>
+<p>Технически можно, изменив маску на 255.255.0.0, но в домашних сетях Ростелекома это не имеет практического смысла и может нарушить работу некоторых служб автообнаружения устройств. Оставьте стандартное значение 255.255.255.0.</p>
+</details>
+
+<details>
+<summary>Где найти пароль от роутера, если наклейка стерлась?</summary>
+<p>Если стандартные admin/admin не подходят, а наклейка нечитаема, поможет только полный сброс настроек кнопкой Reset. Пароли от личного кабинета my.rt.ru не подходят для входа в настройки самого устройства.</p>
+</details>
+
+<details>
+<summary>Почему адрес шлюза не 192.168.0.1?</summary>
+<p>Некоторые модели роутеров (особенно новые или специфические прошивки) могут использовать адрес 192.168.1.1 или 10.0.0.1 по умолчанию. Точный адрес всегда указан на заводской этикетке на дне устройства.</p>
+</details>
+
+<details>
+<summary>Влияет ли смена шлюза на скорость интернета?</summary>
+<p>Нет, изменение локального IP-адреса роутера (шлюза) не влияет на скорость доступа в глобальную сеть. Это лишь внутренний адрес для управления устройствами внутри вашей квартиры или офиса.</p>
+</details>
+
+<div class="pc-summary"><span>Итог</span><h2>Что важно запомнить</h2><p>Шлюз и маска подсети — фундаментальные параметры локальной сети. Их можно быстро узнать через ipconfig или в веб-интерфейсе роутера. Изменять их следует осторожно, чтобы не потерять доступ к настройкам оборудования.</p></div></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/r/ro/rostelekom-kak-vernut-staryj-interfejs-pristavki-2021.html"><span>10 мин</span><strong>Возврат старого интерфейса приставки Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-vernut-kolonku-marusya-v-rostelekom.html"><span>14 мин</span><strong>Инструкция по возврату умной колонки Маруся в Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-smotret-rostelekom-na-smart-tv-bez-pristavki-na-soni.html"><span>11 мин</span><strong>Настройка просмотра Ростелеком на телевизорах Sony без приставки</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-router-rostelekom-na-drugogo-provajdera-dom-ru.html"><span>14 мин</span><strong>Как подключить роутер Ростелеком к провайдеру Дом.ru</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-zaprogrammirovat-pult-rostelekom-na-televizor-supra.html"><span>11 мин</span><strong>Настройка пульта Ростелеком для телевизора Supra</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-obuchit-pult-rostelekom-ot-pulta-televizora.html"><span>12 мин</span><strong>Как настроить пульт Ростелеком под управление телевизором</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

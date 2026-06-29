@@ -1,0 +1,179 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как поменять DNS Ростелеком: настройка в роутере и Windows — РТ Помощник</title><meta name="description" content="Подробная инструкция по смене DNS Ростелеком на роутере и ПК. Публичные серверы, устранение ошибок доступа и ускорение загрузки сайтов.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pomenyat-dns-server-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как поменять DNS Ростелеком: настройка в роутере и Windows — РТ Помощник">
+<meta property="og:description" content="Подробная инструкция по смене DNS Ростелеком на роутере и ПК. Публичные серверы, устранение ошибок доступа и ускорение загрузки сайтов."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pomenyat-dns-server-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как поменять DNS Ростелеком: настройка в роутере и Windows — РТ Помощник">
+<meta name="twitter:description" content="Подробная инструкция по смене DNS Ростелеком на роутере и ПК. Публичные серверы, устранение ошибок доступа и ускорение загрузки сайтов.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pomenyat-dns-server-rostelekom.html#article", "headline": "Как поменять DNS-сервер Ростелеком на роутере и компьютере", "description": "Подробная инструкция по смене DNS Ростелеком на роутере и ПК. Публичные серверы, устранение ошибок доступа и ускорение загрузки сайтов.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pomenyat-dns-server-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pomenyat-dns-server-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pomenyat-dns-server-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Решение проблем", "item": "https://rt-pomoshnik.vercel.app/category/reshenie-problem/"}, {"@type": "ListItem", "position": 3, "name": "Как поменять DNS-сервер Ростелеком на роутере и компьютере", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pomenyat-dns-server-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pomenyat-dns-server-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Влияет ли смена DNS на скорость скачивания файлов?", "acceptedAnswer": {"@type": "Answer", "text": "Прямого влияния на скорость загрузки больших файлов (торренты, игры) DNS не оказывает, так как он отвечает только за преобразование имени сайта в IP-адрес. Однако косвенно скорость может вырасти за счет более быстрого соединения с сервером на этапе установления связи."}}, {"@type": "Question", "name": "Может ли провайдер видеть, какие сайты я посещаю после смены DNS?", "acceptedAnswer": {"@type": "Answer", "text": "Да, провайдер видит IP-адреса запрашиваемых ресурсов, даже если вы используете сторонний DNS. Для полного скрытия трафика необходимо использовать VPN или зашифрованные протоколы DNS over HTTPS/TLS, которые поддерживают современные браузеры."}}, {"@type": "Question", "name": "Что делать, если после смены DNS перестал работать Smart TV?", "acceptedAnswer": {"@type": "Answer", "text": "Некоторые приложения на телевизорах жестко привязаны к региональным серверам провайдера. Попробуйте вернуть автоматические настройки DNS именно на телевизоре, оставив публичные адреса на роутере для остальных устройств, или пропишите DNS Яндекса, который лучше работает с локальным контентом."}}, {"@type": "Question", "name": "Нужно ли перезагружать роутер после прописки DNS на компьютере?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, если вы меняете настройки только в Windows, роутер перезагружать не нужно. Достаточно очистить кэш DNS на компьютере. Перезагрузка роутера требуется только при изменении настроек в его веб-интерфейсе."}}, {"@type": "Question", "name": "Какой DNS лучше использовать для игр?", "acceptedAnswer": {"@type": "Answer", "text": "Для онлайн-игр критически важен пинг. Обычно серверы Cloudflare (1.1.1.1) или Google (8.8.8.8) показывают наименьшую задержку. Рекомендуется протестировать оба варианта через команду ping и выбрать тот, который дает меньшее время отклика."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="is-active" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/reshenie-problem/">Решение проблем</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Решение проблем</span> · 10 мин</p><h1>Как поменять DNS-сервер Ростелеком на роутере и компьютере</h1><p class="pc-deck">Подробная инструкция по смене DNS Ростелеком на роутере и ПК. Публичные серверы, устранение ошибок доступа и ускорение загрузки сайтов.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Короткий вывод</strong><span>Смена DNS выполняется в настройках роутера (раздел WAN или Интернет) или в свойствах сетевого адаптера Windows. Используйте публичные адреса 8.8.8.8 или 1.1.1.1 для стабильной работы.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Решение проблем</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#подготовка-к-изменению-сетевых-параметров">Подготовка к изменению сетевых параметров</a></li><li><a href="#настройка-dns-в-веб-интерфейсе-роутера">Настройка DNS в веб-интерфейсе роутера</a></li><li><a href="#изменение-dns-в-операционной-системе-windows">Изменение DNS в операционной системе Windows</a></li><li><a href="#актуальные-адреса-публичных-dns-серверов">Актуальные адреса публичных DNS-серверов</a></li><li><a href="#очистка-кэша-dns-после-смены-настроек">Очистка кэша DNS после смены настроек</a></li><li><a href="#диагностика-и-устранение-проблем">Диагностика и устранение проблем</a></li><li><a href="#часто-задаваемые-вопросы">Часто задаваемые вопросы</a></li></ol></nav>
+<div class="pc-prose"><p>Смена адресов DNS-серверов часто требуется при невозможности открыть популярные сайты, когда индикатор доступа в сеть горит, но страницы не загружаются. В инфраструктуре Ростелекома по умолчанию используются автоматические адреса, которые могут работать нестабильно из-за перегрузки или технических сбоев на стороне провайдера. Переход на публичные DNS (например, от Google или Cloudflare) позволяет обойти локальные проблемы маршрутизации и ускорить отклик доменных имен.</p>
+
+<p>Изменение настроек можно произвести двумя основными способами: непосредственно в меню настройки роутера или в параметрах сетевой карты компьютера. Первый вариант предпочтительнее, так как новые адреса применятся ко всем подключенным устройствам в домашней сети — смартфонам, телевизорам и ноутбукам. Второй метод подходит для точечной настройки конкретного ПК, если доступ к админ-панели маршрутизатора ограничен или закрыт провайдером.</p>
+
+<p>Процедура замены не требует глубоких технических знаний, но требует внимательности при вводе цифровых значений. Ошибка в одной цифре IP-адреса приведет к полной потере доступа к интернету на настроенном устройстве. Перед началом работ рекомендуется записать текущие значения параметров, чтобы в случае неудачи можно было быстро вернуть исходные настройки и восстановить соединение.</p>
+
+
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Когда нужно остановиться</strong><p>Если после сохранения настроек интернет пропал на всех устройствах, немедленно верните автоматическое получение адресов. Ошибка в DNS блокирует разрешение имен сайтов, делая сеть нерабочей.</p></div></aside>
+
+<h2 id="подготовка-к-изменению-сетевых-параметров">Подготовка к изменению сетевых параметров</h2>
+
+<p>Перед внесением изменений в конфигурацию сети необходимо убедиться в наличии доступа к интерфейсу управления оборудованием. Для настройки роутера потребуется IP-адрес шлюза, логин и пароль администратора. Эти данные обычно указаны на наклейке на нижней части корпуса устройства. Стандартные адреса для входа часто выглядят как 192.168.0.1 или 192.168.1.1, а учетные данные по умолчанию — admin/admin.</p>
+
+<p>Если вы планируете менять настройки только на компьютере под управлением Windows, доступ к роутеру не обязателен. Однако стоит заранее определить альтернативные адреса серверов имен, чтобы не искать их в процессе настройки. Наиболее надежными и быстрыми вариантами являются сервисы Google Public DNS и Cloudflare. Их адреса статичны и не меняются годами.</p>
+
+<p>Важно понимать разницу между основным и альтернативным DNS. Основной сервер обрабатывает все запросы первым, а альтернативный подключается только в случае его недоступности. Рекомендуется прописывать пары серверов от одного провайдера, чтобы избежать конфликтов политик фильтрации и разной скорости отклика.</p>
+
+<div class="pc-fact-grid" aria-label="Как оценить ситуацию"><div><span>Сайты не открываются</span><strong>Ошибка DNS</strong><p>Проверьте пинг до 8.8.8.8</p></div><div><span>Интернет работает медленно</span><strong>Проблема маршрутизации</strong><p>Попробуйте сменить DNS</p></div><div><span>Блокировка ресурсов</span><strong>Фильтрация провайдера</strong><p>Используйте сторонний DNS</p></div></div>
+
+<h2 id="настройка-dns-в-веб-интерфейсе-роутера">Настройка DNS в веб-интерфейсе роутера</h2>
+
+<p>Это наиболее эффективный метод, обеспечивающий работу новых параметров для всей домашней сети. Войдите в панель управления роутером через браузер, введя адрес шлюза. Интерфейс разных моделей оборудования Ростелеком (Sagemcom, Sercomm, Huawei, Eltex) может отличаться визуально, но логика настройки остается единой.</p>
+
+<p>Необходимо найти раздел, отвечающий за подключение к глобальной сети. Обычно он называется «Интернет», «WAN», «Глобальная сеть» или «Подключение». Внутри этого раздела ищется профиль подключения типа PPPoE или IPoE (Динамический IP), который активно используется в данный момент.</p>
+
+<p>В настройках активного профиля следует найти поля «Предпочитаемый DNS-сервер» и «Альтернативный DNS-сервер». По умолчанию там часто стоит галочка «Получить автоматически от провайдера». Эту галочку нужно снять, чтобы активировать поля для ручного ввода. Впишите выбранные адреса, сохраните изменения и перезагрузите роутер.</p>
+
+<div class="pc-widget-title">Порядок действий</div><ol class="pc-steps"><li><span>1</span><div><strong>Войдите в настройки роутера (192.168.0.1)</strong></div></li><li><span>2</span><div><strong>Откройте раздел WAN или Интернет</strong></div></li><li><span>3</span><div><strong>Отключите автоматический DNS и впишите новые адреса</strong></div></li><li><span>4</span><div><strong>Сохраните настройки и перезагрузите устройство</strong></div></li></ol>
+
+<h3>Особенности для разных моделей оборудования</h3>
+
+<p>В роутерах Sagemcom и Sercomm, часто выдаваемых провайдером, настройки DNS могут быть скрыты внутри вкладки «Расширенные настройки» или «Дополнительно». Иногда требуется переключить режим работы WAN с «Трансляции» на «Маршрутизатор», чтобы открылся доступ к редактированию полей DNS.</p>
+
+<p>Устройства Huawei и Eltex могут иметь разделение настроек для IPv4 и IPv6. Если ваш провайдер поддерживает шестую версию протокола, рекомендуется прописать DNS и для нее, используя адреса вроде :4860:4860::8888. Игнорирование этого пункта при активном IPv6 может привести к тому, что часть трафика пойдет через медленные серверы провайдера.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="изменение-dns-в-операционной-системе-windows">Изменение DNS в операционной системе Windows</h2>
+
+<p>Если нет доступа к роутеру или нужно настроить только один компьютер, изменения вносятся через панель управления сетями. Нажмите правой кнопкой мыши на значок сети в трее и выберите «Параметры сети и Интернет». Далее перейдите в «Настройка параметров адаптера» или «Дополнительные параметры сети».</p>
+
+<p>В открывшемся окне найдите ваше активное подключение (Ethernet или Беспроводная сеть), кликните по нему правой кнопкой и выберите «Свойства». В списке компонентов найдите строку «IP версии 4 (TCP/IPv4)», выделите её и снова нажмите «Свойства».</p>
+
+<p>В нижнем диалоговом окне переключите точку на «Использовать следующие адреса DNS-серверов». Введите адреса в соответствующие поля. После нажатия «ОК» система применит настройки мгновенно, перезагрузка компьютера обычно не требуется, но может понадобиться очистка кэша.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Изменение DNS на компьютере не влияет на работу других устройств в сети (телефоны, ТВ). Для них настройки нужно менять отдельно или в роутере.</p></div></aside>
+
+<h3>Настройка для Windows 10 и 11</h3>
+
+<p>В современных версиях Windows интерфейс может отличаться. В параметрах сети можно нажать кнопку «Изменить» рядом с назначением DNS-сервера. Выберите режим «Вручную», включите переключатель IPv4 и введите адреса. Система может запросить подтверждение прав администратора.</p>
+
+<p>Стоит отметить, что в Windows 10 и 11 появилась функция «Защищенный DNS» (DNS over HTTPS). Если вы хотите использовать её, нужно включить этот тумблер и выбрать шаблон (например, Google или Cloudflare) из списка. Это зашифрует ваши DNS-запросы, предотвратив их перехват провайдером.</p>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/p/po/pochemu-net-vaj-faya-ot-routera-rostelekom-na-telefone.html"><span>01</span><strong>Почему нет Wi-Fi от роутера Ростелеком на телефоне</strong><small>13 мин →</small></a><a href="/articles/k/ka/kak-obojti-zashchitu-rostelekom.html"><span>02</span><strong>Способы обхода блокировок Ростелеком</strong><small>8 мин →</small></a><a href="/articles/z/zh/zhaloba-na-rostelekom-kuda-podat-obrazets.html"><span>03</span><strong>Куда подать жалобу на Ростелеком: образцы и порядок действий</strong><small>13 мин →</small></a></div></aside><h2 id="актуальные-адреса-публичных-dns-серверов">Актуальные адреса публичных DNS-серверов</h2>
+
+<p>Выбор провайдера DNS влияет на скорость открытия сайтов и конфиденциальность. Серверы крупных технологических компаний обеспечивают высокую отказоустойчивость. Ниже приведена таблица с наиболее популярными и стабильными адресами, совместимыми с сетью Ростелеком.</p>
+
+<div class="pc-table-wrap"><table>
+<thead>
+<tr>
+<th>Провайдер</th>
+<th>Предпочитаемый DNS</th>
+<th>Альтернативный DNS</th>
+<th>Особенность</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Google</td>
+<td>8.8.8.8</td>
+<td>8.8.4.4</td>
+<td>Высокая скорость, мировое покрытие</td>
+</tr>
+<tr>
+<td>Cloudflare</td>
+<td>1.1.1.1</td>
+<td>1.0.0.1</td>
+<td>Акцент на приватность и защиту</td>
+</tr>
+<tr>
+<td>Quad9</td>
+<td>9.9.9.9</td>
+<td>149.112.112.112</td>
+<td>Блокировка вредоносных доменов</td>
+</tr>
+<tr>
+<td>Яндекс.DNS</td>
+<td>77.88.8.8</td>
+<td>77.88.8.1</td>
+<td>Локальная скорость, базовая защита</td>
+</tr>
+</tbody>
+</table></div>
+
+<p>Серверы Google традиционно считаются самыми быстрыми для большинства регионов России. Cloudflare часто выигрывает в тестах на отсутствие задержек. Яндекс.DNS может показать лучшую скорость внутри сети провайдера за счет локализации трафика, но иногда подвержен тем же блокировкам, что и серверы самого Ростелекома.</p>
+
+<section class="pc-compare"><h3>Сравнение вариантов</h3><div><div><strong>Серверы провайдера</strong><p>Автоматически, но могут быть сбои и блокировки</p></div><div><strong>Google DNS</strong><p>Стабильно и быстро, подходит для большинства задач</p></div><div><strong>Cloudflare</strong><p>Максимальная приватность и защита от слежки</p></div></div></section>
+
+<h2 id="очистка-кэша-dns-после-смены-настроек">Очистка кэша DNS после смены настроек</h2>
+
+<p>После изменения адресов серверов компьютер или роутер могут продолжать использовать старые данные, сохраненные в кэше. Это приводит к ситуации, когда настройки изменены, но некоторые сайты все еще не открываются или открываются неверно. Для решения этой проблемы необходимо принудительно очистить кэш разрешений имен.</p>
+
+<p>В Windows это делается через командную строку. Запустите её от имени администратора и введите команду <code>ipconfig /flushdns</code>. Система подтвердит успешную очистку кэша. После этого попробуйте открыть проблемный сайт заново.</p>
+
+<p>В браузерах также существует собственный кэш DNS, который может конфликтовать с системным. В Chrome или Яндекс.Браузере можно ввести в адресной строке <code>chrome://net-internals/#dns</code> и нажать кнопку «Clear host cache». Это гарантирует, что браузер запросит актуальный IP-адрес у новых серверов.</p>
+
+<div class="pc-code"><span>bash</span><pre><code>ipconfig /flushdns</code></pre></div>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="диагностика-и-устранение-проблем">Диагностика и устранение проблем</h2>
+
+<p>Если после смены DNS интернет перестал работать полностью, скорее всего, был введен неверный адрес или сервер недоступен в вашем регионе. Первым делом проверьте, пингуется ли новый сервер. Откройте командную строку и введите <code>ping 8.8.8.8</code>. Если идут ответы со временем менее 100 мс, соединение есть.</p>
+
+<p>Частой ошибкой является путаница между IP-адресом шлюза и адресом DNS. В поле DNS нельзя вписывать адрес роутера (192.168.x.x), если только вы не поднимаете свой локальный сервер имен. Используйте только публичные адреса из таблицы выше.</p>
+
+<p>Также стоит проверить, не блокирует ли провайдер доступ к сторонним DNS-серверам на протоколе 53 порт. Ростелеком в некоторых регионах может применять такие меры. В этом случае поможет использование DNS over HTTPS в браузере или смена провайдера на Яндекс, который часто работает в обход таких ограничений.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Ввод адреса роутера в поле DNS вместо публичного IP</strong></div></article><article><span>02</span><div><strong>Отсутствие перезагрузки роутера после смены настроек WAN</strong></div></article><article><span>03</span><div><strong>Игнорирование очистки кэша браузера</strong></div></article></div>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Как выбрать действие</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>Не открываются отдельные сайты</span><strong>Смените DNS на Google или Cloudflare</strong></div><div class="pc-decision-row"><span>Интернет пропал полностью</span><strong>Верните автоматические настройки DNS</strong></div><div class="pc-decision-row"><span>Нужна защита от вирусов</span><strong>Используйте серверы Quad9 или Яндекс.Безопасный</strong></div></div></section>
+
+<h2 id="часто-задаваемые-вопросы">Часто задаваемые вопросы</h2>
+
+<details>
+<summary>Влияет ли смена DNS на скорость скачивания файлов?</summary>
+<p>Прямого влияния на скорость загрузки больших файлов (торренты, игры) DNS не оказывает, так как он отвечает только за преобразование имени сайта в IP-адрес. Однако косвенно скорость может вырасти за счет более быстрого соединения с сервером на этапе установления связи.</p>
+</details>
+
+<details>
+<summary>Может ли провайдер видеть, какие сайты я посещаю после смены DNS?</summary>
+<p>Да, провайдер видит IP-адреса запрашиваемых ресурсов, даже если вы используете сторонний DNS. Для полного скрытия трафика необходимо использовать VPN или зашифрованные протоколы DNS over HTTPS/TLS, которые поддерживают современные браузеры.</p>
+</details>
+
+<details>
+<summary>Что делать, если после смены DNS перестал работать Smart TV?</summary>
+<p>Некоторые приложения на телевизорах жестко привязаны к региональным серверам провайдера. Попробуйте вернуть автоматические настройки DNS именно на телевизоре, оставив публичные адреса на роутере для остальных устройств, или пропишите DNS Яндекса, который лучше работает с локальным контентом.</p>
+</details>
+
+<details>
+<summary>Нужно ли перезагружать роутер после прописки DNS на компьютере?</summary>
+<p>Нет, если вы меняете настройки только в Windows, роутер перезагружать не нужно. Достаточно очистить кэш DNS на компьютере. Перезагрузка роутера требуется только при изменении настроек в его веб-интерфейсе.</p>
+</details>
+
+<details>
+<summary>Какой DNS лучше использовать для игр?</summary>
+<p>Для онлайн-игр критически важен пинг. Обычно серверы Cloudflare (1.1.1.1) или Google (8.8.8.8) показывают наименьшую задержку. Рекомендуется протестировать оба варианта через команду ping и выбрать тот, который дает меньшее время отклика.</p>
+</details>
+
+<div class="pc-summary"><span>Итог</span><h2>Что важно запомнить</h2><p>Смена DNS — безопасная процедура, решающая проблемы с доступом к сайтам. Всегда имейте под рукой адреса для возврата к автоматическим настройкам на случай сбоя.</p></div></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/p/po/pochemu-net-vaj-faya-ot-routera-rostelekom-na-telefone.html"><span>13 мин</span><strong>Почему нет Wi-Fi от роутера Ростелеком на телефоне</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-obojti-zashchitu-rostelekom.html"><span>8 мин</span><strong>Способы обхода блокировок Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/z/zh/zhaloba-na-rostelekom-kuda-podat-obrazets.html"><span>13 мин</span><strong>Куда подать жалобу на Ростелеком: образцы и порядок действий</strong><b>Читать ↗</b></a><a href="/articles/r/ro/rostelekom-spb-vyzvat-mastera-na-dom-kak.html"><span>13 мин</span><strong>Вызов мастера Ростелеком на дом в Санкт-Петербурге</strong><b>Читать ↗</b></a><a href="/articles/p/pr/pristavka-rostelekom-set-ne-nastroena-chto-delat.html"><span>10 мин</span><strong>Как исправить ошибку «сеть не настроена» на приставке Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-vosstanovit-parol-dostupa-k-internetu-rostelekom.html"><span>13 мин</span><strong>Как восстановить пароль доступа к интернету Ростелеком</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

@@ -1,0 +1,135 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как узнать IP роутера Ростелеком на Windows 10: 3 способа — РТ Помощник</title><meta name="description" content="Пошаговая инструкция для Windows 10: как найти адрес шлюза Ростелеком через ipconfig, настройки сети и командную строку.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-ajpi-routera-rostelekom-vindovs-10.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как узнать IP роутера Ростелеком на Windows 10: 3 способа — РТ Помощник">
+<meta property="og:description" content="Пошаговая инструкция для Windows 10: как найти адрес шлюза Ростелеком через ipconfig, настройки сети и командную строку."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-ajpi-routera-rostelekom-vindovs-10.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как узнать IP роутера Ростелеком на Windows 10: 3 способа — РТ Помощник">
+<meta name="twitter:description" content="Пошаговая инструкция для Windows 10: как найти адрес шлюза Ростелеком через ipconfig, настройки сети и командную строку.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-ajpi-routera-rostelekom-vindovs-10.html#article", "headline": "Как узнать IP-адрес роутера Ростелеком в Windows 10", "description": "Пошаговая инструкция для Windows 10: как найти адрес шлюза Ростелеком через ipconfig, настройки сети и командную строку.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-ajpi-routera-rostelekom-vindovs-10.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-ajpi-routera-rostelekom-vindovs-10.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-ajpi-routera-rostelekom-vindovs-10.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Решение проблем", "item": "https://rt-pomoshnik.vercel.app/category/reshenie-problem/"}, {"@type": "ListItem", "position": 3, "name": "Как узнать IP-адрес роутера Ростелеком в Windows 10", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-ajpi-routera-rostelekom-vindovs-10.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-uznat-ajpi-routera-rostelekom-vindovs-10.html#faq", "mainEntity": [{"@type": "Question", "name": "Можно ли узнать IP роутера с телефона?", "acceptedAnswer": {"@type": "Answer", "text": "Да, принцип тот же. Зайдите в настройки Wi-Fi на телефоне, нажмите на значок шестеренки или стрелку рядом с именем вашей сети. В разделе «Дополнительно» или «Сеть» найдите пункт «Шлюз» или «Маршрутизатор». Там будет указан нужный IP-адрес."}}, {"@type": "Question", "name": "Что делать, если страница входа требует пароль, а я его не помню?", "acceptedAnswer": {"@type": "Answer", "text": "Посмотрите на наклейку на дне роутера. Там указаны логин и пароль по умолчанию (часто admin/admin или уникальный набор символов). Если вы меняли пароль и забыли его, поможет только полный сброс настроек кнопкой Reset."}}, {"@type": "Question", "name": "Почему адрес 192.168.1.1 не открывается?", "acceptedAnswer": {"@type": "Answer", "text": "Возможно, ваш компьютер подключен к другой сети или роутеру. Проверьте, к какой Wi-Fi сети вы подключены. Также адрес мог быть изменен в настройках LAN. Попробуйте узнать актуальный шлюз через команду ipconfig."}}, {"@type": "Question", "name": "Отличается ли адрес для входа в личный кабинет Ростелеком?", "acceptedAnswer": {"@type": "Answer", "text": "Да, это разные вещи. Адрес роутера (192.168.x.x) нужен для настройки оборудования дома. Личный кабинет провайдера находится по адресу my.rt.ru и служит для оплаты счетов и управления услугами."}}, {"@type": "Question", "name": "Можно ли изменить IP-адрес роутера?", "acceptedAnswer": {"@type": "Answer", "text": "Да, в настройках роутера в разделе «Локальная сеть» (LAN) можно изменить IP-адрес. Это делается, чтобы избежать конфликта адресов, если у вас в сети несколько роутеров. После изменения для входа нужно будет использовать новый адрес."}}, {"@type": "Question", "name": "Какой логин и пароль вводить при первом входе?", "acceptedAnswer": {"@type": "Answer", "text": "Данные для авторизации указаны на заводской наклейке на корпусе устройства. Обычно это логин «admin» и пароль «admin», либо уникальный пароль, сгенерированный производителем. Не путайте их с паролем от Wi-Fi."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="is-active" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/reshenie-problem/">Решение проблем</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Решение проблем</span> · 9 мин</p><h1>Как узнать IP-адрес роутера Ростелеком в Windows 10</h1><p class="pc-deck">Пошаговая инструкция для Windows 10: как найти адрес шлюза Ростелеком через ipconfig, настройки сети и командную строку.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Краткий ответ</strong><span>IP-адрес роутера — это «Шлюз по умолчанию». Самый быстрый способ узнать его: нажмите Win+R, введите cmd, затем в черном окне наберите ipconfig и найдите строку «Основной шлюз».</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Решение проблем</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#использование-командной-строки-для-быстрого-поиска">Использование командной строки для быстрого поиска</a></li><li><a href="#поиск-адреса-через-параметры-сети-windows-10">Поиск адреса через параметры сети Windows 10</a></li><li><a href="#проверка-через-классическую-панель-управления">Проверка через классическую панель управления</a></li><li><a href="#возможные-адреса-роутеров-ростелеком-по-умолчанию">Возможные адреса роутеров Ростелеком по умолчанию</a></li><li><a href="#что-делать-если-стандартные-адреса-не-подходят">Что делать, если стандартные адреса не подходят</a></li><li><a href="#частые-ошибки-при-входе-в-настройки">Частые ошибки при входе в настройки</a></li></ol></nav>
+<div class="pc-prose"><p>Для настройки беспроводной сети, смены пароля или перенастройки портов пользователю необходимо попасть в панель управления маршрутизатора. Вход в интерфейс осуществляется через браузер, но для этого нужно знать точный адрес устройства в локальной сети. В оборудовании Ростелеком этот адрес может отличаться от стандартного в зависимости от модели устройства и настроек провайдера, хотя чаще всего используются зарезервированные диапазоны.</p>
+
+<p>Операционная система Windows 10 автоматически определяет шлюз по умолчанию при подключении к сети, будь то кабель или Wi-Fi. Эта информация хранится в сетевых адаптерах и доступна для просмотра без установки дополнительного программного обеспечения. Понимание того, где искать эти данные, позволяет быстро решить проблему с доступом к административной панели, даже если наклейка на корпусе устройства стерлась или отсутствует.</p>
+
+<p>Существует несколько методов получения этой информации: от использования графического интерфейса системы до ввода простых команд. Каждый из способов дает одинаковый результат, но отличается скоростью выполнения и удобством для конкретного пользователя. Важно различать внешний IP-адрес, который видят сайты в интернете, и внутренний адрес шлюза, необходимый для локального управления оборудованием.</p>
+
+
+
+<aside class="pc-definition"><strong>Что такое IP шлюза</strong><p>Это адрес вашего роутера внутри домашней сети. Компьютер обращается к нему, чтобы выйти в интернет. В настройках Windows он называется «Шлюз по умолчанию».</p></aside>
+
+<h2 id="использование-командной-строки-для-быстрого-поиска">Использование командной строки для быстрого поиска</h2>
+
+<p>Самый надежный и быстрый метод, работающий на всех версиях Windows 10 независимо от обновлений интерфейса, — это использование утилиты командной строки. Этот способ требует минимального количества действий и выдает точные технические данные о текущем сетевом подключении. Он универсален и подходит как для проводного соединения, так и для Wi-Fi.</p>
+
+<p>Для начала необходимо открыть окно выполнения команд. Нажмите на клавиатуре сочетание клавиш Win + R. В появившемся_small_ окне введите команду <code>cmd</code> и нажмите Enter. Откроется черное окно интерпретатора командной строки, готовое к вводу инструкций.</p>
+
+<p>В открывшемся окне введите команду <code>ipconfig</code> и подтвердите действие клавишей Enter. Система выведет список всех сетевых адаптеров. Вам нужно найти раздел, соответствующий вашему типу подключения: «Адаптер беспроводной локальной сети» для Wi-Fi или «Адаптер Ethernet» для кабеля.</p>
+
+<div class="pc-code"><span>bash</span><pre><code>ipconfig | findstr /i &quot;Gateway&quot;</code></pre></div>
+
+<p>Внутри нужного раздела найдите строку «Основной шлюз» (Default Gateway). Цифровой адрес, указанный напротив этой строки (например, 192.168.1.1 или 192.168.0.1), и есть IP-адрес вашего роутера Ростелеком. Именно эту последовательность цифр нужно ввести в адресную строку браузера для входа в настройки.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="поиск-адреса-через-параметры-сети-windows-10">Поиск адреса через параметры сети Windows 10</h2>
+
+<p>Пользователи, предпочитающие графический интерфейс, могут найти необходимые данные через стандартное меню настроек Windows 10. Этот метод нагляден и не требует запоминания команд, что делает его удобным для тех, кто редко работает с техническими утилитами. Интерфейс может незначительно отличаться в разных сборках ОС, но логика поиска остается единой.</p>
+
+<p>Нажмите правой кнопкой мыши на значок сетевого подключения в трее (возле часов). В контекстном меню выберите пункт «Параметры сети и Интернет». Откроется главное окно сетевых настроек системы.</p>
+
+<p>В открывшемся окне убедитесь, что выбрана вкладка вашего текущего подключения: «Wi-Fi» или «Ethernet». Нажмите на название активной сети или на кнопку «Свойства» под названием подключения. Система перейдет на страницу с детальной информацией о соединении.</p>
+
+<p>Прокрутите страницу вниз до раздела «Свойства». Найдите строку «Шлюз по умолчанию». Указанный там IP-адрес является адресом вашего роутера. Если в этом поле пусто, значит, компьютер не получил настройки от роутера, и следует проверить кабель или соединение Wi-Fi.</p>
+
+<div class="pc-fact-grid" aria-label="Как оценить ситуацию"><div><span>Адрес 192.168.1.1</span><strong>Стандарт для Sagemcom</strong><p>Частая модель у Ростелекома</p></div><div><span>Адрес 192.168.0.1</span><strong>Стандарт для D-Link/TP-Link</strong><p>Встречается на старых устройствах</p></div><div><span>Адрес 192.168.10.1</span><strong>Специфичные модели</strong><p>Иногда используется на Huawei</p></div></div>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-proverit-ispravnost-routera-rostelekom.html"><span>01</span><strong>Как проверить исправность роутера Ростелеком</strong><small>9 мин →</small></a><a href="/articles/k/ka/kak-nastroit-podklyuchenie-k-internetu-rostelekom-na-windows-10.html"><span>02</span><strong>Настройка интернета Ростелеком на Windows 10</strong><small>13 мин →</small></a><a href="/articles/n/ne/ne-pereklyuchaet-pult-ot-pristavki-rostelekom-kanaly-chto-delat.html"><span>03</span><strong>Пульт Ростелеком не переключает каналы: пошаговая инструкция</strong><small>10 мин →</small></a></div></aside><h2 id="проверка-через-классическую-панель-управления">Проверка через классическую панель управления</h2>
+
+<p>В некоторых случаях современные меню настроек могут скрывать детализированную информацию или работать некорректно из-за ошибок интерфейса. Классическая панель управления Windows предоставляет доступ к глубоким настройкам адаптеров, где информация о шлюзе отображается в отдельном окне состояния.</p>
+
+<p>Откройте меню «Пуск», введите в поиске «Панель управления» и запустите приложение. Переключите режим просмотра на «Крупные значки» и найдите пункт «Центр управления сетями и общим доступом». Это центральный узел управления сетевыми подключениями в системе.</p>
+
+<p>В правой части окна, в разделе «Просмотр активных сетей», найдите ваше подключение. Нажмите на ссылку рядом с надписью «Подключения» (например, «Ethernet» или имя вашей Wi-Fi сети). Откроется небольшое окно состояния текущего соединения.</p>
+
+<p>В окне состояния нажмите кнопку «Сведения». Откроется таблица «Сведения о сетевого подключении». Найдите в списке параметр «Шлюз по умолчанию IPv4». Значение в соседнем столбце и будет искомым адресом роутера.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="возможные-адреса-роутеров-ростелеком-по-умолчанию">Возможные адреса роутеров Ростелеком по умолчанию</h2>
+
+<p>Если компьютер не подключен к сети или система не отображает шлюз, можно попробовать ввести стандартные адреса, которые провайдер использует на своем оборудовании. Ростелеком выдает абонентам устройства различных производителей, и у каждого из них есть заводские настройки по умолчанию.</p>
+
+<p>Наиболее распространенным адресом является <code>192.168.1.1</code>. Он используется на большинстве современных моделей роутеров Sagemcom, которые массово устанавливаются провайдером. Также часто встречается адрес <code>192.168.0.1</code>, характерный для оборудования D-Link и TP-Link.</p>
+
+<p>Реже, но все же возможно, использование адреса <code>192.168.10.1</code>. Этот диапазон часто применяется на устройствах Huawei или некоторых специфических конфигурациях GPON-терминалов. Ввод этих адресов в браузер может дать результат даже без проверки через систему, если настройки роутера не менялись.</p>
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Когда нужно остановиться</strong><p>Если браузер пишет «Не удается получить доступ к сайту» при вводе правильного IP, не перезагружайте роутер многократно. Возможно, сбиты настройки LAN или устройство зависло. Подождите 5 минут перед повторной попыткой.</p></div></aside>
+
+<h2 id="что-делать-если-стандартные-адреса-не-подходят">Что делать, если стандартные адреса не подходят</h2>
+
+<p>Бывают ситуации, когда ни один из стандартных адресов не открывается, а система показывает шлюз с нестандартным набором цифр, либо поле шлюза пустое. Это может означать, что предыдущий владелец или мастер изменил настройки локальной сети роутера.</p>
+
+<p>В таком случае самым эффективным решением является сброс настроек роутера к заводским. На корпусе устройства есть маленькое отверстие с надписью Reset. Нажмите туда скрепкой и удерживайте 10–15 секунд, пока индикаторы не мигнут. После перезагрузки роутер вернет стандартный IP-адрес, указанный на наклейке.</p>
+
+<p> Вам придется настраивать роутер заново или ждать автоматической загрузки настроек от провайдера, если эта функция активна.</p>
+
+<div class="pc-widget-title">Порядок действий</div><ol class="pc-steps"><li><span>1</span><div><strong>Узнайте IP через команду ipconfig</strong></div></li><li><span>2</span><div><strong>Введите адрес в браузер (Chrome, Яндекс и др.)</strong></div></li><li><span>3</span><div><strong>Введите логин и пароль с наклейки на роутере</strong></div></li></ol>
+
+<h2 id="частые-ошибки-при-входе-в-настройки">Частые ошибки при входе в настройки</h2>
+
+<p>Даже зная правильный IP-адрес, пользователи часто сталкиваются с проблемами при входе. Одна из самых распространенных ошибок — ввод адреса в строку поиска поисковой системы (Google, Яндекс), а не в адресную строку браузера. Адрес должен вводиться именно в верхнюю строку, где обычно пишется название сайта.</p>
+
+<p>Другая ошибка — использование протокола https вместо http. Некоторые старые модели роутеров Ростелеком не поддерживают защищенное соединение на странице входа. Если страница не грузится, попробуйте вручную дописать <code>http://</code> перед цифрами адреса.</p>
+
+<p>Также проблема может возникать из-за кэша браузера или активных расширений (блокировщиков рекламы, VPN). Попробуйте открыть адрес в режиме инкогнито или в другом браузере. Это исключит влияние сторонних настроек обозревателя на процесс подключения.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Ввод адреса в поиск Google вместо адресной строки</strong></div></article><article><span>02</span><div><strong>Попытка входа с устройства, подключенного к гостевой сети Wi-Fi</strong></div></article></div>
+
+<details>
+<summary>Можно ли узнать IP роутера с телефона?</summary>
+<p>Да, принцип тот же. Зайдите в настройки Wi-Fi на телефоне, нажмите на значок шестеренки или стрелку рядом с именем вашей сети. В разделе «Дополнительно» или «Сеть» найдите пункт «Шлюз» или «Маршрутизатор». Там будет указан нужный IP-адрес.</p>
+</details>
+
+<details>
+<summary>Что делать, если страница входа требует пароль, а я его не помню?</summary>
+<p>Посмотрите на наклейку на дне роутера. Там указаны логин и пароль по умолчанию (часто admin/admin или уникальный набор символов). Если вы меняли пароль и забыли его, поможет только полный сброс настроек кнопкой Reset.</p>
+</details>
+
+<details>
+<summary>Почему адрес 192.168.1.1 не открывается?</summary>
+<p>Возможно, ваш компьютер подключен к другой сети или роутеру. Проверьте, к какой Wi-Fi сети вы подключены. Также адрес мог быть изменен в настройках LAN. Попробуйте узнать актуальный шлюз через команду ipconfig.</p>
+</details>
+
+<details>
+<summary>Отличается ли адрес для входа в личный кабинет Ростелеком?</summary>
+<p>Да, это разные вещи. Адрес роутера (192.168.x.x) нужен для настройки оборудования дома. Личный кабинет провайдера находится по адресу my.rt.ru и служит для оплаты счетов и управления услугами.</p>
+</details>
+
+<details>
+<summary>Можно ли изменить IP-адрес роутера?</summary>
+<p>Да, в настройках роутера в разделе «Локальная сеть» (LAN) можно изменить IP-адрес. Это делается, чтобы избежать конфликта адресов, если у вас в сети несколько роутеров. После изменения для входа нужно будет использовать новый адрес.</p>
+</details>
+
+<details>
+<summary>Какой логин и пароль вводить при первом входе?</summary>
+<p>Данные для авторизации указаны на заводской наклейке на корпусе устройства. Обычно это логин «admin» и пароль «admin», либо уникальный пароль, сгенерированный производителем. Не путайте их с паролем от Wi-Fi.</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-proverit-ispravnost-routera-rostelekom.html"><span>9 мин</span><strong>Как проверить исправность роутера Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-podklyuchenie-k-internetu-rostelekom-na-windows-10.html"><span>13 мин</span><strong>Настройка интернета Ростелеком на Windows 10</strong><b>Читать ↗</b></a><a href="/articles/n/ne/ne-pereklyuchaet-pult-ot-pristavki-rostelekom-kanaly-chto-delat.html"><span>10 мин</span><strong>Пульт Ростелеком не переключает каналы: пошаговая инструкция</strong><b>Читать ↗</b></a><a href="/articles/r/ro/rostelekom-kak-sdelat-zayavku-na-remont.html"><span>13 мин</span><strong>Ростелеком: как сделать заявку на ремонт</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-otmenit-pokupku-filma-v-rostelekom-interaktivnoe-tv.html"><span>12 мин</span><strong>Как отменить покупку фильма в Ростелеком Интерактивное ТВ</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-najti-pult-ot-televizora-v-kvartire-rostelekom.html"><span>10 мин</span><strong>Поиск пульта от телевизора Ростелеком и управление без него</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

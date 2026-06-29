@@ -1,0 +1,133 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как подключить SIP-телефон к Ватс Ростелеком: инструкция — РТ Помощник</title><meta name="description" content="Пошаговая настройка SIP-телефонии для Ватс Ростелеком. Настройка оборудования, параметры сервера, устранение ошибок и проверка регистрации.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-vats-rostelekom-podklyuchit-sip-telefon.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как подключить SIP-телефон к Ватс Ростелеком: инструкция — РТ Помощник">
+<meta property="og:description" content="Пошаговая настройка SIP-телефонии для Ватс Ростелеком. Настройка оборудования, параметры сервера, устранение ошибок и проверка регистрации."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-vats-rostelekom-podklyuchit-sip-telefon.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как подключить SIP-телефон к Ватс Ростелеком: инструкция — РТ Помощник">
+<meta name="twitter:description" content="Пошаговая настройка SIP-телефонии для Ватс Ростелеком. Настройка оборудования, параметры сервера, устранение ошибок и проверка регистрации.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-vats-rostelekom-podklyuchit-sip-telefon.html#article", "headline": "Настройка SIP-телефона для Ватс Ростелеком", "description": "Пошаговая настройка SIP-телефонии для Ватс Ростелеком. Настройка оборудования, параметры сервера, устранение ошибок и проверка регистрации.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-vats-rostelekom-podklyuchit-sip-telefon.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-vats-rostelekom-podklyuchit-sip-telefon.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-vats-rostelekom-podklyuchit-sip-telefon.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Оборудование", "item": "https://rt-pomoshnik.vercel.app/category/oborudovanie/"}, {"@type": "ListItem", "position": 3, "name": "Настройка SIP-телефона для Ватс Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-vats-rostelekom-podklyuchit-sip-telefon.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-vats-rostelekom-podklyuchit-sip-telefon.html#faq", "mainEntity": [{"@type": "Question", "name": "Можно ли использовать старый аналоговый телефон через адаптер?", "acceptedAnswer": {"@type": "Answer", "text": "Да, для этого потребуется устройство ATA (Analog Telephone Adapter). Настройка производится аналогично IP-телефону: в веб-интерфейс адаптера вводятся данные SIP-аккаунта из личного кабинета Ватс. Обычный телефон подключается в порт FXS адаптера."}}, {"@type": "Question", "name": "Что делать, если забыл пароль от веб-интерфейса телефона?", "acceptedAnswer": {"@type": "Answer", "text": "Необходимо выполнить сброс до заводских настроек (Factory Reset). Обычно это делается долгим нажатием кнопки OK или через сервисное меню на экране телефона. После сброса все настройки сотрутся, и их придется вводить заново."}}, {"@type": "Question", "name": "Сколько SIP-аккаунтов можно настроить на одном телефоне?", "acceptedAnswer": {"@type": "Answer", "text": "Зависит от модели устройства. Бюджетные модели поддерживают 2–4 линии, продвинутые офисные аппараты — до 12 и более. В «Ватс» каждый аккаунт соответствует отдельному добавочному номеру сотрудника."}}, {"@type": "Question", "name": "Нужен ли статический IP-адрес для работы SIP-телефона?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, телефон отлично работает с динамическим IP, получаемым по DHCP. Статический адрес нужен только для удобства администрирования, чтобы не искать телефон в сети каждый раз. Для регистрации на сервере это не имеет значения."}}, {"@type": "Question", "name": "Почему телефон показывает правильный статус, но не звонит?", "acceptedAnswer": {"@type": "Answer", "text": "Возможно, на стороне АТС «Ватс» для данного пользователя запрещены исходящие вызовы или не настроена маршрутизация. Проверьте права доступа в личном кабинете или свяжитесь с администратором вашей виртуальной АТС."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="is-active" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/oborudovanie/">Оборудование</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Оборудование</span> · 10 мин</p><h1>Настройка SIP-телефона для Ватс Ростелеком</h1><p class="pc-deck">Пошаговая настройка SIP-телефонии для Ватс Ростелеком. Настройка оборудования, параметры сервера, устранение ошибок и проверка регистрации.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Краткий вывод</strong><span>Для подключения введите данные пользователя (логин, пароль) и адрес SIP-сервера в веб-интерфейс телефона. Основные параметры берутся из личного кабинета Ватс в разделе настроек сотрудника.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Оборудование</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#подготовка-учетных-данных-в-личном-кабинете">Подготовка учетных данных в личном кабинете</a></li><li><a href="#поиск-параметров-сервера-и-домена">Поиск параметров сервера и домена</a></li><li><a href="#подключение-оборудования-к-сети">Подключение оборудования к сети</a></li><li><a href="#вход-в-веб-интерфейс-телефона">Вход в веб-интерфейс телефона</a></li><li><a href="#настройка-sip-аккаунта">Настройка SIP-аккаунта</a></li><li><a href="#проверка-статуса-регистрации">Проверка статуса регистрации</a></li><li><a href="#решение-типовых-проблем-со-звуком-и-вызовами">Решение типовых проблем со звуком и вызовами</a></li><li><a href="#faq">FAQ</a></li></ol></nav>
+<div class="pc-prose"><p>Интеграция аппаратных IP-телефонов в экосистему «Ватс» от Ростелеком позволяет перенести облачную телефонию на стационарные устройства в офисе. Это решение актуально для сотрудников, которым неудобно пользоваться гарнитурой или софтофоном на компьютере. Процесс подключения требует точного ввода сетевых параметров и учетных данных, полученных в личном кабинете бизнес-клиента.</p>
+
+<p>Основная сложность заключается в различии настроек для разных моделей оборудования. Производители телефонов (Yealink, Fanvil, SIP-T21 и другие) используют собственные интерфейсы, но логика регистрации на сервере едина. Перед началом работ необходимо убедиться, что услуга виртуальной АТС активирована и у вас есть доступ к панели администратора для создания новых пользователей.</p>
+
+<p>Ключевым моментом является правильное разграничение прав доступа. SIP-телефон регистрируется не под мастер-аккаунтом всей компании, а под конкретным добавочным номером (пользователем), которому назначен этот аппарат. Ошибки в пароле или адресе сервера приведут к тому, что устройство будет бесконечно пытаться зарегистрироваться, но не сможет совершать звонки.</p>
+
+
+
+<h2 id="подготовка-учетных-данных-в-личном-кабинете">Подготовка учетных данных в личном кабинете</h2>
+
+<p>Перед тем как брать в руки телефон, необходимо сформировать корректные данные для авторизации. Настройка производится не на уровне провайдера, а внутри интерфейса вашей виртуальной АТС. Зайдите в личный кабинет «Ватс» под учетной записью администратора компании.</p>
+
+<p>Перейдите в раздел управления сотрудниками или телефонией. Вам нужно выбрать конкретного работника, за которым будет закреплен аппарат, или создать нового пользователя. Для каждого добавочного номера генерируются уникальные логин и пароль. Логин чаще всего совпадает с номером телефона или внутренним добавочным, но может быть представлен в формате SIP URI.</p>
+
+<p>Обратите внимание на поле «Пароль». По соображениям безопасности система может скрывать его звездочками. В этом случае воспользуйтесь функцией сброса или генерации нового пароля. Запишите новые данные в надежное место, так как они потребуются для ввода в меню телефона. Без точного пароля регистрация на сервере невозможна.</p>
+
+<p>Также в этом разделе проверьте статус номера. Убедитесь, что у сотрудника есть права на исходящие и входящие вызовы. Иногда новые пользователи создаются с ограничениями, которые нужно снять вручную. Если номер заблокирован или не активен, телефон покажет ошибку регистрации даже при верных настройках сети.</p>
+
+<div class="pc-fact-grid" aria-label="Что нужно знать перед настройкой"><div><span>Логин</span><strong>Обычно внутренний номер</strong><p>Проверить в карточке сотрудника Ватс</p></div><div><span>Пароль</span><strong>Сложный набор символов</strong><p>Сгенерировать заново, если неизвестен</p></div><div><span>Домен</span><strong>Адрес сервера провайдера</strong><p>Уточнить в технической документации или у менеджера</p></div></div>
+
+<h2 id="поиск-параметров-сервера-и-домена">Поиск параметров сервера и домена</h2>
+
+<p>Самая частая проблема при самостоятельной настройке — незнание адреса SIP-сервера (Registrar или Proxy). В отличие от логина и пароля, которые индивидуальны для пользователя, адрес сервера един для всех клиентов определенной платформы «Ватс».</p>
+
+<p>В интерфейсе личного кабинета эти данные часто находятся в разделе «Настройки», «Техническая информация» или «Помощь». Ищите параметры с названиями «SIP сервер», «Домен регистрации» или «Proxy». Адрес обычно выглядит как доменное имя (например, sip.vats.ru или подобный корпоративный домен) или IP-адрес.</p>
+
+<p>Если в интерфейсе явного указания нет, обратитесь к документации, которая была выслана при подключении услуги, или позвоните на горячую линию для бизнеса по номеру 8 800 200 16 61. Оператор технической поддержки сможет продиктовать актуальный адрес сервера для вашего региона и тарифного плана.</p>
+
+<p>Важно различать параметры «Outbound Proxy» (исходящий прокси) и «Registrar» (сервер регистрации). В большинстве случаев для «Ватс» они совпадают, но некоторые модели телефонов требуют раздельного ввода. Если телефон не регистрируется, попробуйте продублировать адрес сервера во все поля, связанные с доменом и прокси.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Важно</strong><p>Не используйте публичные адреса серверов других операторов. Телефон зарегистрируется, но звонки не пройдут или будут тарифицироваться неверно.</p></div></aside>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="подключение-оборудования-к-сети">Подключение оборудования к сети</h2>
+
+<p>Физическое подключение телефона является фундаментом для дальнейшей программной настройки. Большинство современных IP-телефонов поддерживают технологию PoE (Power over Ethernet), что позволяет передавать питание и данные по одному кабелю.</p>
+
+<p>Если у вас есть PoE-коммутатор или инжектор, просто соедините порт LAN на телефоне с сетевым оборудованием кабелем витая пара. Телефон включится автоматически. Если такой возможности нет, обязательно подключите блок питания в розетку, а затем соедините телефон с роутером или свитчем.</p>
+
+<p>Проверьте индикацию на экране устройства. Телефон должен получить IP-адрес от вашего маршрутизатора по протоколу DHCP. Обычно адрес отображается в нижней части дисплея или в меню «Статус» / «Состояние сети». Запишите этот IP-адрес, он понадобится для входа в веб-интерфейс настроек.</p>
+
+<p>Убедитесь, что телефон находится в той же локальной сети, что и компьютер, с которого вы планируете управлять настройками. Если телефон подключен в гостевую сеть или изолированный VLAN, вы не сможете открыть его веб-интерфейс для конфигурации.</p>
+
+<div class="pc-widget-title">Порядок физического подключения</div><ol class="pc-steps"><li><span>1</span><div><strong>Подключите кабель интернета в порт LAN телефона</strong></div></li><li><span>2</span><div><strong>Подключите питание (блок или PoE)</strong></div></li><li><span>3</span><div><strong>Дождитесь загрузки и получения IP-адреса</strong></div></li><li><span>4</span><div><strong>Введите IP-адрес в браузере компьютера</strong></div></li></ol>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/r/ro/rostelekom-iptv-kakoj-router.html"><span>01</span><strong>Выбор и настройка роутера для IPTV Ростелеком</strong><small>11 мин →</small></a><a href="/articles/k/ka/kak-nastroit-pult-rostelekom-k-televizoru-bbk.html"><span>02</span><strong>Настройка универсального пульта Ростелеком для телевизора BBK</strong><small>9 мин →</small></a><a href="/articles/r/ro/router-rostelekom-kak-podklyuchit-internet.html"><span>03</span><strong>Как подключить роутер Ростелеком: инструкция по настройке</strong><small>13 мин →</small></a></div></aside><h2 id="вход-в-веб-интерфейс-телефона">Вход в веб-интерфейс телефона</h2>
+
+<p>Для настройки параметров SIP используется встроенный веб-сервер телефона. Откройте любой браузер на компьютере (Chrome, Firefox, Edge) и введите IP-адрес телефона в адресную строку. Нажмите Enter.</p>
+
+<p>Появится окно авторизации. По умолчанию на большинстве устройств (Yealink, Fanvil, Snom) логин и пароль администратора одинаковы. Чаще всего это пара admin/admin. Если эти данные не подходят, проверьте наклейку на нижней части корпуса телефона — там часто указаны заводские учетные данные.</p>
+
+<p>После успешного входа вы увидите главную панель управления. Интерфейс может быть на английском или русском языке. Рекомендуется сразу переключить язык на русский в настройках системы, чтобы избежать ошибок при выборе пунктов меню.</p>
+
+<p>Важно: не изменяйте настройки сети (статический IP, маску, шлюз), если вы не являетесь квалифицированным сетевым администратором. Неправильные настройки сети приведут к потере связи с телефоном, и для восстановления потребуется сброс до заводских настроек.</p>
+
+<h2 id="настройка-sip-аккаунта">Настройка SIP-аккаунта</h2>
+
+<p>Перейдите в раздел «Аккаунты» (Account) или «Линии» (Line). Выберите первый доступный слот (Account 1). Именно здесь вводятся данные, полученные в личном кабинете «Ватс».</p>
+
+<p>Заполните поле «Активный» (Active) значением «Включено» (Enabled). В поле «Метка» (Label) введите имя сотрудника или номер телефона — это будет отображаться на экране при входящем звонке. Поле «Отображаемое имя» (Display Name) также заполните именем абонента.</p>
+
+<p>В поле «Имя пользователя» (User Name) и «Имя для регистрации» (Register Name) введите логин сотрудника. В поле «Пароль» (Password) введите сгенерированный ранее пароль. Будьте внимательны к регистру символов и специальным знакам.</p>
+
+<p>В поле «SIP сервер» (SIP Server) и «Вторичный SIP сервер» введите адрес домена, полученный у провайдера. Поле «Транспорт» (Transport) обычно оставляют по умолчанию (UDP), но если связь нестабильна, можно попробовать TCP. Сохраните изменения, нажав кнопку «Подтвердить» (Confirm) или «Сохранить» (Save).</p>
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Когда нужно остановиться</strong><p>Если после сохранения телефон перезагружается в цикле или экран гаснет — отключите питание. Возможно, конфликт IP-адресов или сбой прошивки.</p></div></aside>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="проверка-статуса-регистрации">Проверка статуса регистрации</h2>
+
+<p>После сохранения настроек телефон автоматически попытается связаться с сервером Ростелеком. Вернитесь на главную страницу веб-интерфейа или посмотрите на физический дисплей телефона.</p>
+
+<p>Индикатором успешной работы является статус «Зарегистрирован» (Registered) или иконка трубки без знака запрета. В веб-интерфейсе в строке состояния аккаунта должно быть написано «Registered». Если статус «Ошибка» (Error) или «Не зарегистрирован» (Unregistered), проверьте введенные данные.</p>
+
+<p>Наиболее частая причина ошибки — неверный пароль или адрес сервера. Перепроверьте их посимвольно. Также проблема может быть в брандмауэре вашего роутера, который блокирует SIP-трафик. Убедитесь, что порты 5060 (UDP/TCP) открыты для исходящих соединений.</p>
+
+<p>Если статус меняется с «Регистрация» на «Ошибка» и обратно, это свидетельствует о проблемах с сетью или нестабильном интернете. Попробуйте перезагрузить телефон и маршрутизатор. Если проблема сохраняется более 10 минут, обратитесь в поддержку.</p>
+
+<section class="pc-verify"><div class="pc-verify-head"><span>Контрольные точки</span><h3>Как проверить результат</h3></div><div class="pc-verify-grid"><article class="pc-verify-card"><strong>Статус в веб-интерфейсе</strong><div><span>Норма</span><p>Registered (Зарегистрирован)</p></div><div><span>Тревожный признак</span><p>Error / Unregistered</p></div></article><article class="pc-verify-card"><strong>Индикация на экране</strong><div><span>Норма</span><p>Горит иконка трубки</p></div><div><span>Тревожный признак</span><p>Крестик или пустой экран</p></div></article><article class="pc-verify-card"><strong>Тестовый звонок</strong><div><span>Норма</span><p>Гудок и соединение</p></div><div><span>Тревожный признак</span><p>Тишина или быстрый сброс</p></div></article></div></section>
+
+<h2 id="решение-типовых-проблем-со-звуком-и-вызовами">Решение типовых проблем со звуком и вызовами</h2>
+
+<p>Даже при успешной регистрации могут возникнуть проблемы с прохождением вызовов. Самая распространенная ситуация: вызов идет, но после поднятия трубки нет звука (односторонняя слышимость или тишина).</p>
+
+<p>Это классическая проблема NAT (трансляции сетевых адресов). Телефон находится за роутером, и сервер не знает, куда отправлять аудиопоток. В настройках аккаунта телефона найдите раздел NAT или Network Settings.</p>
+
+<p>Включите опцию «NAT Keep Alive» (Keep Alive) или «Обход NAT». Установите интервал отправки пакетов (например, 30 секунд). Это заставит телефон постоянно напоминать роутеру о своем существовании, сохраняя порт открытым для входящего звука.</p>
+
+<p>Также проверьте кодек. В настройках аккаунта есть список приоритетных кодеков. Убедитесь, что активны стандартные G.711 (Alaw/Ulaw) или G.729. Если выбраны экзотические кодеки, которые не поддерживаются сервером «Ватс», звонок не состоится.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Ввод мастер-пароля компании вместо пароля пользователя — приведет к ошибке авторизации</strong></div></article><article><span>02</span><div><strong>Отключение NAT Keep Alive — приведет к отсутствию звука после соединения</strong></div></article></div>
+
+<h2 id="faq">FAQ</h2>
+
+<details><summary>Можно ли использовать старый аналоговый телефон через адаптер?</summary><p>Да, для этого потребуется устройство ATA (Analog Telephone Adapter). Настройка производится аналогично IP-телефону: в веб-интерфейс адаптера вводятся данные SIP-аккаунта из личного кабинета Ватс. Обычный телефон подключается в порт FXS адаптера.</p></details>
+
+<details><summary>Что делать, если забыл пароль от веб-интерфейса телефона?</summary><p>Необходимо выполнить сброс до заводских настроек (Factory Reset). Обычно это делается долгим нажатием кнопки OK или через сервисное меню на экране телефона. После сброса все настройки сотрутся, и их придется вводить заново.</p></details>
+
+<details><summary>Сколько SIP-аккаунтов можно настроить на одном телефоне?</summary><p>Зависит от модели устройства. Бюджетные модели поддерживают 2–4 линии, продвинутые офисные аппараты — до 12 и более. В «Ватс» каждый аккаунт соответствует отдельному добавочному номеру сотрудника.</p></details>
+
+<details><summary>Нужен ли статический IP-адрес для работы SIP-телефона?</summary><p>Нет, телефон отлично работает с динамическим IP, получаемым по DHCP. Статический адрес нужен только для удобства администрирования, чтобы не искать телефон в сети каждый раз. Для регистрации на сервере это не имеет значения.</p></details>
+
+<details><summary>Почему телефон показывает правильный статус, но не звонит?</summary><p>Возможно, на стороне АТС «Ватс» для данного пользователя запрещены исходящие вызовы или не настроена маршрутизация. Проверьте права доступа в личном кабинете или свяжитесь с администратором вашей виртуальной АТС.</p></details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/r/ro/rostelekom-iptv-kakoj-router.html"><span>11 мин</span><strong>Выбор и настройка роутера для IPTV Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-pult-rostelekom-k-televizoru-bbk.html"><span>9 мин</span><strong>Настройка универсального пульта Ростелеком для телевизора BBK</strong><b>Читать ↗</b></a><a href="/articles/r/ro/router-rostelekom-kak-podklyuchit-internet.html"><span>13 мин</span><strong>Как подключить роутер Ростелеком: инструкция по настройке</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-internet-na-kompyutere-cherez-router-rostelekom.html"><span>9 мин</span><strong>Настройка интернета Ростелеком через роутер</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-zajti-na-router-rostelekom-cherez-internet.html"><span>10 мин</span><strong>Удаленный доступ к роутеру Ростелеком через интернет</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-nastroit-usb-na-routere-rostelekom.html"><span>11 мин</span><strong>Как настроить USB-порт на роутере Ростелеком</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

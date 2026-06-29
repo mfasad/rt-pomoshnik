@@ -1,0 +1,137 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как открыть порты на Windows 10 Ростелеком: полная инструкция — РТ Помощник</title><meta name="description" content="Руководство по пробросу портов для игр и серверов через роутер Ростелеком и настройке брандмауэра Windows 10.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-porty-na-vindovs-10-rostelekom.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как открыть порты на Windows 10 Ростелеком: полная инструкция — РТ Помощник">
+<meta property="og:description" content="Руководство по пробросу портов для игр и серверов через роутер Ростелеком и настройке брандмауэра Windows 10."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-porty-na-vindovs-10-rostelekom.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как открыть порты на Windows 10 Ростелеком: полная инструкция — РТ Помощник">
+<meta name="twitter:description" content="Руководство по пробросу портов для игр и серверов через роутер Ростелеком и настройке брандмауэра Windows 10.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-porty-na-vindovs-10-rostelekom.html#article", "headline": "Открытие портов на Windows 10 и оборудовании Ростелеком", "description": "Руководство по пробросу портов для игр и серверов через роутер Ростелеком и настройке брандмауэра Windows 10.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-porty-na-vindovs-10-rostelekom.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-porty-na-vindovs-10-rostelekom.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-porty-na-vindovs-10-rostelekom.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Игры и ПК", "item": "https://rt-pomoshnik.vercel.app/category/igry-i-pk/"}, {"@type": "ListItem", "position": 3, "name": "Открытие портов на Windows 10 и оборудовании Ростелеком", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-porty-na-vindovs-10-rostelekom.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-otkryt-porty-na-vindovs-10-rostelekom.html#faq", "mainEntity": [{"@type": "Question", "name": "Почему онлайн-сканер показывает порт закрытым, хотя в игре все работает?", "acceptedAnswer": {"@type": "Answer", "text": "Это нормальная ситуация. Сканер проверяет, есть ли программа, которая прямо сейчас «слушает» этот порт и готова принять соединение. Если игра выключена, порт будет закрыт для сканера, но правило в роутере работает корректно и откроется в момент запуска игры."}}, {"@type": "Question", "name": "Нужно ли открывать порты для каждой игры отдельно?", "acceptedAnswer": {"@type": "Answer", "text": "Да, каждое приложение использует свои уникальные номера портов. Вы должны найти в документации к конкретной игре или программе список требуемых портов и создать для каждого отдельное правило в роутере и брандмауэре."}}, {"@type": "Question", "name": "Можно ли открыть порты без статического IP от Ростелеком?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, технически это невозможно. Если провайдер использует CGNAT (серый IP), входящие соединения из интернета просто не доходят до вашего роутера. Единственное решение — покупка услуги статического IP."}}, {"@type": "Question", "name": "Влияет ли антивирус на открытие портов?", "acceptedAnswer": {"@type": "Answer", "text": "Да, сторонние антивирусы (Kaspersky, ESET, Avast) имеют свои встроенные фаерволы, которые могут игнорировать настройки Windows. Если стандартный брандмауэр настроен верно, но порт закрыт, проверьте настройки сетевого экрана в вашем антивирусе."}}, {"@type": "Question", "name": "Что делать, если я забыл пароль от роутера Ростелеком?", "acceptedAnswer": {"@type": "Answer", "text": "Если стандартные данные с наклейки не подходят, придется выполнить аппаратный сброс. Зажмите кнопку Reset на задней панели роутера на 10-15 секунд. После этого устройство вернется к заводским настройкам, и вам придется заново настроить интернет (логин/пароль из договора)."}}, {"@type": "Question", "name": "Безопасно ли открывать порты для торрентов?", "acceptedAnswer": {"@type": "Answer", "text": "Открытие портов для торрент-клиентов повышает скорость скачивания, но теоретически делает ваш IP видимым для других участников сети. Для обычного пользователя риск минимален, если операционная система своевременно обновляется и имеет надежный пароль."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="is-active" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/igry-i-pk/">Игры и ПК</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Игры и ПК</span> · 10 мин</p><h1>Открытие портов на Windows 10 и оборудовании Ростелеком</h1><p class="pc-deck">Руководство по пробросу портов для игр и серверов через роутер Ростелеком и настройке брандмауэра Windows 10.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Краткий вывод</strong><span>Чтобы открыть порт, нужно зайти в настройки роутера Ростелеком (обычно 192.168.1.1), создать правило переадресации (Port Forwarding) на IP вашего ПК, а затем разрешить соединение в брандмауэре Windows 10.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Игры и ПК</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#подготовка-компьютера-фиксация-ip-адреса">Подготовка компьютера: фиксация IP-адреса</a></li><li><a href="#вход-в-панель-управления-роутером-ростелеком">Вход в панель управления роутером Ростелеком</a></li><li><a href="#настройка-переадресации-портов-port-forwarding">Настройка переадресации портов (Port Forwarding)</a></li><li><a href="#настройка-брандмауэра-windows-10">Настройка брандмауэра Windows 10</a></li><li><a href="#проверка-статуса-открытых-портов">Проверка статуса открытых портов</a></li><li><a href="#проблема-серого-ip-адреса-у-ростелеком">Проблема серого IP-адреса у Ростелеком</a></li><li><a href="#типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</a></li><li><a href="#альтернативные-методы-dmz-и-upnp">Альтернативные методы: DMZ и UPnP</a></li></ol></nav>
+<div class="pc-prose"><p>Открытие портов (проброс или Port Forwarding) — необходимая процедура для корректной работы онлайн-игр, видеосерверов, торрент-клиентов и удаленного доступа к домашним устройствам. В сети провайдера Ростелеком, как и у большинства крупных операторов, абоненты часто находятся за двойным или тройным NAT, что блокирует входящие соединения из интернета. Для решения проблемы требуется комплексная настройка: сначала на маршрутизаторе, выданном провайдером, а затем в брандмауэре операционной системы Windows 10.</p>
+
+<p>Процесс не является сложным, но требует внимательности к деталям, так как ошибка в одном из шагов приведет к тому, что порт останется закрытым. Главная задача — создать маршрут, по которому внешний запрос с определенного порта будет перенаправляться на конкретный IP-адрес вашего компьютера внутри локальной сети. Без этой настройки игровые консоли и ПК могут показывать строгий тип NAT, что ограничивает возможности multiplayer-режимов.</p>
+
+<p>Перед началом работы убедитесь, что у вашего компьютера установлен статический IP-адрес в локальной сети. Если адрес выдается динамически (по DHCP), он может измениться после перезагрузки роутера, и созданные правила перестанут работать, так как будут указывать на несуществующее устройство. Закрепление адреса — первый и обязательный этап подготовки.</p>
+
+
+
+<h2 id="подготовка-компьютера-фиксация-ip-адреса">Подготовка компьютера: фиксация IP-адреса</h2>
+
+<p>Маршрутизатор перенаправляет трафик на конкретный адрес. Если ваш компьютер получает адрес автоматически и он изменится, правило проброса потеряет силу. Поэтому необходимо назначить статический IP. Это делается через настройки сетевого адаптера в Windows.</p>
+
+<p>Нажмите комбинацию клавиш <code>Win + R</code>, введите команду <code>ncpa.cpl</code> и нажмите Enter. В открывшемся окне найдите ваше активное подключение (Ethernet или Wi-Fi), кликните по нему правой кнопкой мыши и выберите «Свойства». В списке найдите строку «IP версии 4 (TCP/IPv4)», выделите её и снова нажмите «Свойства».</p>
+
+<p>В открывшемся окне переключите маркер на «Использовать следующий IP-адрес». Вам нужно ввести данные вашей текущей сети. Обычно шлюз (роутер Ростелеком) имеет адрес <code>192.168.1.1</code> или <code>192.168.0.1</code>. Маску подсети ставьте <code>255.255.255.0</code>. В поле IP-адрес введите адрес из той же подсети, но с высоким номером, например, <code>192.168.1.150</code>, чтобы избежать конфликтов с другими устройствами.</p>
+
+<h2 id="вход-в-панель-управления-роутером-ростелеком">Вход в панель управления роутером Ростелеком</h2>
+
+<p>После настройки компьютера необходимо получить доступ к интерфейсу роутера. Большинство устройств, выдаваемых провайдером (Sagemcom, Eltex, Sercomm, ZTE), имеют стандартный адрес веб-интерфейса. Откройте любой браузер и введите в адресной строке IP-адрес шлюза, который вы указали в предыдущем шаге (часто это <code>192.168.1.1</code>).</p>
+
+<p>Система запросит логин и пароль. По умолчанию на наклейке снизу роутера указаны данные для входа. Чаще всего логин — <code>admin</code>, а пароль — <code>admin</code> или уникальный код из наклейки. Если вы меняли пароль ранее и забыли его, придется сбрасывать роутер до заводских настроек кнопкой Reset, что потребует повторной настройки интернета.</p>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="настройка-переадресации-портов-port-forwarding">Настройка переадресации портов (Port Forwarding)</h2>
+
+<p>Интерфейсы роутеров Ростелеком могут отличаться в зависимости от модели и версии прошивки, но логика везде одинакова. Вам нужно найти раздел, отвечающий за переадресацию. Ищите вкладки с названиями «NAT», «Переадресация», «Port Forwarding», «Виртуальные серверы» или «Туннелирование».</p>
+
+<p>В этом разделе создайте новое правило. Вам потребуется указать следующие параметры: имя правила (любое, например, «Minecraft»), протокол (TCP, UDP или TCP/UDP), внешний порт (тот, который будет открыт для интернета) и внутренний порт (обычно совпадает с внешним). В поле «Внутренний IP-адрес» или «IP хоста» введите тот статический адрес, который вы задали компьютеру (например, <code>192.168.1.150</code>).</p>
+
+<div class="pc-widget-title">Порядок действий в роутере</div><ol class="pc-steps"><li><span>1</span><div><strong>Зайдите в раздел NAT / Переадресация портов</strong></div></li><li><span>2</span><div><strong>Нажмите «Добавить» или «Создать правило»</strong></div></li><li><span>3</span><div><strong>Укажите внутренний IP вашего ПК</strong></div></li><li><span>4</span><div><strong>Введите номер порта и выберите протокол (TCP/UDP)</strong></div></li><li><span>5</span><div><strong>Сохраните настройки и перезагрузите роутер</strong></div></li></ol>
+
+<p>После сохранения настроек роутер может потребовать перезагрузки. Это критически важный этап, так как новые правила фильтрации трафика часто применяются только после перезапуска сетевого оборудования. Без перезагрузки порт может оставаться закрытым, даже если правило отображается в списке активных.</p>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kak-poluchit-beskonechnyj-premium-akkaunt-v-world-of-tanks-rostelekom.html"><span>01</span><strong>Как получить бонусы World of Tanks через услуги Ростелеком</strong><small>11 мин →</small></a><a href="/articles/k/ka/kak-otklyuchit-akkaunt-v-tankakh-ot-rostelekom.html"><span>02</span><strong>Как отвязать аккаунт World of Tanks от Ростелеком</strong><small>12 мин →</small></a><a href="/articles/k/ka/kak-privyazat-akkaunt-vargejming-k-rostelekomu.html"><span>03</span><strong>Инструкция по привязке аккаунта Wargaming к Ростелекому</strong><small>10 мин →</small></a></div></aside><h2 id="настройка-брандмауэра-windows-10">Настройка брандмауэра Windows 10</h2>
+
+<p>Даже если роутер корректно пропускает трафик, встроенный защитник Windows может блокировать входящее соединение. Необходимо создать разрешающее правило в брандмауэре. Откройте «Панель управления», перейдите в «Система и безопасность» и выберите «Брандмауэр Защитника Windows».</p>
+
+<p>В меню слева кликните на «Дополнительные параметры». Откроется консоль мониторинга. Выберите раздел «Правила для входящих подключений» и в правой панели нажмите «Создать правило». Мастер настройки предложит несколько типов правил; выберите «Для порта» и нажмите «Далее».</p>
+
+<p>Укажите протокол (TCP или UDP, в зависимости от того, что вы настроили в роутере) и введите конкретный номер порта в поле «Определенные локальные порты». На следующем этапе выберите действие «Разрешить подключение». Затем оставьте галочки на всех профилях (Доменный, Частный, Публичный), чтобы правило работало в любой сети, и дайте правилу понятное имя.</p>
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Риски открытия портов</strong><p>Открытие портов делает ваше устройство видимым для внешней сети. Никогда не открывайте порты для служб удаленного управления (например, RDP на порт 3389) без сложного пароля, так как это прямой путь для хакеров.</p></div></aside>
+
+<h2 id="проверка-статуса-открытых-портов">Проверка статуса открытых портов</h2>
+
+<p>После выполнения всех настроек необходимо убедиться, что порт действительно открыт и доступен из глобальной сети. Локальная проверка через <code>netstat</code> покажет лишь то, что программа слушает порт, но не подтвердит доступность извне. Для этого используйте онлайн-сервисы.</p>
+
+<p>Существует множество бесплатных инструментов, таких как 2ip.ru или portscanner.ru. Введите номер порта, который вы открыли, и запустите сканирование. Если сервис сообщит, что порт «Открыт» (Open), значит, настройка прошла успешно. Если статус «Закрыт» (Closed) или «Отфильтрован» (Filtered), проверьте шаги заново.</p>
+
+<section class="pc-verify"><div class="pc-verify-head"><span>Контрольные точки</span><h3>Как проверить результат</h3></div><div class="pc-verify-grid"><article class="pc-verify-card"><strong>Онлайн-сканер портов</strong><div><span>Норма</span><p>Статус «Открыт»</p></div><div><span>Тревожный признак</span><p>Статус «Закрыт» или тайм-аут</p></div></article><article class="pc-verify-card"><strong>Игра или приложение</strong><div><span>Норма</span><p>Тип NAT «Открытый»</p></div><div><span>Тревожный признак</span><p>Тип NAT «Строгий» или «Умеренный»</p></div></article></div></section>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="проблема-серого-ip-адреса-у-ростелеком">Проблема серого IP-адреса у Ростелеком</h2>
+
+<p>Частой причиной неудачи является использование провайдером технологии CGNAT (Carrier-Grade NAT). В этом случае роутер получает не «белый» (публичный) IP-адрес, а внутренний адрес провайдера. Даже идеальная настройка переадресации не сработает, так как сам роутер находится за чужим маршрутизатором.</p>
+
+<p>Проверить это легко: зайдите в веб-интерфейс роутера и посмотрите IP-адрес, полученный на WAN-порту (в разделе «Статус» или «Интернет»). Сравните его с адресом, который показывают сайты вроде 2ip.ru. Если адреса разные (например, на роутере начинается на 10.x.x.x или 100.x.x.x, а на сайте — другой), значит, у вас серый IP.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Как выбрать действие</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>WAN IP роутера совпадает с IP на сайте 2ip</span><strong>Проблема в настройках роутера или брандмауэра Windows</strong></div><div class="pc-decision-row"><span>WAN IP роутера отличается от IP на сайте 2ip</span><strong>Требуется заказ услуги «Статический IP» у провайдера</strong></div></div></section>
+
+<p>Решение в данном случае только одно — заказать услугу «Статический IP-адрес» у Ростелеком. Это платная опция, которая присваивает вашему договору постоянный публичный адрес. После подключения услуги и перезагрузки роутера адреса совпадут, и проброс портов станет возможным.</p>
+
+<h2 id="типичные-ошибки-и-способы-их-устранения">Типичные ошибки и способы их устранения</h2>
+
+<p>Пользователи часто допускают ошибки при выборе протокола. Некоторые игры и приложения требуют только UDP, другие — только TCP, а третьи — оба протокола сразу. Если вы открыли только TCP, а игре нужен UDP, соединение не установится. Рекомендуется создавать два правила или выбирать опцию «TCP/UDP», если роутер это позволяет.</p>
+
+<p>Еще одна распространенная ошибка — указание неверного внутреннего IP. Если вы сменили сетевую карту или сбросили настройки сети, адрес компьютера мог измениться, а правило в роутере осталось старым. Всегда проверяйте текущий IP через команду <code>ipconfig</code> в командной строке перед настройкой.</p>
+
+<div class="pc-widget-title">Типичные ошибки</div><div class="pc-mistakes"><article><span>01</span><div><strong>Неверный протокол (открыт TCP, нужен UDP) — соединение не пройдет</strong></div></article><article><span>02</span><div><strong>Динамический IP компьютера изменился — правило ведет в никуда</strong></div></article><article><span>03</span><div><strong>Серый IP от провайдера — проброс портов технически невозможен без смены тарифа</strong></div></article></div>
+
+<h2 id="альтернативные-методы-dmz-и-upnp">Альтернативные методы: DMZ и UPnP</h2>
+
+<p>Если ручная настройка портов кажется слишком сложной или требуется открыть множество портов для разных игр, можно использовать функцию DMZ (Демилитаризованная зона). В настройках роутера укажите IP-адрес вашего ПК как хост DMZ. Это перенаправит на компьютер весь входящий трафик, который не занят другими правилами.</p>
+
+<p>Метод DMZ эффективен, но менее безопасен, так как компьютер полностью исключается из защиты файрвола роутера. Используйте его только если доверяете сетевой безопасности своей Windows на 100%. Альтернативой также служит UPnP (автоматическое открытие портов), но эта функция часто отключена провайдером или работает нестабильно.</p>
+
+<section class="pc-compare"><h3>Сравнение вариантов</h3><div><div><strong>Ручной проброс (Port Forwarding)</strong><p>Безопасно и надежно. Подходит для конкретных игр и серверов.</p></div><div><strong>Режим DMZ</strong><p>Открывает все порты сразу. Менее безопасно, но удобно для консолей.</p></div><div><strong>UPnP</strong><p>Автоматическое открытие. Удобно, но часто блокируется провайдером.</p></div></div></section>
+
+<details>
+<summary>Почему онлайн-сканер показывает порт закрытым, хотя в игре все работает?</summary>
+<p>Это нормальная ситуация. Сканер проверяет, есть ли программа, которая прямо сейчас «слушает» этот порт и готова принять соединение. Если игра выключена, порт будет закрыт для сканера, но правило в роутере работает корректно и откроется в момент запуска игры.</p>
+</details>
+
+<details>
+<summary>Нужно ли открывать порты для каждой игры отдельно?</summary>
+<p>Да, каждое приложение использует свои уникальные номера портов. Вы должны найти в документации к конкретной игре или программе список требуемых портов и создать для каждого отдельное правило в роутере и брандмауэре.</p>
+</details>
+
+<details>
+<summary>Можно ли открыть порты без статического IP от Ростелеком?</summary>
+<p>Нет, технически это невозможно. Если провайдер использует CGNAT (серый IP), входящие соединения из интернета просто не доходят до вашего роутера. Единственное решение — покупка услуги статического IP.</p>
+</details>
+
+<details>
+<summary>Влияет ли антивирус на открытие портов?</summary>
+<p>Да, сторонние антивирусы (Kaspersky, ESET, Avast) имеют свои встроенные фаерволы, которые могут игнорировать настройки Windows. Если стандартный брандмауэр настроен верно, но порт закрыт, проверьте настройки сетевого экрана в вашем антивирусе.</p>
+</details>
+
+<details>
+<summary>Что делать, если я забыл пароль от роутера Ростелеком?</summary>
+<p>Если стандартные данные с наклейки не подходят, придется выполнить аппаратный сброс. Зажмите кнопку Reset на задней панели роутера на 10-15 секунд. После этого устройство вернется к заводским настройкам, и вам придется заново настроить интернет (логин/пароль из договора).</p>
+</details>
+
+<details>
+<summary>Безопасно ли открывать порты для торрентов?</summary>
+<p>Открытие портов для торрент-клиентов повышает скорость скачивания, но теоретически делает ваш IP видимым для других участников сети. Для обычного пользователя риск минимален, если операционная система своевременно обновляется и имеет надежный пароль.</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kak-poluchit-beskonechnyj-premium-akkaunt-v-world-of-tanks-rostelekom.html"><span>11 мин</span><strong>Как получить бонусы World of Tanks через услуги Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-otklyuchit-akkaunt-v-tankakh-ot-rostelekom.html"><span>12 мин</span><strong>Как отвязать аккаунт World of Tanks от Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-privyazat-akkaunt-vargejming-k-rostelekomu.html"><span>10 мин</span><strong>Инструкция по привязке аккаунта Wargaming к Ростелекому</strong><b>Читать ↗</b></a><a href="/articles/u/u-/u-menya-rostelekom-kak-podklyuchit-tarif-igrovoj.html"><span>11 мин</span><strong>Как подключить тариф для игр у Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/g/gd/gde-vzyat-tanki-v-arendu-ot-rostelekom.html"><span>10 мин</span><strong>Как арендовать сервер «Танки» в Ростелеком Игровой</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-domashnij-internet-rostelekom-k-kompyuteru-na-vindovs-10.html"><span>11 мин</span><strong>Настройка интернета Ростелеком на Windows 10</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>

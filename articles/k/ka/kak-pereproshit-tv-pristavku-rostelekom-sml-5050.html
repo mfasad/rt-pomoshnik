@@ -1,0 +1,135 @@
+<!doctype html><html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>📡</text></svg>"><title>Как перепрошить ТВ приставку Ростелеком SML-5050 — РТ Помощник</title><meta name="description" content="Инструкция по перепрошивке SML-5050 через USB и UART. Как войти в recovery mode, выбрать прошивку и восстановить работу устройства.">
+<meta name="robots" content="index, follow"><link rel="canonical" href="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pereproshit-tv-pristavku-rostelekom-sml-5050.html">
+<meta property="og:type" content="article"><meta property="og:title" content="Как перепрошить ТВ приставку Ростелеком SML-5050 — РТ Помощник">
+<meta property="og:description" content="Инструкция по перепрошивке SML-5050 через USB и UART. Как войти в recovery mode, выбрать прошивку и восстановить работу устройства."><meta property="og:locale" content="ru_RU">
+<meta property="og:url" content="https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pereproshit-tv-pristavku-rostelekom-sml-5050.html"><meta property="og:site_name" content="РТ Помощник">
+<meta name="twitter:card" content="summary"><meta name="twitter:title" content="Как перепрошить ТВ приставку Ростелеком SML-5050 — РТ Помощник">
+<meta name="twitter:description" content="Инструкция по перепрошивке SML-5050 через USB и UART. Как войти в recovery mode, выбрать прошивку и восстановить работу устройства.">
+<link rel="stylesheet" href="/static/css/style.css?v=1782739074"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pereproshit-tv-pristavku-rostelekom-sml-5050.html#article", "headline": "Как перепрошить ТВ приставку Ростелеком SML-5050", "description": "Инструкция по перепрошивке SML-5050 через USB и UART. Как войти в recovery mode, выбрать прошивку и восстановить работу устройства.", "url": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pereproshit-tv-pristavku-rostelekom-sml-5050.html", "mainEntityOfPage": {"@type": "WebPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pereproshit-tv-pristavku-rostelekom-sml-5050.html"}, "publisher": {"@type": "Organization", "name": "РТ Помощник", "url": "https://rt-pomoshnik.vercel.app/"}}, {"@type": "BreadcrumbList", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pereproshit-tv-pristavku-rostelekom-sml-5050.html#breadcrumb", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://rt-pomoshnik.vercel.app/"}, {"@type": "ListItem", "position": 2, "name": "Оборудование", "item": "https://rt-pomoshnik.vercel.app/category/oborudovanie/"}, {"@type": "ListItem", "position": 3, "name": "Как перепрошить ТВ приставку Ростелеком SML-5050", "item": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pereproshit-tv-pristavku-rostelekom-sml-5050.html"}]}, {"@type": "FAQPage", "@id": "https://rt-pomoshnik.vercel.app/articles/k/ka/kak-pereproshit-tv-pristavku-rostelekom-sml-5050.html#faq", "mainEntity": [{"@type": "Question", "name": "Можно ли перепрошить SML-5050 без флешки?", "acceptedAnswer": {"@type": "Answer", "text": "Без флешки перепрошить устройство штатными методами невозможно. Обновление по сети (OTA) работает только если система хотя бы частично загружается и имеет доступ к серверам Ростелекома. При серьезных сбоях внешний носитель обязателен."}}, {"@type": "Question", "name": "Где взять файл прошивки официально?", "acceptedAnswer": {"@type": "Answer", "text": "Ростелеком не публикует файлы прошивок в открытом доступе для пользователей. Их можно найти только на специализированных форумах энтузиастов или получить в сервисных центрах. Использование файлов со сторонних ресурсов всегда несет риск."}}, {"@type": "Question", "name": "Сотрется ли мой список каналов после прошивки?", "acceptedAnswer": {"@type": "Answer", "text": "Да, при полной перепрошивке все пользовательские данные, настройки Wi-Fi и привязки к личному кабинету будут удалены. Устройство вернется к заводскому состоянию, и его потребуется настроить заново как новое."}}, {"@type": "Question", "name": "Что такое «кирпич» и можно ли его оживить?", "acceptedAnswer": {"@type": "Answer", "text": "«Кирпич» — это состояние, когда приставка не подает признаков жизни (черный экран, нет реакции на пульт). Если не поврежден загрузчик, оживить её можно через UART. Если поврежден загрузчик, требуется программатор для перепайки чипа памяти, что экономически часто нецелесообразно."}}, {"@type": "Question", "name": "Подойдет ли прошивка от SML-4830?", "acceptedAnswer": {"@type": "Answer", "text": "Нет, прошивки от разных моделей (даже одного производителя) несовместимы. Установка ПО от SML-4830 на SML-5050 гарантированно выведет устройство из строя из-за различий в аппаратной конфигурации."}}, {"@type": "Question", "name": "Нужно ли активировать приставку после перепрошивки?", "acceptedAnswer": {"@type": "Answer", "text": "Если вы перепрошиваете устройство, полученное от провайдера, оно может потребовать повторной активации в сети оператора. Для этого может потребоваться звонок в поддержку по номеру 8 800 100 0 800 или ввод мак-адреса в личном кабинете."}}]}]}</script></head>
+<body class="pc-body pc-article-body" data-page-type="article" data-ads="on"><a class="pc-skip" href="#article">К статье</a>
+<button class="pc-menu-button" type="button" aria-controls="siteSidebar" aria-expanded="false" data-menu-button><span aria-hidden="true"></span><span>Разделы</span></button>
+<div class="pc-sidebar-shade" data-sidebar-shade></div><aside class="pc-sidebar" id="siteSidebar" aria-label="Навигация по сайту">
+<div class="pc-sidebar-top"><a class="pc-brand" href="/"><span class="pc-brand-mark">📡</span><span><strong>РТ Помощник</strong><small>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</small></span></a>
+<div class="pc-search" role="search"><label class="pc-visually-hidden" for="globalSearchInput">Поиск</label><input id="globalSearchInput" type="search" placeholder="Найти решение" autocomplete="off"><div class="search-dropdown" id="globalSearchDropdown"></div></div>
+<nav class="pc-section-nav" aria-label="Разделы"><p class="pc-nav-label">Темы</p><a class="" href="/category/nastrojka-wi-fi/"><span>01</span>Настройка Wi-Fi</a><a class="" href="/category/podklyuchenie-tv/"><span>02</span>Подключение ТВ</a><a class="" href="/category/servis-wink/"><span>03</span>Сервис Wink</a><a class="" href="/category/mobilnaya-svyaz/"><span>04</span>Мобильная связь</a><a class="" href="/category/videonablyudenie/"><span>05</span>Видеонаблюдение</a><a class="" href="/category/oplata-i-tarify/"><span>06</span>Оплата и Тарифы</a><a class="" href="/category/lichnyj-kabinet/"><span>07</span>Личный кабинет</a><a class="" href="/category/reshenie-problem/"><span>08</span>Решение проблем</a><a class="is-active" href="/category/oborudovanie/"><span>09</span>Оборудование</a><a class="" href="/category/otklyuchenie-uslug/"><span>10</span>Отключение услуг</a><a class="" href="/category/umnyj-dom/"><span>11</span>Умный дом</a><a class="" href="/category/igry-i-pk/"><span>12</span>Игры и ПК</a><a class="" href="/category/kontakty-i-ofisy/"><span>13</span>Контакты и Офисы</a><a class="" href="/category/drugoe/"><span>14</span>Другое</a></nav></div>
+<div class="pc-sidebar-bottom"><a href="/about.html">О проекте</a><a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a><p>РТ Помощник · Справочные материалы</p></div></aside>
+<main class="pc-main"><div class="pc-topline"><nav class="pc-breadcrumbs" aria-label="Хлебные крошки"><a href="/">Главная</a><span>/</span><a href="/category/oborudovanie/">Оборудование</a></nav><span class="pc-updated">Практический материал</span></div>
+<article class="pc-article" id="article"><header class="pc-article-header"><div class="pc-article-heading"><p class="pc-kicker"><span>Оборудование</span> · 9 мин</p><h1>Как перепрошить ТВ приставку Ростелеком SML-5050</h1><p class="pc-deck">Инструкция по перепрошивке SML-5050 через USB и UART. Как войти в recovery mode, выбрать прошивку и восстановить работу устройства.</p></div>
+<aside class="pc-brief" aria-label="Краткий ответ"><p>Краткий ответ</p><strong>Короткий вывод</strong><span>Для перепрошивки SML-5050 скачайте файл образа, запишите его на флешку от 4 до 16 ГБ, отформатированную в FAT32. Вставьте накопитель в выключенную приставку, зажмите кнопку Reset (или обновление), подайте питание и дождитесь перезагрузки.</span></aside></header>
+<div class="pc-byline"><div class="pc-author-mark">РП</div><div><strong>РТ Помощник</strong><span>Оборудование</span></div><p>Справочный материал</p></div>
+<div class="pc-ad-slot" data-slot="article_before" aria-hidden="true"></div><nav class="pc-toc" aria-label="Содержание"><p>В этом материале</p><ol><li><a href="#подготовка-оборудования-и-поиск-прошивки">Подготовка оборудования и поиск прошивки</a></li><li><a href="#метод-обновления-через-usb-recovery">Метод обновления через USB Recovery</a></li><li><a href="#вход-в-режим-восстановления-и-начало-установки">Вход в режим восстановления и начало установки</a></li><li><a href="#что-делать-если-приставка-не-видит-флешку">Что делать, если приставка не видит флешку</a></li><li><a href="#альтернативный-метод-прошивка-через-uart">Альтернативный метод: прошивка через UART</a></li><li><a href="#проверка-работоспособности-после-перепрошивки">Проверка работоспособности после перепрошивки</a></li></ol></nav>
+<div class="pc-prose"><p>Замедление работы, зависания интерфейса или невозможность запуска приложений часто требуют полного обновления программного обеспечения приставки SML-5050. Штатный механизм обновления через меню устройства может не сработать при критических сбоях файловой системы или повреждении системных разделов. В таких случаях единственным рабочим решением становится установка новой версии прошивки вручную через внешний накопитель или интерфейс UART.</p>
+
+<p>Процесс перепрошивки отличается от обычной установки обновлений и требует строгого соблюдения последовательности действий. Неправильно подобранная версия ПО или прерывание записи может привести к полной неработоспособности оборудования («окирпичиванию»). Важно понимать, что данная процедура аннулирует гарантию и требует технической грамотности, а также наличия исправного USB-накопителя определенного объема.</p>
+
+<p>Перед началом работ необходимо убедиться, что проблема действительно в программном обеспечении, а не в неисправности пульта или блока питания. Если устройство включается, но не загружается дальше логотипа, или работает крайне нестабильно, перепрошивка является оправданным шагом.</p>
+
+
+
+<aside class="pc-callout pc-callout--warning"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Риск потери гарантии</strong><p>Вскрытие корпуса для доступа к плате или использование UART-кабеля лишает устройство гарантии. При неудачной прошивке через USB устройство может перестать включаться.</p></div></aside>
+
+<h2 id="подготовка-оборудования-и-поиск-прошивки">Подготовка оборудования и поиск прошивки</h2>
+
+<p>Успех операции на 90% зависит от качества подготовительного этапа. Главное требование — найти корректный файл прошивки (образ), совместимый именно с вашей ревизией платы SML-5050. Производством этих приставок занимались разные партнеры (Sagemcom, Eltex и другие), и прошивка от одной модификации может не подойти к другой.</p>
+
+<p>Обычно файлы прошивок имеют расширение `.img` или архивный формат. Искать их следует на профильных форумах или специализированных ресурсах, посвященных IPTV оборудованию. Важно проверять дату публикации и комментарии пользователей: если кто-то подтвердил успешную установку на SML-5050, вероятность успеха высока. Не используйте файлы с сомнительных сайтов без проверки контрольных сумм, если они предоставлены.</p>
+
+<p>Второй критический элемент — USB-флешка. Она должна быть отформатирована в файловую систему FAT32. Размер накопителя играет важную роль: оптимально использовать флешки объемом от 4 до 16 ГБ. Накопители большого объема (32, 64 ГБ и выше) могут не определяться загрузчиком приставки в режиме восстановления, так как драйверы в старом ПО не поддерживают адресацию больших секторов.</p>
+
+<aside class="pc-callout pc-callout--note"><span class="pc-callout-sign" aria-hidden="true">!</span><div><strong>Требования к флешке</strong><p>Используйте только USB 2.0 накопители. USB 3.0 (синего цвета) могут вызывать конфликты при загрузке в режиме Recovery. Файл прошивки должен лежать в корне флешки, без вложенных папок.</p></div></aside>
+
+<div class="pc-fact-grid" aria-label="Диагностика перед прошивкой"><div><span>Приставка висит на логотипе</span><strong>Сбой загрузчика</strong><p>Требуется прошивка через Recovery или UART</p></div><div><span>Нет изображения, горит красный индикатор</span><strong>Проблема с питанием или платой</strong><p>Прошивка не поможет, нужна диагностика БП</p></div><div><span>Интерфейс тормозит</span><strong>Переполнение кэша</strong><p>Попробуйте сброс до заводских настроек</p></div></div>
+
+<div class="pc-ad-slot" data-slot="article_mid_1" aria-hidden="true"></div><h2 id="метод-обновления-через-usb-recovery">Метод обновления через USB Recovery</h2>
+
+<p>Этот способ является наиболее безопасным и доступным для большинства пользователей, так как не требует разборки корпуса и пайки. Он работает, если загрузчик устройства (Bootloader) не поврежден. Суть метода заключается в том, чтобы заставить приставку искать файл обновления на внешнем носителе при старте.</p>
+
+<p>Подготовленную флешку с файлом прошивки необходимо вставить в USB-порт приставки. Рекомендуется использовать порт, расположенный ближе к передней панели или тот, который физически удобнее для доступа, так как процедуру, возможно, придется повторить. Убедитесь, что индикатор на флешке (если он есть) мигает, подтверждая подачу питания.</p>
+
+<p>Далее необходимо обесточить приставку, вынув блок питания из розетки. Это обязательное условие для инициации режима восстановления. Некоторые версии ПО реагируют только на полное отсутствие питания, программная перезагрузка через меню может не сработать для входа в режим прошивки.</p>
+
+<div class="pc-widget-title">Алгоритм действий USB</div><ol class="pc-steps"><li><span>1</span><div><strong>Вставьте флешку с файлом update.zip или .img в выключенную приставку.</strong></div></li><li><span>2</span><div><strong>Зажмите кнопку сброса (Reset) на корпусе или кнопку обновления на пульте.</strong></div></li><li><span>3</span><div><strong>Не отпуская кнопку, включите питание в розетку.</strong></div></li><li><span>4</span><div><strong>Удерживайте кнопку 10-15 секунд до появления меню или начала процесса.</strong></div></li></ol>
+
+<aside class="pc-inline-related"><div class="pc-inline-related-head"><span>Также по теме</span><strong>Возможно, пригодится</strong></div><div class="pc-inline-related-links"><a href="/articles/k/ka/kakoj-router-nuzhen-dlya-optovolokna-rostelekom.html"><span>01</span><strong>Выбор роутера для оптоволоконного интернета Ростелеком</strong><small>12 мин →</small></a><a href="/articles/k/ka/kak-podklyuchit-transformer-v-rostelekom.html"><span>02</span><strong>Как подключить роутер к сети Ростелеком</strong><small>13 мин →</small></a><a href="/articles/k/ka/kak-podklyuchit-2-kompyutera-k-internetu-cherez-kabel-rostelekom.html"><span>03</span><strong>Подключение двух компьютеров к интернету Ростелеком: кабельная схема</strong><small>11 мин →</small></a></div></aside><h2 id="вход-в-режим-восстановления-и-начало-установки">Вход в режим восстановления и начало установки</h2>
+
+<p>Самый сложный момент — правильно скомбинировать нажатие кнопки и подачу питания. На корпусе SML-5050 часто есть скрытая кнопка Reset, расположенная в углублении (требуется скрепка) или совмещенная с кнопкой включения. В некоторых ревизиях используется кнопка на пульте ДУ (обычно значок шестеренки или стрелки в круге).</p>
+
+<p>Если используется кнопка на корпусе: зажмите её скрепкой, подключите питание и держите до тех пор, пока на экране не появится меню Android Recovery или логотип робота с надписью "No command". Если используется пульт: зажмите кнопку обновления, подключите питание и не отпускайте, пока не начнется процесс.</p>
+
+<p>В случае успеха вы увидите либо автоматический запуск процесса обновления (полоса прогресса), либо меню Recovery. В меню навигация осуществляется кнопками громкости на пульте (или самом устройстве), а выбор — кнопкой включения. Необходимо выбрать пункт `Apply update from USB` или `Wipe data/factory reset`, если прошивка требует предварительной очистки.</p>
+
+<div class="pc-widget-title">Типичные ошибки при входе в Recovery</div><div class="pc-mistakes"><article><span>01</span><div><strong>Слишком раннее отпускание кнопки — приставка грузится в обычный режим.</strong></div></article><article><span>02</span><div><strong>Неподходящая файловая система флешки (NTFS/exFAT) — устройство не видит файл.</strong></div></article><article><span>03</span><div><strong>Файл прошивки переименован неверно — некоторые версии ищут строго update.zip</strong></div></article></div>
+
+<div class="pc-ad-slot" data-slot="article_mid_2" aria-hidden="true"></div><h2 id="что-делать-если-приставка-не-видит-флешку">Что делать, если приставка не видит флешку</h2>
+
+<p>Частая ситуация: индикаторы горят, но процесс не начинается, или появляется сообщение "No command" / "Android Recovery" без возможности выбрать обновление с USB. Это означает, что загрузчик не может прочитать накопитель.</p>
+
+<p>В первую очередь проверьте формат флешки. Перепрограммируйте её в FAT32 с размером кластера по умолчанию. Попробуйте другой порт USB. На задней панели SML-5050 обычно два порта — попробуйте оба, иногда один из них распаян напрямую к контроллеру, а второй через хаб.</p>
+
+<p>Если флешка объемом 32 ГБ и более, загрузчик может её игнорировать. Найдите старую флешку на 2, 4 или 8 ГБ. Также имеет значение имя файла: переименуйте образ в `update.zip` или `recovery.img` в зависимости от требований конкретной версии прошивки, которую вы скачали.</p>
+
+<section class="pc-decision"><div class="pc-decision-head"><span>Маршрут решения</span><h3>Выбор метода прошивки</h3></div><div class="pc-decision-grid"><div class="pc-decision-row"><span>Меню Recovery доступно и видит флешку</span><strong>Используйте стандартное обновление через USB</strong></div><div class="pc-decision-row"><span>Меню не видит флешку или зависает</span><strong>Попробуйте другую флешку меньшего объема</strong></div><div class="pc-decision-row"><span>Экран черный, индикатор горит</span><strong>Требуется прошивка через UART (пайка)</strong></div></div></section>
+
+<h2 id="альтернативный-метод-прошивка-через-uart">Альтернативный метод: прошивка через UART</h2>
+
+<p>Если программные методы не помогают и приставка не реагирует на флешку, остается аппаратный метод через UART. Это требует разборки корпуса, наличия USB-TTL адаптера (например, на чипе CH340 или PL2303) и навыков работы с паяльником или тонкими проводами.</p>
+
+<p>Вам нужно найти на плате контактные площадки TX, RX и GND. Обычно они подписаны на текстолите. Адаптер подключается к плате: TX адаптера к RX приставки, RX адаптера к TX приставки, GND к GND. Питание (VCC) подключать <strong>не нужно</strong>, приставка питается от своего блока.</p>
+
+<p>После подключения к ПК через терминал (PuTTY, SecureCRT) с настройками скорости 115200, 8N1, вы увидите загрузочный лог. Прервав загрузку клавишей (обычно пробел или Enter), можно попасть в консоль загрузчика (U-Boot). Оттуда командой `fatload usb 0 0x82000000 update.zip` и последующей `run upgrade` можно принудительно запустить запись образа.</p>
+
+<div class="pc-code"><span>bash</span><pre><code>setenv upgrade_available 1
+saveenv
+reset</code></pre></div>
+
+<h2 id="проверка-работоспособности-после-перепрошивки">Проверка работоспособности после перепрошивки</h2>
+
+<p>После успешного завершения процесса (появится сообщение `Update complete` или аналогичное) приставка перезагрузится. Первый запуск может занять до 5-10 минут, так как система оптимизирует приложения и создает новые разделы. Не выключайте устройство в этот период.</p>
+
+<p>Признаком успешной прошивки является появление рабочего стола Android TV или фирменного интерфейса Wink без ошибок. Проверьте работу пульта, подключение к сети и воспроизведение видео. Зайдите в настройки -> О устройстве, чтобы убедиться, что версия ПО изменилась на ту, которую вы устанавливали.</p>
+
+<p>Если устройство загружается, но интерфейс работает некорректно (черный экран, нет звука), возможно, версия прошивки не совсем подходит под вашу ревизию "железа" (например, разный тип тюнера или Wi-Fi модуля). В этом случае процедуру придется повторить с другим образом.</p>
+
+<section class="pc-verify"><div class="pc-verify-head"><span>Контрольные точки</span><h3>Контрольные точки успеха</h3></div><div class="pc-verify-grid"><article class="pc-verify-card"><strong>Индикатор на корпусе</strong><div><span>Норма</span><p>Зеленый или белый, мигает при загрузке</p></div><div><span>Тревожный признак</span><p>Горит красным или не горит</p></div></article><article class="pc-verify-card"><strong>Изображение на ТВ</strong><div><span>Норма</span><p>Четкая картинка, меню доступно</p></div><div><span>Тревожный признак</span><p>Черный экран или &#x27;No Signal&#x27;</p></div></article><article class="pc-verify-card"><strong>Настройки системы</strong><div><span>Норма</span><p>Версия ПО соответствует файлу</p></div><div><span>Тревожный признак</span><p>Версия старая или неизвестная</p></div></article></div></section>
+
+<details>
+<summary>Можно ли перепрошить SML-5050 без флешки?</summary>
+<p>Без флешки перепрошить устройство штатными методами невозможно. Обновление по сети (OTA) работает только если система хотя бы частично загружается и имеет доступ к серверам Ростелекома. При серьезных сбоях внешний носитель обязателен.</p>
+</details>
+
+<details>
+<summary>Где взять файл прошивки официально?</summary>
+<p>Ростелеком не публикует файлы прошивок в открытом доступе для пользователей. Их можно найти только на специализированных форумах энтузиастов или получить в сервисных центрах. Использование файлов со сторонних ресурсов всегда несет риск.</p>
+</details>
+
+<details>
+<summary>Сотрется ли мой список каналов после прошивки?</summary>
+<p>Да, при полной перепрошивке все пользовательские данные, настройки Wi-Fi и привязки к личному кабинету будут удалены. Устройство вернется к заводскому состоянию, и его потребуется настроить заново как новое.</p>
+</details>
+
+<details>
+<summary>Что такое «кирпич» и можно ли его оживить?</summary>
+<p>«Кирпич» — это состояние, когда приставка не подает признаков жизни (черный экран, нет реакции на пульт). Если не поврежден загрузчик, оживить её можно через UART. Если поврежден загрузчик, требуется программатор для перепайки чипа памяти, что экономически часто нецелесообразно.</p>
+</details>
+
+<details>
+<summary>Подойдет ли прошивка от SML-4830?</summary>
+<p>Нет, прошивки от разных моделей (даже одного производителя) несовместимы. Установка ПО от SML-4830 на SML-5050 гарантированно выведет устройство из строя из-за различий в аппаратной конфигурации.</p>
+</details>
+
+<details>
+<summary>Нужно ли активировать приставку после перепрошивки?</summary>
+<p>Если вы перепрошиваете устройство, полученное от провайдера, оно может потребовать повторной активации в сети оператора. Для этого может потребоваться звонок в поддержку по номеру 8 800 100 0 800 или ввод мак-адреса в личном кабинете.</p>
+</details></div><div class="pc-ad-slot" data-slot="article_after" aria-hidden="true"></div>
+<section class="pc-related" aria-labelledby="relatedTitle"><div class="pc-section-title"><span>Дальше по теме</span><h2 id="relatedTitle">Продолжить чтение</h2></div><div class="pc-related-grid"><a href="/articles/k/ka/kakoj-router-nuzhen-dlya-optovolokna-rostelekom.html"><span>12 мин</span><strong>Выбор роутера для оптоволоконного интернета Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-transformer-v-rostelekom.html"><span>13 мин</span><strong>Как подключить роутер к сети Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-podklyuchit-2-kompyutera-k-internetu-cherez-kabel-rostelekom.html"><span>11 мин</span><strong>Подключение двух компьютеров к интернету Ростелеком: кабельная схема</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-smotret-fleshku-cherez-pristavku-rostelekom.html"><span>11 мин</span><strong>Просмотр видео с флешки через приставку Ростелеком</strong><b>Читать ↗</b></a><a href="/articles/r/ro/rostelekom-skolko-platit-za-router.html"><span>11 мин</span><strong>Сколько платить за роутер Ростелеком: аренда или покупка</strong><b>Читать ↗</b></a><a href="/articles/k/ka/kak-vklyuchit-pristavku-rostelekom-k-televizoru-dexp.html"><span>12 мин</span><strong>Подключение приставки Ростелеком к телевизору DEXP</strong><b>Читать ↗</b></a></div></section></article>
+<footer class="pc-landing-footer"><div class="pc-landing-footer-inner">
+<div class="pc-landing-footer-brand"><h2>РТ Помощник</h2><p>Полный справочник по настройке оборудования, подключению услуг и решению проблем с сервисами Ростелеком.</p></div>
+<div class="pc-footer-links"><strong>Разделы</strong><a href="/category/nastrojka-wi-fi/">Настройка Wi-Fi</a><a href="/category/podklyuchenie-tv/">Подключение ТВ</a><a href="/category/servis-wink/">Сервис Wink</a><a href="/category/mobilnaya-svyaz/">Мобильная связь</a><a href="/category/videonablyudenie/">Видеонаблюдение</a><a href="/category/oplata-i-tarify/">Оплата и Тарифы</a></div>
+<div class="pc-footer-links"><strong>Проект</strong><a href="/about.html">О нас</a>
+<a href="/contact.html">Контакты</a><a href="/privacy.html">Конфиденциальность</a>
+<a href="/sitemap.xml">Карта сайта</a></div>
+<div class="pc-footer-base"><span>РТ Помощник</span><span>Материалы носят справочный характер</span><div class="pc-counter-contract" data-counter="liveinternet" aria-hidden="true"></div></div>
+</div></footer></main>
+<div class="pc-cookie" data-cookie><p>Мы используем cookie, чтобы сайт работал стабильно.</p><button type="button" data-cookie-accept>Понятно</button></div>
+<script src="/static/js/main.js" defer></script><script src="/static/js/pack_c.js" defer></script><script src="/static/js/inject.js" defer></script></body></html>
