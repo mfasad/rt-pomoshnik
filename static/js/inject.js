@@ -60,3 +60,36 @@ ym(110245443,'init',{clickmap:true,trackLinks:true,accurateTrackBounce:true,webv
 
   articleHeader.parentNode.insertBefore(notice, articleHeader.nextSibling);
 })();
+
+// BEGIN GENERATED AD: VideoRoll
+// VideoRoll — Под текстом статьи, перед похожими
+(function(){
+    if (!document.body) return;
+    var pageType = document.body.getAttribute('data-page-type');
+    if (pageType && pageType !== 'article') return;
+    if (!pageType && /(^|\s)(home|category|archive)(\s|$)/.test(document.body.className)) return;
+    var target = document.querySelector(".pc-article, article.pc-article, .article-body, .pb-article-body, main article, article");
+    if (!target) return;
+    if (document.getElementById("vid_vpaut_div")) return;
+
+    // Ad container
+    var wrap = document.createElement('div');
+    wrap.style.cssText = 'margin:20px 0;text-align:center';
+    wrap.innerHTML = "<div id=\"vid_vpaut_div\" style=\"display:inline-block;width:600px;height:320px\" vid_vpaut_pl=\"47986\"></div>";
+    var related = target.querySelector('.pc-related, .related-articles, .related-posts, .article-related, [data-related]');
+    if (related && related.parentNode) {
+        related.parentNode.insertBefore(wrap, related);
+    } else {
+        target.appendChild(wrap);
+    }
+
+    // External script
+    var scriptSrc = "https://videoroll.net/js/vid_vpaut_script.js";
+    if (!document.querySelector('script[src="' + scriptSrc + '"]')) {
+        var s = document.createElement('script');
+        s.src = scriptSrc;
+        s.async = true;
+        document.body.appendChild(s);
+    }
+})();
+// END GENERATED AD: VideoRoll
